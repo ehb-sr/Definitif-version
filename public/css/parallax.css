@@ -1,0 +1,89 @@
+html,body{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #575753;
+    height: 100%;
+    width: 100%;
+}
+
+.contentwrap{
+    position: relative;
+    padding: 100px 18%;
+    z-index: 5;
+    background: white;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    padding:0;
+}
+
+.contentwrap h1 {
+    font-size: 4em;
+    width: 17em;
+    margin-top: 0;
+    color: red;
+    font-weight: bold;
+}
+
+.contentwrap p {
+    font-size: 1.5em;
+    color: black;
+}
+
+.photowrap{
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.photowrap img{
+    width: 40%;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+    margin-right: 8em;
+}
+
+.date div {
+    margin: 5px;
+}
+
+.date p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#agendaContent, #eventContent {
+    padding: 5% 2%;
+}
+
+#agendaContent > .infoContent, #eventContent >.infoContent {
+    width: 50em;
+    margin-right: 8em;
+}
+
+.contentImg {
+    width: 35%;
+}
+
+.infoContent > h1 {
+    width: 12.5em;
+}
+
+.date > .flex {
+    border-bottom: 3px outset;
+}
+
+#contactContent > div > .contentImg {
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 100px;
+    width: 50%;
+}

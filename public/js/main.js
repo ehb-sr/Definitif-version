@@ -44,7 +44,7 @@ $(document).ready(function () {
         progress  : true,
 
         // Load image url
-        loadImgSrc: 'images/load.gif',
+        loadImgSrc: '../../img/caroussel/load.gif',
 
         //  Skin name
         skin      : 'edslider'

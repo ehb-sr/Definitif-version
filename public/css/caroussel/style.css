@@ -16,7 +16,7 @@ header,
     position:absolute;
 }
 .first{
-    background:url("../images/first.jpg");
+    background:url("../../img/campussen/kaai.jpg");
     background-size: 100% 100%;
 }
 .first a,
@@ -39,7 +39,7 @@ header,
     font-weight: bold;
 }
 .second{
-    background:url("../images/second.jpg");
+    background:url("../../img/campussen/Jette.jpg");
     background-size: 100% 100%;
 }
 
@@ -54,7 +54,7 @@ header,
     font-weight: bold;
 }
 .third{
-    background:url("../images/third.jpg");
+    background:url("../../img/campussen/kaai.jpg");
     background-size: 100% 100%;
 }
 .third > p {
@@ -68,7 +68,7 @@ header,
     font-weight: bold;
 }
 .fourth{
-    background:url("../images/fourth.jpg");
+    background:url("../../img/campussen/ritcs.jpg");
     background-size: 100% 100%;
 }
 

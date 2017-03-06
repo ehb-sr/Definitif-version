@@ -18,7 +18,7 @@
             paginator : true,
             navigator : true,
             progress  : true,
-            loadImgSrc: 'load.gif',
+            loadImgSrc: '../../img/caroussel/load.gif',
             skin      : 'edslider'
         };
 
