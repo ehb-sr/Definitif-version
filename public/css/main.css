@@ -9,23 +9,28 @@ body
     height: 40px;
 }
 
-.container {
-    background-color: rgba(0, 0, 0, 0.25);
+.containerMenu {
+    background-color: rgba(0, 0, 0, 0.7);
     height: 3.5em;
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 
-.container div {
+.containerMenu {
     display:flex;
     justify-content: flex-end;
     margin-right: 2%;
 }
 
-.container .menuLogo {
-    float: left;
+.containerMenu > a {
+    margin-right: auto;
     margin-left: 2%;
     padding: 0.5em;
+}
+
+.containerMenu > div {
+    align-self: center;
 }
 
 .item {
@@ -36,7 +41,7 @@ body
     font-weight: bold;
     transition: 1s ease;
     border-bottom: 2px solid transparent;
-
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .item:hover {
@@ -45,7 +50,7 @@ body
 }
 
 .current {
-    color: darkred;
+    color: red;
     border-bottom: 2px solid;
 }
 

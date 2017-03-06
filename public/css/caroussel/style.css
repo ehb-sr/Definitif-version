@@ -35,8 +35,9 @@ header,
     width:320px;
     text-align:center;
     margin-left:-160px;
-    color: darkred;
+    color: red;
     font-weight: bold;
+    text-shadow: 10px 10px 10px black;
 }
 .second{
     background:url("../../img/campussen/Jette.jpg");
@@ -50,11 +51,12 @@ header,
     left:43%;
     text-align:center;
     margin-left:-160px;
-    color: darkred;
+    color: red;
     font-weight: bold;
+    text-shadow: 10px 10px 10px black;
 }
 .third{
-    background:url("../../img/campussen/kaai.jpg");
+    background:url("../../img/campussen/bloemenhof.jpg");
     background-size: 100% 100%;
 }
 .third > p {
@@ -64,8 +66,9 @@ header,
     left:22%;
     text-align:center;
     margin-left:-160px;
-    color: darkred;
+    color: red;
     font-weight: bold;
+    text-shadow: 10px 10px 10px black;
 }
 .fourth{
     background:url("../../img/campussen/ritcs.jpg");
@@ -73,7 +76,7 @@ header,
 }
 
 .fourth > p {
-    color: darkred;
+    color: red;
     font-weight: bold;
     text-align:center;
     margin-left:-160px;
@@ -81,6 +84,7 @@ header,
     font-size:50px;
     right: 7%;
     top: 13%;
+    text-shadow: 10px 10px 10px black;
 }
 
 /*

@@ -87,3 +87,18 @@ html,body{
     border-radius: 100px;
     width: 50%;
 }
+
+.card {
+    position: relative;
+}
+
+.card .top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.card:hover .top {
+    display: inline;
+}
+
