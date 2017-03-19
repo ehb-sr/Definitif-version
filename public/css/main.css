@@ -5,6 +5,11 @@ body
     margin: 0;
 }
 
+.flex-kol {
+    display: flex;
+    flex-direction: column;
+}
+
 .menuLogo img {
     height: 40px;
 }

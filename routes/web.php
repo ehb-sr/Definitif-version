@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('raden', function () {
     return view('raden');
 });
+
+Route::get('dossier', function () {
+    return view('dossier');
+});
