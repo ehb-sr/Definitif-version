@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     $('.mySlideshow').edslider({
         // Set width
-        width     : 1520,
+        width     : '100%',
         //1536
 
         // Set height
@@ -32,7 +32,7 @@ $(document).ready(function () {
         duration  : 1000,
 
         // Enable/disable animation
-        animation : false,
+        animation : true,
 
         // Enable/disable paginator
         paginator : false,

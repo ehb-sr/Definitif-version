@@ -29,6 +29,13 @@ html,body{
     font-weight: bold;
 }
 
+.contentwrap h2 {
+    font-size: 3em;
+    margin-top: 0;
+    color: red;
+    font-weight: bold;
+}
+
 .contentwrap p {
     font-size: 1.5em;
     color: black;
@@ -69,8 +76,12 @@ html,body{
     margin-right: 8em;
 }
 
+#vvsContainer > #vvsInfo, #vvsContainer > #vvsImg {
+    width: 50em;
+}
+
 .contentImg {
-    width: 35%;
+    width: 25%;
 }
 
 .infoContent > h1 {
@@ -85,7 +96,7 @@ html,body{
     border: 2px solid;
     padding: 5px;
     border-radius: 100px;
-    width: 50%;
+    width: 35%;
 }
 
 .card {
