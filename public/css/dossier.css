@@ -73,3 +73,55 @@ textarea {
     font-size: 16px !important;
 }
 
+#followWrap {
+    height: 7.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: -10.65em;
+    margin-bottom: 3em;
+}
+#followItem {
+    height: 50px;
+    background: #e6e6e6;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-radius: 0 0 0.5em 0.5em;
+    margin-bottom: 0;
+    width: 9em;
+    align-self: flex-end;
+    font-size: 2.5em;
+    border-color: #cccccc;
+}
+.sticky {
+    position: fixed;
+    top: 1.4em;
+}
+
+#followMenu {
+    width: 20em;
+    float: right;
+    margin-right: -15em;
+    border: 2px solid;
+    border-radius: 0.5em;
+    align-self: flex-end;
+}
+
+#followMenuWrap {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0em;
+    height: 15em;
+    margin-top: -11em;
+}
+
+.stickyMenu {
+    position: fixed;
+    right: 19.5em;
+    top: 6em;
+}
+
+h1 {
+    margin: 0.5em 1em;
+}
+

@@ -33,9 +33,20 @@
             <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
         </div>
         <div class="contentwrap">
+            <div id="followWrap">
+                <h2 id="followItem">2016 - 2017</h2>
+            </div>
+            <div id="followMenuWrap">
+                <div id="followMenu">
+                    <h3>Academiejaar</h3>
+                    <h4>2016 - 2017</h4>
+                    <h4>2017 - 2018</h4>
+                </div>
+            </div>
+
             <div class="flex box">
                 <div class="flex-kol topic-box">
-                    <h3 class="title-topic">Tittel</h3>
+                    <h2 class="title-topic">Titel</h2>
                     <h4 class="topic">Topic</h4>
                 </div>
                 <div class="flex-kol">
@@ -46,18 +57,120 @@
                     </div>
                 </div>
             </div>
-
             <div class="flex-kol comment-content">
                 <div class="flex-kol comment-box">
                     <p class="timestamp-message">Timestamp</p>
                     <p class="comment-user">Comment user</p>
                 </div>
-                <div class="flex-kol">
+                <div class="flex">
                     <textarea></textarea>
                     <img src="#" class="add-btn">
                 </div>
             </div>
             <p class="s-more">See More</p>
+
+            <div class="flex box">
+                <div class="flex-kol topic-box">
+                    <h2 class="title-topic">Titel</h2>
+                    <h4 class="topic">Topic</h4>
+                </div>
+                <div class="flex-kol">
+                    <button class="pdf">PDF</button>
+                    <div class="flex-kol">
+                        <h4 class="title-einde">Einde</h4>
+                        <p class="timestamp-einde">Timestamp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-kol comment-content">
+                <div class="flex-kol comment-box">
+                    <p class="timestamp-message">Timestamp</p>
+                    <p class="comment-user">Comment user</p>
+                </div>
+                <div class="flex">
+                    <textarea></textarea>
+                    <img src="#" class="add-btn">
+                </div>
+            </div>
+            <p class="s-more">See More</p>
+
+            <div class="flex box">
+                <div class="flex-kol topic-box">
+                    <h2 class="title-topic">Titel</h2>
+                    <h4 class="topic">Topic</h4>
+                </div>
+                <div class="flex-kol">
+                    <button class="pdf">PDF</button>
+                    <div class="flex-kol">
+                        <h4 class="title-einde">Einde</h4>
+                        <p class="timestamp-einde">Timestamp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-kol comment-content">
+                <div class="flex-kol comment-box">
+                    <p class="timestamp-message">Timestamp</p>
+                    <p class="comment-user">Comment user</p>
+                </div>
+                <div class="flex">
+                    <textarea></textarea>
+                    <img src="#" class="add-btn">
+                </div>
+            </div>
+            <p class="s-more">See More</p>
+
+            <div class="flex box">
+                <div class="flex-kol topic-box">
+                    <h2 class="title-topic">Titel</h2>
+                    <h4 class="topic">Topic</h4>
+                </div>
+                <div class="flex-kol">
+                    <button class="pdf">PDF</button>
+                    <div class="flex-kol">
+                        <h4 class="title-einde">Einde</h4>
+                        <p class="timestamp-einde">Timestamp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-kol comment-content">
+                <div class="flex-kol comment-box">
+                    <p class="timestamp-message">Timestamp</p>
+                    <p class="comment-user">Comment user</p>
+                </div>
+                <div class="flex">
+                    <textarea></textarea>
+                    <img src="#" class="add-btn">
+                </div>
+            </div>
+            <p class="s-more">See More</p>
+
+            <div class="flex box">
+                <div class="flex-kol topic-box">
+                    <h2 class="title-topic">Titel</h2>
+                    <h4 class="topic">Topic</h4>
+                </div>
+                <div class="flex-kol">
+                    <button class="pdf">PDF</button>
+                    <div class="flex-kol">
+                        <h4 class="title-einde">Einde</h4>
+                        <p class="timestamp-einde">Timestamp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-kol comment-content">
+                <div class="flex-kol comment-box">
+                    <p class="timestamp-message">Timestamp</p>
+                    <p class="comment-user">Comment user</p>
+                </div>
+                <div class="flex">
+                    <textarea></textarea>
+                    <img src="#" class="add-btn">
+                </div>
+            </div>
+            <p class="s-more">See More</p>
+
+
+
         </div>
     </div>
 </div>
@@ -67,6 +180,24 @@
         $.parallax({
             speed: .70
         });
+    });
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        var followWrap = $('#followWrap').offset().top;
+        if (y > followWrap) {
+            $('#followItem').addClass('sticky');
+        } else {
+            $('#followItem').removeClass('sticky');
+        }
+
+        var x = $(this).scrollTop();
+        var followMenu = $('#followMenuWrap').offset().top;
+        if (x > followMenu) {
+            $('#followMenu').addClass('stickyMenu');
+        } else {
+            $('#followMenu').removeClass('stickyMenu');
+        }
     });
 </script>
 
