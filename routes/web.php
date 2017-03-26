@@ -22,3 +22,7 @@ Route::get('raden', function () {
 Route::get('dossier', function () {
     return view('dossier');
 });
+
+Route::get('verkiezing', function() {
+   return view('verkiezing');
+});

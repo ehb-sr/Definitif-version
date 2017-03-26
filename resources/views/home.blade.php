@@ -19,7 +19,7 @@
             <a class="item" href="#" id="stuvers">Stuvers</a>
             <a class="item" href="./raden" id="raden">Raden</a>
             <a class="item" href="./dossier">Dossiers</a>
-            <a class="item" href="#">Verkiezing</a>
+            <a class="item" href="./verkiezing">Verkiezing</a>
             <a class="item" href="#">Contact</a>
         </div>
     </div>
