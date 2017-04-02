@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+body
+{
+    margin: 0;
+}
+
+.menuLogo img {
+    height: 40px;
+}
+
+.containerMenu {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 3.5em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.containerMenu {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.containerMenu > a {
+    margin-right: auto;
+    margin-left: 2%;
+    padding: 0.5em;
+}
+
+.containerMenu > div {
+    align-self: center;
+}
+
+.item {
+    font-size: 1.2em;
+    padding: 0.7em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 1s ease;
+    border-bottom: 2px solid transparent;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.item:hover {
+    color: lightcoral;
+    border-bottom: 2px solid;
+}
+
+.current {
+    color: red;
+    border-bottom: 2px solid;
+}
