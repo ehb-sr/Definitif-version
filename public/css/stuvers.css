@@ -1,0 +1,140 @@
+h1{
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+}
+h2{
+    padding-top: 15px;
+    color: #ff0000;
+    text-align: center;
+
+}
+
+.roundrect {
+    border-radius:50%;
+
+}
+
+.DesignEnItcontent{
+    margin-top: 120px;
+    position: absolute;
+    left: 40%;
+}
+.StuverDiv{
+    background-color: lightgray;
+    border-bottom-width:5px;
+    border-bottom-color: darkgrey;
+    border-bottom-style: solid;
+
+
+}
+
+.container{
+    width:100%;
+    display: inline-block;
+    }
+.container2{
+    width:100%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.leftcontainer {
+    float:left ;
+width:50%;}
+.rightcontainer {
+   float:right ;
+width: 50%;}
+.leftcontainer img{
+    width:100%;
+    float: left;
+
+}
+.rightcontainer img{
+    width: 100%;
+    float: right;
+}
+
+.contentTitleLeftStuvers{
+    margin-left:50px;
+    text-align: left;
+    margin-top: 120px;
+    position: absolute;
+}
+
+
+.contentTitleRightStuvers{
+    margin-left:110px;
+    text-align: right;
+    position: absolute;
+    margin-top:120px;
+}
+
+.contentTitleLeft2Stuvers{
+    margin-left:45px;
+    text-align: left;
+    margin-top: -40px;
+    position: absolute;
+}
+
+
+.contentTitleRight2Stuvers{
+    margin-left:110px;
+    text-align: right;
+    position: absolute;
+    margin-top:-40px;
+}
+
+
+.citaatLeft{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 230px;
+
+}
+.citaatRight{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 45px;
+
+}
+
+.GebouwImage img{
+    position: absolute;
+    margin-top: -390px;
+    border-radius: 50%;
+    margin-left: 41%;
+}
+
+.citaatLeft2{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 230px;
+
+}
+
+
+.citaatRight2{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 45px;
+
+}
+
+
+.text{
+    position: absolute;
+    margin-left: 15px;
+    width:250px;
+    height:150px;
+    margin-top: 10px;
+}
+.text2{
+    position: absolute;
+    margin-left: 15px;
+    width:250px;
+    height:150px;
+    margin-top: 20px;
+}
+
+

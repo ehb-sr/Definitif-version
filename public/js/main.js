@@ -3,6 +3,10 @@ $(document).ready(function () {
     var currentItem;
     var newCurrentItem;
 
+    $.parallax({
+        speed: .70
+    });
+
     $('.item').on('click', function() {
 
         if(currentItem != null)
@@ -14,39 +18,5 @@ $(document).ready(function () {
         currentItem = newCurrentItem;
     });
 
-    $('.mySlideshow').edslider({
-        // Set width
-        width     : '100%',
-        //1536
 
-        // Set height
-        height    : 650,
-
-        // Start position
-        position  : 1,
-
-        // Interval time between slides (in milliseconds)
-        interval  : 50000,
-
-        // <a href="http://www.jqueryscript.net/animation/">Animation</a> Speed (in milliseconds)
-        duration  : 1000,
-
-        // Enable/disable animation
-        animation : true,
-
-        // Enable/disable paginator
-        paginator : false,
-
-        // Enable/disable navigator
-        navigator : true,
-
-        //  Enable/disable interval progress bar
-        progress  : true,
-
-        // Load image url
-        loadImgSrc: '../../img/caroussel/load.gif',
-
-        //  Skin name
-        skin      : 'edslider'
-    });
 });

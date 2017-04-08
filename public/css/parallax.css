@@ -14,6 +14,14 @@ html,body{
     background: white;
     text-align: center;
 }
+#contentAbout {
+    padding: 100px 10%;
+}
+
+#citaatContent {
+    padding: 100px 10%;
+}
+
 
 .flex {
     display: flex;
@@ -67,11 +75,11 @@ html,body{
     margin-bottom: 2px;
 }
 
-#agendaContent, #eventContent {
+#agendaContent, #eventContent, #citaatContent {
     padding: 5% 2%;
 }
 
-#agendaContent > .infoContent, #eventContent >.infoContent {
+#agendaContent > .infoContent, #eventContent >.infoContent, #citaatContent > .citaatcontainer {
     width: 50em;
     margin-right: 8em;
 }
@@ -111,5 +119,65 @@ html,body{
 
 .card:hover .top {
     display: inline;
+}
+
+.citaatImg{
+    width: 600px;
+    height: auto;
+}
+.left p{
+    position: absolute;
+    margin-top: 20px;
+    width: 580px;
+    margin-left: 10px;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+.PersonImgLeft{
+    float: left;
+    margin-left:460px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.contentTitleLeft{
+    margin-left:290px;
+    text-align: right;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.right {
+    width: 50%;
+    float: left;
+    position: absolute;
+
+    margin-left: 50%;
+}
+
+.right p {
+    margin-top: 20px;
+    width: 580px;
+    position: absolute;
+    margin-left: 20px;
+}
+.PersonImgRight{
+    float: left;
+    margin-left: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.contentTitleRight{
+    margin-left:160px;
+    text-align: left;
+    margin-top: 15px;
+    position: absolute;
 }
 
