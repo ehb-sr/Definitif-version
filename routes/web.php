@@ -12,17 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('base');
+});
+
+Route::get('about', function() {
+   return view('about/content');
+});
+
+Route::get('stuvers', function() {
+    return view('stuvers/content');
 });
 
 Route::get('raden', function () {
-    return view('raden');
+    return view('raden/content');
 });
 
 Route::get('dossier', function () {
-    return view('dossier');
+    return view('dossier/content');
 });
 
 Route::get('verkiezing', function() {
-   return view('verkiezing');
+   return view('verkiezing/content');
+});
+
+Route::get('contact', function() {
+    return view('contact/content');
 });

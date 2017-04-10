@@ -1,7 +1,10 @@
-
-
+<!DOCTYPE html>
+<html>
+<head>
+    @include('head-base')
+</head>
+<body>
 @include('menu.menu')
-
 <div class="sitewrap">
     <div class="contentwrap" id="contentAbout">
         @include('about.about')
@@ -31,3 +34,13 @@
         @include('about.citaatcontainer')
     </div>
 </div>
+<script src="{{ asset('js/main.js') }}"></script>
+<script>
+    $(document).ready(function() {
+        $.parallax({
+            speed: .70
+        });
+    })
+</script>
+</body>
+</html>

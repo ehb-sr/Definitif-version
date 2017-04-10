@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @include('head-base')
+</head>
+<body>
+@include('menu.menu')
 <div class="sitewrap">
     <div class="contentwrap" id="contentAbout">
         <h1>Studentenvertegenwoordigers</h1>
@@ -40,3 +47,6 @@
         @include('stuvers.departement')
     </div>
 </div>
+<script src="{{ asset('js/main.js') }}"></script>
+</body>
+</html>

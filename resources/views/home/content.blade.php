@@ -1,3 +1,4 @@
+
 <div class="sitewrap">
     @include('home.slider')
 
@@ -12,7 +13,7 @@
     </div>
 
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+       <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages parallax" alt=""/>
     </div>
     <div class="contentwrap flex" id="eventContent">
         <div class="infoContent">
@@ -23,17 +24,24 @@
         <div class="date">
             <!--FOR LOOP 5x-->
             @include('home.date')
+            @include('home.date')
+            @include('home.date')
+            @include('home.date')
+            @include('home.date')
         </div>
     </div>
 
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/agenda-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/home/parallax/agenda-background.jpg') }}" class="bgimages parallax" alt=""/>
     </div>
     <div class="contentwrap flex" id="agendaContent">
         <div class="date">
             <!--FOR LOOP 5x -->
             @include('home.date')
-
+            @include('home.date')
+            @include('home.date')
+            @include('home.date')
+            @include('home.date')
         </div>
         <div class="infoContent">
             <h1>Agenda</h1>
@@ -44,7 +52,7 @@
     </div>
 
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/contact-us2-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/home/parallax/contact-us2-background.jpg') }}" class="bgimages parallax" alt=""/>
     </div>
     <div class="contentwrap">
         <h1>Contact us!</h1>

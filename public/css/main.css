@@ -162,3 +162,644 @@ body
 .date-as-calendar.size3x {
     font-size: 48px;
 }
+
+/* ============================
+        ABOUT PAGE
+   ============================*/
+
+.aboutDiv{
+    background-color: lightgray;
+    border-bottom: 5px darkgrey solid;
+    margin-top: -15px;
+}
+
+.aboutcontent{
+    font-size: 12px;
+    color:black;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding:15px;
+}
+
+
+.citaatcontainer{
+    width:100%;
+    display: inline-block;
+}
+
+.leftcontainer{
+    float:left;
+    width:50%;
+    position: relative;
+    margin-left: 50px;
+
+}
+.textballon{
+    width:550px;
+    height:150px;
+    margin:10px;
+}
+.leftcontainer img{
+    float:right;
+}
+
+.rightcontainer {
+    float: left;
+    width: 50%;
+}
+.rightcontainer img{
+    float:left;
+    width:550px;
+    height:150px;
+    margin:10px;
+}
+.item{
+    position: relative;
+}
+
+.rightitem{
+    float: left;
+    position: relative;
+}
+
+.citaatLeft {
+    position: absolute;
+    width:500px;
+    margin-top:13px;
+}
+
+.citaatRight {
+    position: absolute;
+    width:500px;
+    margin-left:45px;
+    margin-top:13px;
+}
+
+/* ========================
+        STUVERS PAGE
+   ======================== */
+
+   h1{
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+}
+h2{
+    padding-top: 15px;
+    color: #ff0000;
+    text-align: center;
+
+}
+
+.roundrect {
+    border-radius:50%;
+
+}
+
+.DesignEnItcontent{
+    margin-top: 120px;
+    position: absolute;
+    left: 40%;
+}
+.StuverDiv{
+    background-color: lightgray;
+    border-bottom-width:5px;
+    border-bottom-color: darkgrey;
+    border-bottom-style: solid;
+
+
+}
+
+.container{
+    width:100%;
+    display: inline-block;
+    }
+.container2{
+    width:100%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.leftcontainer {
+    float:left ;
+width:50%;}
+.rightcontainer {
+   float:right ;
+width: 50%;}
+.leftcontainer img{
+    width:100%;
+    float: left;
+
+}
+.rightcontainer img{
+    width: 100%;
+    float: right;
+}
+
+.contentTitleLeftStuvers{
+    margin-left:50px;
+    text-align: left;
+    margin-top: 120px;
+    position: absolute;
+}
+
+
+.contentTitleRightStuvers{
+    margin-left:110px;
+    text-align: right;
+    position: absolute;
+    margin-top:120px;
+}
+
+.contentTitleLeft2Stuvers{
+    margin-left:45px;
+    text-align: left;
+    margin-top: -40px;
+    position: absolute;
+}
+
+
+.contentTitleRight2Stuvers{
+    margin-left:110px;
+    text-align: right;
+    position: absolute;
+    margin-top:-40px;
+}
+
+
+.citaatLeft{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 230px;
+
+}
+.citaatRight{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 45px;
+
+}
+
+.GebouwImage img{
+    position: absolute;
+    margin-top: -390px;
+    border-radius: 50%;
+    margin-left: 41%;
+}
+
+.citaatLeft2{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 230px;
+
+}
+
+
+.citaatRight2{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 45px;
+
+}
+
+
+.text{
+    position: absolute;
+    margin-left: 15px;
+    width:250px;
+    height:150px;
+    margin-top: 10px;
+}
+.text2{
+    position: absolute;
+    margin-left: 15px;
+    width:250px;
+    height:150px;
+    margin-top: 20px;
+}
+
+/* ========================
+        RADEN PAGE
+   ======================== */
+
+.large {
+    padding: 100px 10% !important;
+}
+
+.lidBox img {
+    width: 40%;
+    height: 97%;
+    border-radius: 70px;
+}
+
+.lidBox div {
+    margin-left: 5%;
+}
+
+.lidBox h3 {
+    margin-bottom: 3%;
+    margin-top: 100%;
+}
+
+.lidBox p {
+    margin-top: 3%;
+    margin-bottom: 0;
+    font-size: inherit !important;
+}
+
+.lidContainer {
+    margin-top: 6%;
+    margin-left: 14%;
+    justify-content: center;
+}
+
+#assLidContainer {
+    margin-top: 6%;
+    margin-left: 0;
+}
+
+#assLidContainer div {
+    width: 30%;
+    height: 7em;
+}
+
+#assLidContainer h3 {
+    margin-top: 50%;
+}
+
+#uab {
+    height: 7em;
+    width: 19%;
+    margin-top: 6%;
+    right: 0;
+    margin-left: auto;
+}
+
+#uab h3 {
+    margin-top: 82%;
+}
+
+#vvs {
+    padding: 100px 5%;
+}
+
+#assContent h3, #ho h3, #rvt, .dr h3 {
+    font-size: 2em;
+    margin-top: 0;
+    color: red;
+    font-weight: bold;
+}
+
+#rvt {
+    margin-top: 6%;
+}
+
+.dr div {
+    width: 50%;
+}
+
+#rvtLeden {
+    justify-content: center;
+    margin-left: 10%;
+}
+
+#assImg{
+    height: 45%;
+    width: 35%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+#hoImg {
+    height: 30%;
+    width: 21%;
+    margin-left: 7%;
+    margin-right: 3%;
+}
+
+#hoLeden {
+    right: 0;
+    margin-left: auto;
+}
+
+#hoLeden2 {
+    right: 0;
+    margin-left: auto;
+    width: 42em;
+}
+
+#hoLeden .lidBox, #hoLeden2 .lidBox {
+    width: 14em;
+    height: 6em;
+}
+
+button {
+    padding: 1em 2em;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    border-bottom-color: darkred;
+    margin-left: 10em;
+    margin-top: 4em;
+}
+
+/* ========================
+        DOSSIER PAGE
+   ======================== */
+
+.box {
+    border-bottom: 2px solid;
+    width: 82%;
+}
+
+.topic-box {
+    width: 75%;
+    padding-right: 15%;
+}
+
+.title-topic {
+    text-align: left;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 2em;
+    margin-left: 2%
+}
+
+.topic {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-left: 2%;
+}
+
+.title-einde {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.timestamp-einde {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.comment-content {
+    width: 82%
+}
+
+.comment-box {
+    border-bottom: 2px solid;
+}
+
+.timestamp-message {
+    width: 5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em !important;
+    color: #575753 !important;
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+.comment-user {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-left: 2%;
+}
+
+textarea {
+    width: 89%;
+    border: 0;
+    border-bottom: 1px solid;
+    padding: 9px;
+}
+
+.s-more {
+    margin-right: 16em;
+    padding-top: 0;
+    margin-top: 10px;
+    color: dodgerblue !important;
+    font-size: 16px !important;
+}
+
+#followWrap {
+    height: 7.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: -10.65em;
+    margin-bottom: 3em;
+}
+#followItem {
+    height: 50px;
+    background: #e6e6e6;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-radius: 0 0 0.5em 0.5em;
+    margin-bottom: 0;
+    width: 9em;
+    align-self: flex-end;
+    font-size: 2.5em;
+    border-color: #cccccc;
+}
+.sticky {
+    position: fixed;
+    top: 1.4em;
+}
+
+#followMenu {
+    width: 20em;
+    float: right;
+    margin-right: -15em;
+    border: 2px solid;
+    border-radius: 0.5em;
+    align-self: flex-end;
+}
+
+#followMenuWrap {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0em;
+    height: 15em;
+    margin-top: -11em;
+}
+
+.stickyMenu {
+    position: fixed;
+    right: 19.5em;
+    top: 6em;
+}
+
+h1 {
+    margin: 0.5em 1em;
+}
+
+/* ========================
+        VERKIEZING PAGE
+   ======================== */
+
+#imgCouple {
+    width: 28%;
+}
+
+.half {
+    width: 50%;
+}
+
+.bordersTB {
+    border-bottom: 3px ridge;
+    border-top: 3px ridge;
+}
+
+.bordersR {
+    border-right: 3px ridge;
+}
+
+.quatro {
+    padding: 0 2%;
+    width: 25%;
+}
+
+.triple {
+    padding: 0 2%;
+    width: 33%;
+}
+
+#verk .contentwrap {
+    padding: 100px 12%;
+}
+
+#verk h1 {
+    margin: auto;
+}
+
+/* ========================
+        CONTACT PAGE
+   ======================== */
+
+
+.contact{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.leftSide h1{
+    text-align: center;
+    color: #ff0000;
+    font-size: 45px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.leftSide{
+    width:50%;
+    background-color: white;
+    float: left;
+    height: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.rightSide{
+    width:50%;
+    background-color: #adadad;
+    float: left;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 48px;
+    text-align: center;
+
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:red;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight:bold;
+}
+input, textarea{
+    width: 300px;margin-bottom: 15px;
+}
+
+select{
+    width: 310px;
+    margin-bottom: 15px;
+}
+label{
+    float: left;
+    margin-left: 45px;
+}
+
+.map{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.contact{
+    width: 80%;
+    position: relative;
+}
+
+#gmap{
+    height: 100%;
+    left: 0;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1; } /* One increment smaller than the z-index of container */
+
+#container{
+    background: white;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    width: 800px;
+    height: auto;
+    z-index: 2; } /* One increment larger than the Google Maps z-index of iframe */
+
+.cardContact {
+    position: relative;
+}
+
+.cardContact .top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.cardContact .contentImg {
+    margin-left: 20px;
+    width: 15%;
+}
+.cardContact:hover .top {
+    display: inline;
+}
+
+.contentImg{
+    width: 5%;
+}
+
+#container form{
+    background-color:  #adadad;
+}
+
+
+
+

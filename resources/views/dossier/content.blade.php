@@ -1,4 +1,10 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    @include('head-base')
+</head>
+<body>
+@include('menu.menu')
 <div class="sitewrap">
     <div class="contentwrap">
         <h1>Dossiers</h1>
@@ -16,3 +22,11 @@
         @include('dossier.comment')
     </div>
 </div>
+<script src="{{ asset('js/main.js') }}"></script>
+<script>
+    $(document).ready(function() {
+        $.parallax();
+    });
+</script>
+</body>
+</html>

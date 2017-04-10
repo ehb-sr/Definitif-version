@@ -1,4 +1,10 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    @include('head-base')
+</head>
+<body>
+@include('menu.menu')
 <div class="sitewrap" id="verk">
     <div class="contentwrap">
         <h1>Verkiezing</h1>
@@ -33,3 +39,6 @@
     </div>
     @include('verkiezing.inschrijving')
 </div>
+<script src="{{ asset('js/main.js') }}"></script>
+</body>
+</html>

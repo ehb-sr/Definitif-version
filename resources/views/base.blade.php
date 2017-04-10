@@ -6,7 +6,11 @@
     @include('head-base')
     @include('home.head')
 </head>
-<body id="content">
+<body>
+@include('menu.menu')
+
+<div id="content">
     @include('home.content')
+</div>
 </body>
 </html>
