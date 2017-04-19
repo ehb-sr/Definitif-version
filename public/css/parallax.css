@@ -31,7 +31,6 @@ html,body{
 
 .contentwrap h1 {
     font-size: 4em;
-    width: 17em;
     margin-top: 0;
     color: red;
     font-weight: bold;
@@ -79,8 +78,11 @@ html,body{
     padding: 5% 2%;
 }
 
-#agendaContent > .infoContent, #eventContent >.infoContent, #citaatContent > .citaatcontainer {
+#agendaContent > .infoContent, #eventContent >.infoContent{
     width: 50em;
+    margin-right: 8em;
+}
+#citaatContent > .citaatcontainer {
     margin-right: 8em;
 }
 
@@ -120,64 +122,3 @@ html,body{
 .card:hover .top {
     display: inline;
 }
-
-.citaatImg{
-    width: 600px;
-    height: auto;
-}
-.left p{
-    position: absolute;
-    margin-top: 20px;
-    width: 580px;
-    margin-left: 10px;
-}
-
-.left {
-    width: 50%;
-    float: left;
-}
-.PersonImgLeft{
-    float: left;
-    margin-left:460px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-.contentTitleLeft{
-    margin-left:290px;
-    text-align: right;
-    margin-top: 15px;
-    position: absolute;
-}
-
-.right {
-    width: 50%;
-    float: left;
-    position: absolute;
-
-    margin-left: 50%;
-}
-
-.right p {
-    margin-top: 20px;
-    width: 580px;
-    position: absolute;
-    margin-left: 20px;
-}
-.PersonImgRight{
-    float: left;
-    margin-left: 70px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-
-.contentTitleRight{
-    margin-left:160px;
-    text-align: left;
-    margin-top: 15px;
-    position: absolute;
-}
-
