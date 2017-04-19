@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    @include('dossier.head')
     @include('head-base')
 </head>
 <body>
@@ -23,6 +24,7 @@
     </div>
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
+@include('dossier.script')
 <script>
     $(document).ready(function() {
         $.parallax();

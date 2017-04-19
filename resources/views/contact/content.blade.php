@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    @include('contact.head')
     @include('head-base')
 </head>
 <body>
