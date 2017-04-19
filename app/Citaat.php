@@ -2,12 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: sophie
- * Date: 25.02.17
- * Time: 15:09
+ * Date: 18.04.17
+ * Time: 20:05
  */
-
 namespace App;
-
+use Illuminate\Database\Eloquent\Model;
 
 class Citaat extends Model
 {
@@ -15,3 +14,5 @@ class Citaat extends Model
     protected $table = 'citaten';
     public $timestamps = false;
 }
+
+?>

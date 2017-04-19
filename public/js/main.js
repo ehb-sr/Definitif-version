@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    initialise();
+
     var currentItem;
     var newCurrentItem;
 
@@ -13,40 +15,54 @@ $(document).ready(function () {
         newCurrentItem.addClass('current');
         currentItem = newCurrentItem;
     });
+/*
+    $(function () {
 
-    $('.mySlideshow').edslider({
-        // Set width
-        width     : '100%',
-        //1536
-
-        // Set height
-        height    : 650,
-
-        // Start position
-        position  : 1,
-
-        // Interval time between slides (in milliseconds)
-        interval  : 50000,
-
-        // <a href="http://www.jqueryscript.net/animation/">Animation</a> Speed (in milliseconds)
-        duration  : 1000,
-
-        // Enable/disable animation
-        animation : false,
-
-        // Enable/disable paginator
-        paginator : false,
-
-        // Enable/disable navigator
-        navigator : true,
-
-        //  Enable/disable interval progress bar
-        progress  : true,
-
-        // Load image url
-        loadImgSrc: '../../img/caroussel/load.gif',
-
-        //  Skin name
-        skin      : 'edslider'
+        $("#about").click(function () {
+            ChangeUrl('About', 'about');
+            $( "#content" ).load( "about", function () {
+                   //parallax($(window).width(), $(window).height());
+            });
+        });
+        $("#stuvers").click(function () {
+            ChangeUrl('Stuvers', 'stuvers');
+            $( "#content" ).load( "stuvers" );
+            initialise();
+        });
+        $("#raden").click(function () {
+            ChangeUrl('Raden', 'raden');
+            $( "#content" ).load( "raden" );
+            initialise();
+        });
+        $("#dossier").click(function () {
+            ChangeUrl('Dossier', 'dossier');
+            $( "#content" ).load( "dossier" );
+            initialise();
+        });
+        $("#verkiezing").click(function () {
+            ChangeUrl('Verkiezing', 'verkiezing');
+            $( "#content" ).load( "verkiezing" );
+            initialise();
+        });
+        $("#contact").click(function () {
+            ChangeUrl('Contact', 'contact');
+            $( "#content" ).load( "contact" );
+            $('head').append('@include("contact.head")');
+        });
     });
+*/
 });
+
+
+function initialise() {
+    $.parallax();
+}
+
+function ChangeUrl(page, url) {
+    if (typeof (history.pushState) != "undefined") {
+        var obj = { Page: page, Url: url };
+        history.pushState(obj, obj.Page, obj.Url);
+    } else {
+        alert("Browser does not support HTML5.");
+    }
+}
