@@ -3,31 +3,34 @@
         <div class="citaatLeft">
             <img src="/img/textballon-ConvertImage.png"/>
             <div class="text">
-                "Een student heeft een mening, een stem. Dat is goud waard. De beste persoon om onze school te kunnen verbeteren zijn wij, de studenten."
+                {{$departement->leftAbove->text}}
             </div>
             <div class="itemleft">
                 <div class="contentTitleLeftStuvers">
-                    <b>sophie moermean</b>
+                    <b>{{ $departement->leftAbove->name }}</b>
                     <br>
-                    status
+                    {{ $departement->leftAbove->statuut }}
                 </div>
             </div>
         </div>
-        <img src="/img/test-ConvertImage.jpg" width="500" height="250px"/>
+        <img src="/img/stuvers/{{ $departement->leftAbove->img }}" width="500" height="250px"/>
     </div>
     <div class="rightcontainer">
         <div class="citaatRight">
             <img src="/img/textballon.png"/>
+            <div class="text">
+                {{$departement->rightAbove->text}}
+            </div>
             <div class="itemright">
                 <div class="content">
                     <div class="contentTitleRightStuvers">
-                        <b>sophie moermean</b>
+                        <b>{{ $departement->rightAbove->name }}n</b>
                         <br>
-                        status
+                        {{ $departement->rightAbove->statuut }}
                     </div>
                 </div>
             </div>
         </div>
-        <img src="/img/test.jpg" width="500" height="250px"/>
+        <img src="/img/stuvers/{{ $departement->rightAbove->img }}" width="500" height="250px"/>
     </div>
 </div>
