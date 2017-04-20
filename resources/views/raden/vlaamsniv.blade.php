@@ -11,26 +11,16 @@
         <img src="{{ asset('img/raden/logo/Vlaanderen.gif') }}" id="vvsImg">
     </div>
     <div class="flex lidContainer">
-        <div class="flex lidBox">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
-        </div>
-        <div class="flex lidBox">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
-        </div>
-        <div class="flex lidBox">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
-        </div>
+        @foreach($leden as $lid)
+            @if($lid->VVS == true)
+                <div class="flex lidBox">
+                    <img src="{{ asset($lid->img) }}" class="lidImg">
+                    <div>
+                        <h3>{{ $lid->voornaam.' '.$lid->familienaam }}</h3>
+                        <p>{{ $lid->functie }}</p>
+                    </div>
+                </div>
+            @endif
+        @endforeach
     </div>
 </div>

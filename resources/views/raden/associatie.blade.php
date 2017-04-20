@@ -25,34 +25,30 @@
     </div>
     <div class="flex">
         <div class="flex lidContainer" id="assLidContainer">
-            <div class="flex lidBox">
-                <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-                <div>
-                    <h3>Naam</h3>
-                    <p>Functie</p>
-                </div>
-            </div>
-            <div class="flex lidBox">
-                <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-                <div>
-                    <h3>Naam</h3>
-                    <p>Functie</p>
-                </div>
-            </div>
-            <div class="flex lidBox">
-                <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-                <div>
-                    <h3>Naam</h3>
-                    <p>Functie</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex lidBox" id="uab">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
+
+            @foreach($leden as $lid)
+                @if($lid->BAST == true)
+                    <div class="flex lidBox">
+                        <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
+                        <div>
+                            <h3>{{ $lid->voornaam. ' '. $lid->familienaam }}</h3>
+                            <p>{{ $lid->statuut }}</p>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+
+            @foreach($leden as $lid)
+                @if($lid->UAB == true)
+                    <div class="flex lidBox" id="uab">
+                        <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
+                        <div>
+                            <h3>{{ $lid->voornaam. ' '. $lid->familienaam }}</h3>
+                            <p>{{ $lid->statuut }}</p>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
         </div>
     </div>
 </div>

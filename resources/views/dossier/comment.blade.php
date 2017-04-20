@@ -1,8 +1,10 @@
 <div class="flex-kol comment-content">
+    @foreach($dossier->comments as $comment)
     <div class="flex-kol comment-box">
-        <p class="timestamp-message">Timestamp</p>
-        <p class="comment-user">Comment user</p>
+        <p class="timestamp-message">{{ $comment->timestamp }}</p>
+        <p class="comment-user">{{ $comment->message }}</p>
     </div>
+    @endforeach
     <div class="flex">
         <textarea></textarea>
         <img src="#" class="add-btn">

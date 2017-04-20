@@ -22,6 +22,20 @@
             <button>Leden</button>
         </div>
         <div class="flex" id="hoLeden">
+            @foreach($leden as $lid)
+                @if($lid->STUVO == true)
+                    <div class="flex lidBox">
+                        <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
+                        <div>
+                            <h3>{{ $lid->voornaam. ' '. $lid->familienaam }}</h3>
+                            <p>{{ $lid->statuut }}</p>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+        </div>
+            <!--
+        <div class="flex" id="hoLeden2">
             <div class="flex lidBox">
                 <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                 <div>
@@ -44,48 +58,23 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="flex" id="hoLeden2">
-        <div class="flex lidBox">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
-        </div>
-        <div class="flex lidBox">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
-        </div>
-        <div class="flex lidBox">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
-        </div>
+        -->
     </div>
     <h3 id="rvt">Raad van Toezicht</h3>
     <p>Keurt onder meer de missie, de strategische doelstellingen, het strategisch meerjarenplan en de
         begroting goed. Bepaalt ook mee het pedagogisch project van de student
     </p>
     <div class="flex" id="rvtLeden">
-        <div class="flex lidBox">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
-        </div>
-        <div class="flex lidBox">
-            <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
-            <div>
-                <h3>Naam</h3>
-                <p>Functie</p>
-            </div>
-        </div>
+        @foreach($leden as $lid)
+            @if($lid->RvT == true)
+                <div class="flex lidBox">
+                    <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
+                    <div>
+                        <h3>{{ $lid->voornaam. ' '. $lid->familienaam }}</h3>
+                        <p>{{ $lid->statuut }}</p>
+                    </div>
+                </div>
+            @endif
+        @endforeach
     </div>
 </div>

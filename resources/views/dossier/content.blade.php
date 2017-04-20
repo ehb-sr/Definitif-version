@@ -19,8 +19,11 @@
             <h2 id="followItem">2016 - 2017</h2>
         </div>
         @include('menu.follow')
-        @include('dossier.dossier')
-        @include('dossier.comment')
+
+        @foreach($dossiers as $dossier)
+            @include('dossier.dossier')
+            @include('dossier.comment')
+        @endforeach
     </div>
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
