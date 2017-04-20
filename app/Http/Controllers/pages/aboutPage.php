@@ -1,14 +1,9 @@
 <?php
 use App\Http\Controllers\AboutController;
 
-/**
- * Created by PhpStorm.
- * User: sophie
- * Date: 25.02.17
- * Time: 15:06
- */
+use App\Http\Controllers\Controller;
 
-class WatPage extends Controller
+class AboutPage extends Controller
 {
     public function setPage()
     {

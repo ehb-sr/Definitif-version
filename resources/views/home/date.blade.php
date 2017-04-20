@@ -1,13 +1,13 @@
 <div class="flex">
     <div>
-        <time datetime="2014-09-24" class="date-as-calendar inline-flex size1x">
-            <span class="weekday">Wednesday</span>
-            <span class="day">24</span>
-            <span class="month">September</span>
+        <time datetime="{{ $date->day.'/'.$date->month.'/'.$date->year }}" class="date-as-calendar inline-flex size1x">
+            <span class="weekday">{{ date($date->day.'/'.$date->month.'/'.$date->year, 'D')  }}</span>
+            <span class="day">{{ $date->number }}</span>
+            <span class="month">{{ $date ->month }}</span>
         </time>
     </div>
     <div>
-        <p>Tittel</p>
-        <p>Ondertittel</p>
+        <p>{{ $date->title }}</p>
+        <p>{{ $date->undertitle }}</p>
     </div>
 </div>

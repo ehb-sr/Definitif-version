@@ -9,6 +9,7 @@
     <div class="contentwrap" id="contentAbout">
         @include('about.about')
     </div>
+    @foreach($citaten as $citaat)
     <div class="photowrap">
         <img src="{{ asset('img/about/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
     </div>
@@ -17,22 +18,7 @@
         <!-- FOR LOOP -->
         @include('about.citaatcontainer')
     </div>
-
-    <div class="photowrap">
-         <img src="{{ asset('img/home/parallax/agenda-background.jpg') }}" class="bgimages" alt=""/>
-    </div>
-    <div class="contentwrap flex" id="citaatContent">
-        <!-- FOR LOOP -->
-        @include('about.citaatcontainer')
-    </div>
-
-    <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/contact-us2-background.jpg') }}" class="bgimages" alt=""/>
-    </div>
-    <div class="contentwrap flex" id="citaatContent">
-        <!-- FOR LOOP -->
-        @include('about.citaatcontainer')
-    </div>
+    @endforeach
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
 <script>

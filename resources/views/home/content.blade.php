@@ -23,11 +23,9 @@
         </div>
         <div class="date">
             <!--FOR LOOP 5x-->
-            @include('home.date')
-            @include('home.date')
-            @include('home.date')
-            @include('home.date')
-            @include('home.date')
+            @foreach($dates->event as $date)
+                @include('home.date')
+            @endforeach
         </div>
     </div>
 
@@ -37,11 +35,9 @@
     <div class="contentwrap flex" id="agendaContent">
         <div class="date">
             <!--FOR LOOP 5x -->
-            @include('home.date')
-            @include('home.date')
-            @include('home.date')
-            @include('home.date')
-            @include('home.date')
+            @foreach($dates->agenda as $date)
+                @include('home.date')
+            @endforeach
         </div>
         <div class="infoContent">
             <h1>Agenda</h1>
@@ -76,7 +72,7 @@
             position  : 1,
 
             // Interval time between slides (in milliseconds)
-            interval  : 50000,
+            interval  : 5000,
 
             // <a href="http://www.jqueryscript.net/animation/">Animation</a> Speed (in milliseconds)
             duration  : 1000,

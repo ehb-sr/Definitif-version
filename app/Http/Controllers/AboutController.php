@@ -11,12 +11,8 @@ namespace App\Http\Controllers;
 
 class AboutController extends Controller{
 
-
     public static function getAll(){
         $citaten = Citaat::all();
         return $citaten;
     }
-
-
-
 } 
