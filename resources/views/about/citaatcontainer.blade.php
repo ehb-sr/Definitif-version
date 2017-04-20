@@ -1,8 +1,8 @@
 <div class="citaatcontainer">
     <div class="left">
-        @include('about.citaat')
+        @include('about.citaatLeft')
     </div>
     <div class="right">
-        @include('about.citaat')
+        @include('about.citaatRight')
     </div>
 </div>

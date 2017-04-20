@@ -1,8 +1,8 @@
-<p>{{$citaat->text}}</p>
+<p>{{$citaat->left->text}}</p>
 <img src="{{ asset('img/textballon.png') }}" alt="" class="citaatImg">
 <div class="contentTitleLeft">
-    <b>{{$citaat->Voornaam}} {{$citaat->Familienaam}}</b>
+    <b>{{$citaat->left->Voornaam}} {{$citaat->left->Familienaam}}</b>
     <br>
-    {{$citaat->statuut}}
+    {{$citaat->left->statuut}}
 </div>
 <img src="{{ asset('img/unknown.jpeg') }}" alt="" class="PersonImgLeft">
