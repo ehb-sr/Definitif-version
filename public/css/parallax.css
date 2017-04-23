@@ -72,6 +72,7 @@ html,body{
 .date p {
     margin-top: 2px;
     margin-bottom: 2px;
+    text-align: left;
 }
 
 #agendaContent, #eventContent, #citaatContent {

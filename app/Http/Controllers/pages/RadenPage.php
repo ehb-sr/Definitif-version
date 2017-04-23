@@ -14,7 +14,7 @@ use App\Http\Controllers\RadenController;
 
 class RadenPage extends Controller
 {
-    public function getLedenRaden()
+    public function getContent()
     {
         $leden = RadenController::getByYear(1617);
 

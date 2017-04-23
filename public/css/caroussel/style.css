@@ -16,7 +16,7 @@ header,
     position:absolute;
 }
 .first{
-    background:url("../../img/campussen/kaai.jpg");
+    background:url("../../img/caroussel/ehb_studentenraad_2016.jpg");
     background-size: 100% 100%;
 }
 .first a,
@@ -47,7 +47,7 @@ header,
 .second > p{
     font-family: 'Josefin Sans', sans-serif;
     font-size:50px;
-    bottom:25%;
+    bottom:65%;
     left:43%;
     text-align:center;
     margin-left:-160px;
@@ -62,7 +62,7 @@ header,
 .third > p {
     font-family: 'Josefin Sans', sans-serif;
     font-size:50px;
-    bottom:60%;
+    bottom:14%;
     left:22%;
     text-align:center;
     margin-left:-160px;
@@ -83,7 +83,7 @@ header,
     font-family: 'Josefin Sans', sans-serif;
     font-size:50px;
     right: 7%;
-    top: 13%;
+    top: 38%;
     text-shadow: 10px 10px 10px black;
 }
 

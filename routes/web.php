@@ -11,25 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    return view('base');
-});
+Route::get('/', 'pages\HomePage@getContent');
+//Route::get('/', function () {
+//    return view('base');
+//});
 
-Route::get('about', function() {
-   return view('about/content');
-});
+Route::get('about', 'pages\AboutPage@getContent');
+//Route::get('about', function() {
+//   return view('about/content');
+//});
 
-Route::get('stuvers', function() {
-    return view('stuvers/content');
-});
+Route::get('stuvers', 'pages\StuverPage@getContent');
+//Route::get('stuvers', function() {
+//    return view('stuvers/content');
+//});
 
-Route::get('raden', function () {
-    return view('raden/content');
-});
+Route::get('raden', 'pages\RadenPage@getContent');
+//Route::get('raden', function () {
+//    return view('raden/content');
+//});
 
-Route::get('dossier', function () {
-    return view('dossier/content');
-});
+Route::get('dossier', 'pages\DossierPage@content');
+//Route::get('dossier', function () {
+//    return view('dossier/content');
+//});
 
 Route::get('verkiezing', function() {
    return view('verkiezing/content');

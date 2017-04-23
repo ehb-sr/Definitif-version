@@ -16,14 +16,14 @@ class DateController extends Controller
 {
     public static function getDateEvent()
     {
-        $events = Date::where('type', 1)->orderBy('day', 'month', 'year', 'desc limit 5');
+        $events = Date::where('type', 1)->orderBy('day', 'month', 'year', 'desc limit 5')->get();
 
         return $events;
     }
 
     public static function getAgendaEvent()
     {
-        $agendas = Date::where('type', 2)->orderBy('day', 'month', 'year', 'desc limit 5');
+        $agendas = Date::where('type', 2)->orderBy('day', 'month', 'year', 'desc limit 5')->get();
 
         return $agendas;
     }

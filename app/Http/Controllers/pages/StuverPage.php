@@ -14,7 +14,7 @@ use App\Http\Controllers\Departement;
 
 class StuverPage
 {
-    function setPage() {
+    function getContent() {
 
         $stuvers = StuverController::getStuvers();
 
