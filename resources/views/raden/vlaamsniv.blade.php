@@ -1,4 +1,4 @@
-<div class="contentwrap" id="vvs">
+
     <h2>Op Vlaams niveau</h2>
     <div class="flex" id="vvsContainer">
         <div id="vvsInfo">
@@ -11,16 +11,13 @@
         <img src="{{ asset('img/raden/logo/Vlaanderen.gif') }}" id="vvsImg">
     </div>
     <div class="flex lidContainer">
-        @foreach($leden as $lid)
-            @if($lid->VVS == true)
-                <div class="flex lidBox">
-                    <img src="{{ asset($lid->img) }}" class="lidImg">
-                    <div>
-                        <h3>{{ $lid->voornaam.' '.$lid->familienaam }}</h3>
-                        <p>{{ $lid->functie }}</p>
-                    </div>
+        @foreach($leden->vvs as $lid)
+            <div class="flex lidBox">
+                <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
+                <div>
+                    <h3>{{ $lid->name }}</h3>
+                    <p>{{ $lid->statuut }}</p>
                 </div>
-            @endif
+            </div>
         @endforeach
     </div>
-</div>

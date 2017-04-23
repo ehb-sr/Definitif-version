@@ -11,21 +11,29 @@
         <p></p>
     </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/agenda-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/raden/raden.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('raden.vlaamsniv')
+    <div class="contentwrap" id="vvs">
+        @include('raden.vlaamsniv')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/agenda-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/raden/raden2.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('raden.associatie')
+    <div class="contentwrap large" id="ass">
+        @include('raden.associatie')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/agenda-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/raden/raden3.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('raden.hogeschoolniv')
+    <div class="contentwrap large">
+        @include('raden.hogeschoolniv')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/agenda-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/raden/raden4.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('raden.departement')
+    <div class="contentwrap">
+        @include('raden.departement')
+    </div>
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
 </body>

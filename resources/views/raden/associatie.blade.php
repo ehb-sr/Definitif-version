@@ -1,4 +1,4 @@
-<div class="contentwrap large" id="ass">
+
     <h2>Niveau van de associatie</h2>
     <p>De Erasmushogeschool Brussel en de Vrije Universiteit Brussel zijn partners in de Universitaire
         Associatie Brussel (UAB). De UAB-Studentenraad verbindt de Studentenraad van de EhB met die van de VUB.
@@ -26,29 +26,24 @@
     <div class="flex">
         <div class="flex lidContainer" id="assLidContainer">
 
-            @foreach($leden as $lid)
-                @if($lid->BAST == true)
-                    <div class="flex lidBox">
-                        <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
+            @foreach($leden->bast as $lid)
+                <div class="flex lidBox">
+                    <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                         <div>
-                            <h3>{{ $lid->voornaam. ' '. $lid->familienaam }}</h3>
+                            <h3>{{ $lid->name }}</h3>
                             <p>{{ $lid->statuut }}</p>
                         </div>
                     </div>
-                @endif
             @endforeach
 
-            @foreach($leden as $lid)
-                @if($lid->UAB == true)
+            @foreach($leden->uab as $lid)
                     <div class="flex lidBox" id="uab">
                         <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                         <div>
-                            <h3>{{ $lid->voornaam. ' '. $lid->familienaam }}</h3>
+                            <h3>{{ $lid->name }}</h3>
                             <p>{{ $lid->statuut }}</p>
                         </div>
                     </div>
-                @endif
             @endforeach
         </div>
     </div>
-</div>

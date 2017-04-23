@@ -1,4 +1,4 @@
-<div class="contentwrap">
+
     <h2>Niveau van het departement / School of Arts</h2>
     <div class="flex dr">
         <div>
@@ -18,4 +18,3 @@
             docenten weten wat er bij hen intern aan de gang is en de student bij hen intern.
         </p>
     </div>
-</div>
