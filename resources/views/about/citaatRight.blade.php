@@ -1,8 +1,8 @@
 <p>{{$citaat->right->text}}</p>
-<img src="{{ asset('img/textballon.png') }}" alt="" class="citaatImg">
-<div class="contentTitleLeft">
-    <b>{{$citaat->right->Voornaam}} {{$citaat->right->Familienaam}}</b>
+<img src="{{ asset('img/textballon-ConvertImage.png') }}" alt="" class="citaatImg">
+<div class="contentTitleRight">
+    <b>{{$citaat->right->voornaam}} {{$citaat->right->familienaam}}</b>
     <br>
     {{$citaat->right->statuut}}
 </div>
-<img src="{{ asset('img/unknown.jpeg') }}" alt="" class="PersonImgLeft">
+<img src="{{ asset('img/unknown.jpeg') }}" alt="" class="PersonImgRight">

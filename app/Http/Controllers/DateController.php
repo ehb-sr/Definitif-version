@@ -8,7 +8,6 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Date;
 use App\Http\Controllers\Controller;
 

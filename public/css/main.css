@@ -186,6 +186,7 @@ body
 .citaatcontainer{
     width:100%;
     display: inline-block;
+    margin-bottom: 5em;
 }
 
 .leftcontainer{
@@ -682,7 +683,7 @@ label{
     position: absolute;
     margin-top: 20px;
     width: 580px;
-    margin-left: 48px;
+    margin-left: 75px;
 }
 
 .left {
@@ -698,10 +699,11 @@ label{
     margin-top: 10px;
 }
 .contentTitleLeft{
-    margin-left:350px;
+    margin-left:290px;
     text-align: right;
     margin-top: 15px;
     position: absolute;
+    width: 15em;
 }
 
 .right {
@@ -713,10 +715,10 @@ label{
 }
 
 .right p {
-    margin-top: 20px;
+    margin-top: 5px;
     width: 580px;
     position: absolute;
-    margin-left: 70px;
+    margin-left: 89px;
 }
 .PersonImgRight{
     float: left;
@@ -728,7 +730,7 @@ label{
 }
 
 .contentTitleRight{
-    margin-left:230px;
+    margin-left:210px;
     text-align: left;
     margin-top: 15px;
     position: absolute;

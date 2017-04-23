@@ -11,12 +11,12 @@ namespace App\Http\Controllers;
 
 class Citaat
 {
-    var $links;
-    var $rechts;
+    var $left;
+    var $right;
 
     function __construct($links, $rechts)
     {
-        $this->links = $links;
-        $this->rechts = $rechts;
+        $this->left = $links;
+        $this->right = $rechts;
     }
 }

@@ -6,6 +6,7 @@
  * Time: 20:05
  */
 namespace App;
+
 use Illuminate\Database\Eloquent\Model;
 
 class Citaat extends Model

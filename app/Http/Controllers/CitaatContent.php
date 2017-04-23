@@ -18,10 +18,10 @@ class CitaatContent
 
     function __construct($data)
     {
-        $this->voornaam = $data->voornaam;
-        $this->familienaam = $data->familienaam;
-        $this->statuut = $data->statuut;
-        $this->text = $data->text;
+        $this->voornaam = $data->Voornaam;
+        $this->familienaam = $data->Familienaam;
+        $this->statuut = $data->Statuut;
+        $this->text = $data->Text;
     }
 
 }

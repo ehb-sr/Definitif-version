@@ -10,15 +10,15 @@
         @include('about.about')
     </div>
 
-    @foreach($citaten as $citaat)
     <div class="photowrap">
-        <img src="{{ asset('img/about/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/about/about.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap" id="citaatContent">
         <h1>Citaten</h1>
+    @foreach($citaten as $citaat)
         @include('about.citaatcontainer')
-    </div>
     @endforeach
+    </div>
 
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
