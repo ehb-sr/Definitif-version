@@ -7,13 +7,13 @@
             </div>
             <div class="itemleft">
                 <div class="contentTitleLeftStuvers">
-                    <b>{{ $departement->leftAbove->name }}</b>
+                   <a href="mailto:{{ $departement->leftAbove->mail }}" target="_blank"><b>{{ $departement->leftAbove->name }}</b></a>
                     <br>
                     {{ $departement->leftAbove->statuut }}
                 </div>
             </div>
         </div>
-        <img src="/img/stuvers/{{ $departement->leftAbove->img }}" width="500" height="250px"/>
+        <img src="/img/stuvers/test-ConvertImage.jpg" width="500" height="250px"/>
     </div>
     <div class="rightcontainer">
         <div class="citaatRight">
@@ -24,13 +24,13 @@
             <div class="itemright">
                 <div class="content">
                     <div class="contentTitleRightStuvers">
-                        <b>{{ $departement->rightAbove->name }}n</b>
+                        <a href="mailto:{{ $departement->rightAbove->mail }}" target="_blank"><b>{{ $departement->rightAbove->name }}</b></a>
                         <br>
                         {{ $departement->rightAbove->statuut }}
                     </div>
                 </div>
             </div>
         </div>
-        <img src="/img/stuvers/{{ $departement->rightAbove->img }}" width="500" height="250px"/>
+        <img src="/img/stuvers/test.jpg" width="500" height="250px"/>
     </div>
 </div>

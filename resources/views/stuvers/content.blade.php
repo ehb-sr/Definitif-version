@@ -8,6 +8,13 @@
 <div class="sitewrap">
     <div class="contentwrap" id="contentAbout">
         <h1>Studentenvertegenwoordigers</h1>
+        <p>Elk departement heeft 4 studentenvertegenwoordigers. Kijkt wie op u departement u stem zal vertegenwoordigen! Je kan u studentenvertegenwoordiger ook rechtstreeks contacteren.</p>
+    </div>
+
+    <div class="photowrap">
+        <img src="{{ asset('img/campussen/kaai.jpg') }}" class="bgimages" alt=""/>
+    </div>
+    <div class="contentwrap" id="contentAbout">
         <h2>Design en technologie</h2>
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/kaai.jpg') }}" width="250" height="250"/>
@@ -24,10 +31,10 @@
     <div class="contentwrap" id="contentAbout">
         <h2>Management, media & maatschappij</h2>
         <div class="DesignEnItcontent">
-            <img class="roundrect" src="{{ asset('img/campussen/kaai.jpg') }}" width="250" height="250"/>
+            <img class="roundrect" src="{{ asset('img/campussen/bloemenhof.jpg') }}" width="250" height="250"/>
         </div>
         @foreach($departementen as $departement)
-            @if($departement->departement == 'MMMM')
+            @if($departement->departement == 'MMM')
                 @include('stuvers.departement')
             @endif
         @endforeach
@@ -38,7 +45,7 @@
     <div class="contentwrap" id="contentAbout">
         <h2>Gezondheidszorg & Landsschapsarchitectuur</h2>
         <div class="DesignEnItcontent">
-            <img class="roundrect" src="{{ asset('img/campussen/kaai.jpg') }}" width="250" height="250"/>
+            <img class="roundrect" src="{{ asset('img/campussen/Jette.jpg') }}" width="250" height="250"/>
         </div>
         @foreach($departementen as $departement)
             @if($departement->departement == 'GL')
@@ -52,7 +59,7 @@
     <div class="contentwrap" id="contentAbout">
         <h2>Onderwijs & Pedagogie</h2>
         <div class="DesignEnItcontent">
-            <img class="roundrect" src="{{ asset('img/campussen/kaai.jpg') }}" width="250" height="250"/>
+            <img class="roundrect" src="{{ asset('img/campussen/Jette.jpg') }}" width="250" height="250"/>
         </div>
         @foreach($departementen as $departement)
             @if($departement->departement == 'EDU')
@@ -66,7 +73,7 @@
     <div class="contentwrap" id="contentAbout">
         <h2>Koninklijk Conservatorium Brussel</h2>
         <div class="DesignEnItcontent">
-            <img class="roundrect" src="{{ asset('img/campussen/kaai.jpg') }}" width="250" height="250"/>
+            <img class="roundrect" src="{{ asset('img/campussen/kcb.jpg') }}" width="250" height="250"/>
         </div>
         @foreach($departementen as $departement)
             @if($departement->departement == 'KCB')
@@ -80,7 +87,7 @@
     <div class="contentwrap" id="contentAbout">
         <h2>RITCS</h2>
         <div class="DesignEnItcontent">
-            <img class="roundrect" src="{{ asset('img/campussen/kaai.jpg') }}" width="250" height="250"/>
+            <img class="roundrect" src="{{ asset('img/campussen/ritcs.jpg') }}" width="250" height="250"/>
         </div>
         @foreach($departementen as $departement)
             @if($departement->departement == 'RITCS')

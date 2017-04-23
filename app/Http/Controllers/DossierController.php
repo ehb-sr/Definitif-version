@@ -14,14 +14,14 @@ use App\Dossier;
 class DossierController extends Controller
 {
     public static function getDossiers() {
-        $dossiers = Dossier::where('jaar', 1617);
+        $dossiers = Dossier::where('jaar', 1617)->get();
 
-        return $dossiers->pop();
+        return $dossiers;
     }
 
     public static function getComments($id) {
-        $comments = Comment::where('idDossier', $id);
+        $comments = Comment::where('idDossier', $id)->get();
 
-        return $comments->pop();
+        return $comments;
     }
 }

@@ -16,8 +16,8 @@ class StuverController extends Controller
 {
     public static function getStuvers() {
 
-        $stuvers = Stuvers::where('Jaar', 1617);
+        $stuvers = Stuvers::where('Jaar', 1617)->get();
 
-        return $stuvers->pop();
+        return $stuvers;
     }
 }

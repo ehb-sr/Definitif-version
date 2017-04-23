@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
+a {
+    text-decoration: none;
+}
+
 body
 {
     margin: 0;
@@ -274,8 +278,6 @@ h2{
     border-bottom-width:5px;
     border-bottom-color: darkgrey;
     border-bottom-style: solid;
-
-
 }
 
 .container{
@@ -290,14 +292,21 @@ h2{
 
 .leftcontainer {
     float:left ;
-    width:50%;}
+    width:50%;
+}
+
+.leftcontainer a, .rightcontainer a {
+    color: #3e3e3e;
+}
+
 .rightcontainer {
     float:right ;
-    width: 50%;}
+    width: 50%;
+}
+
 .leftcontainer img{
     width:100%;
     float: left;
-
 }
 
 

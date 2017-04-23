@@ -23,6 +23,6 @@ class Stuver
         $this->text = $data->Quote;
         $this->statuut = $data->Statuut;
         $this->img = $data->Foto;
-        $this->email = $data->Email;
+        $this->mail = $data->Email;
     }
 }

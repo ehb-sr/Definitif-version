@@ -26,6 +26,8 @@ class StuverPage
         $depKCB = new Departement("KCB");
         $depRITCS = new Departement("RITCS");
 
+        //dd($stuvers);
+
         foreach($stuvers as $stuver)
         {
             if($stuver->Campus == 'DT')
@@ -149,13 +151,9 @@ class StuverPage
             }
         }
 
-        if($departement[0] == null)
-        {
-            $departement[0] = $depDT;
-        } else {
-            array_push($departement, $depEDU, $depGL, $depGL, $depKCB, $depMMM, $depRITCS);
-        }
+        array_push($departement, $depDT, $depEDU, $depGL, $depKCB, $depMMM, $depRITCS);
 
-        return view('stuvers')->with('departementen', $departement);
+        //dd($departement);
+        return view('stuvers/content')->with('departementen', $departement);
     }
 }
