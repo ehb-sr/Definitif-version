@@ -1,4 +1,4 @@
-<div class="contentwrap">
+
     <!-- Wat wordt er van jou verwacht -->
     <div class="flex">
         <div class="half">
@@ -17,4 +17,3 @@
             <!-- manneke -->
         </div>
     </div>
-</div>

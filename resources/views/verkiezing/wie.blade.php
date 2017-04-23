@@ -1,4 +1,4 @@
-<div class="contentwrap">
+
     <!-- Wie zoeken we -->
     <div class="flex">
         <div class="half">
@@ -19,4 +19,3 @@
             </div>
         </div>
     </div>
-</div>

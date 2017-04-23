@@ -1,4 +1,4 @@
-<div class="contentwrap">
+
     <!-- Ondersteuning -->
     <h2>Ondersteuning</h2>
     <div class="flex">
@@ -12,4 +12,3 @@
             <p>Je hebt de steun van verschillende beleidsadviseurs en medewerkers binnen de Erasmushogeschool</p>
         </div>
     </div>
-</div>

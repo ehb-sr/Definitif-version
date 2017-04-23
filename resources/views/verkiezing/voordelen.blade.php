@@ -1,4 +1,4 @@
-<div class="contentwrap">
+
     <!-- Voordelen -->
     <h2>Voordelen</h2>
     <div class="flex">
@@ -15,4 +15,3 @@
             <p>Je stimuleert je ervaringen in verschillende belangrijke competenties zoals organiseren, vergaderen, standpunten realiseren, etc</p>
         </div>
     </div>
-</div>

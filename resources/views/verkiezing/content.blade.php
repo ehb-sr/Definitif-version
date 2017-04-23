@@ -11,33 +11,47 @@
         <p></p>
     </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/verkiezing/verk_1.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('verkiezing.inleiding')
+    <div class="contentwrap">
+        @include('verkiezing.inleiding')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/verkiezing/verk_2.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('verkiezing.samenstelling')
+    <div class="contentwrap">
+        @include('verkiezing.samenstelling')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/verkiezing/verk_3.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('verkiezing.wie')
+    <div class="contentwrap">
+        @include('verkiezing.wie')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/verkiezing/verk_4.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('verkiezing.verwachting')
+    <div class="contentwrap">
+        @include('verkiezing.verwachting')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/verkiezing/verk_5.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('verkiezing.voordelen')
+    <div class="contentwrap">
+        @include('verkiezing.voordelen')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/verkiezing/verk_6.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('verkiezing.ondersteuning')
+    <div class="contentwrap">
+        @include('verkiezing.ondersteuning')
+    </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/caroussel/ehb_studentenraad_2016.jpg') }}" class="bgimages" alt=""/>
     </div>
-    @include('verkiezing.inschrijving')
+    <div class="contentwrap">
+        @include('verkiezing.inschrijving')
+    </div>
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
 </body>
