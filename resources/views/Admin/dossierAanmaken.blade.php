@@ -123,7 +123,7 @@
                                                  </div>
                                                     <div >
                                                         <label>Einde</label>
-                                                   {{ Form::file('file','',array('id'=>'','class'=>'')) }}
+                                                    <input type="dateTime" name="einde" >
                                                 </div>
                                                 <button type="submit" class="btn btn-info">Dossier aanmaken</button>
 
