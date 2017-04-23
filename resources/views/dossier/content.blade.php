@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>Dossier - Studentenraad</title>
     @include('dossier.head')
     @include('head-base')
 </head>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>About - Studentenraad</title>
     @include('head-base')
 </head>
 <body>

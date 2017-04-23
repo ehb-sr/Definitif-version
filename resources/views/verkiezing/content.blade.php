@@ -4,6 +4,7 @@
     @include('head-base')
 </head>
 <body>
+<title>Verkiezing - Studentenraad</title>
 @include('menu.menu')
 <div class="sitewrap" id="verk">
     <div class="contentwrap">

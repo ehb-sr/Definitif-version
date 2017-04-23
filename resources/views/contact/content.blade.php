@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>Contact - Studentenraad</title>
     @include('contact.head')
     @include('head-base')
 </head>
