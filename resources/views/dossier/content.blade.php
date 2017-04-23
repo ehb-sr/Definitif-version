@@ -12,7 +12,7 @@
         <p></p>
     </div>
     <div class="photowrap">
-        <img src="{{ asset('img/home/parallax/event-background.jpg') }}" class="bgimages" alt=""/>
+        <img src="{{ asset('img/dossier/dossiers.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap">
         <div id="followWrap">
@@ -21,8 +21,10 @@
         @include('menu.follow')
 
         @foreach($dossiers as $dossier)
-            @include('dossier.dossier')
-            @include('dossier.comment')
+            <div class="dossierBox">
+                @include('dossier.dossier')
+                @include('dossier.comment')
+            </div>
         @endforeach
     </div>
 </div>

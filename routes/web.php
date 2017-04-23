@@ -31,7 +31,7 @@ Route::get('raden', 'pages\RadenPage@getContent');
 //    return view('raden/content');
 //});
 
-Route::get('dossier', 'pages\DossierPage@content');
+Route::get('dossier', 'pages\DossierPage@getContent');
 //Route::get('dossier', function () {
 //    return view('dossier/content');
 //});

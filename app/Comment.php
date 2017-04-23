@@ -13,5 +13,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-
+    protected $fillable =['id','jaar','time','text'];
+    protected $table = 'comments';
+    public $timestamps = false;
 }

@@ -13,12 +13,17 @@ class Dossier
 {
     var $id;
     var $title;
-    var $subtitle;
+    var $topic;
     var $endDate;
+    var $pdf;
     var $comments;
 
     function __construct($data)
     {
-
+        $this->id = $data->id;
+        $this->title = $data->titel;
+        $this->topic = $data->topic;
+        $this->pdf = $data->pdf;
+        $this->endDate = $data->einde;
     }
 }

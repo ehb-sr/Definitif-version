@@ -1,13 +1,15 @@
 <div class="flex-kol comment-content">
     @foreach($dossier->comments as $comment)
-    <div class="flex-kol comment-box">
-        <p class="timestamp-message">{{ $comment->timestamp }}</p>
-        <p class="comment-user">{{ $comment->message }}</p>
-    </div>
+        @if($comment != null)
+            <div class="flex-kol comment-box">
+                <p class="timestamp-message">{{ $comment->time }}</p>
+                <p class="comment-user">{{ $comment->message }}</p>
+            </div>
+        @endif
     @endforeach
     <div class="flex">
         <textarea></textarea>
-        <img src="#" class="add-btn">
+        <img src="{{ asset('img/dossier/add_box_black.png') }}" class="add-btn">
     </div>
 </div>
-<p class="s-more">See More</p>
+<!--<p class="s-more">See More</p> -->
