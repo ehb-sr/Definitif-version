@@ -13,6 +13,7 @@ use App\Http\Controllers\Comment;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Dossier;
 use App\Http\Controllers\DossierController;
+use Symfony\Component\HttpFoundation\Request;
 
 class DossierPage extends Controller
 {
@@ -36,5 +37,10 @@ class DossierPage extends Controller
         }
 
         return view('dossier/content')->with('dossiers', $arr);
+    }
+
+    function addComment(Request $request)
+    {
+        dd($request);
     }
 }

@@ -43,3 +43,7 @@ Route::get('verkiezing', function() {
 Route::get('contact', function() {
     return view('contact/content');
 });
+
+Route::post('addComment', 'pages\DossierPage@AddComment');
+
+Route:: post('contact', 'pages\ContactPage@sendForm');

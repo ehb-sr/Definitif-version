@@ -8,8 +8,13 @@
         @endif
     @endforeach
     <div class="flex">
-        <textarea></textarea>
-        <img src="{{ asset('img/dossier/add_box_black.png') }}" class="add-btn">
+        <form class="add-comment" method="post" action="addComment" id="{{ $dossier->id }}">
+            <textarea name="comment"></textarea>
+            <button type="submit" id="submit" name="submit">
+                <img src="{{ asset('img/dossier/add_box_black.png') }}" class="add-btn">
+            </button>
+
+        </form>
     </div>
 </div>
 <!--<p class="s-more">See More</p> -->

@@ -138,3 +138,17 @@ h1 {
     margin-bottom: 3em;
 }
 
+form {
+    display: inherit;
+    width: 100%;
+}
+
+button[type=submit] {
+    border: none;
+    background:none;
+}
+
+button[type=submit]:focus {
+    border:none;
+}
+

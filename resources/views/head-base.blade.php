@@ -1,3 +1,4 @@
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel="icon" type="image/x-icon" href="{{ asset('img/sr_s.png') }}">
 <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 <link rel="stylesheet" href="{{ asset('css/parallax.css') }}">
