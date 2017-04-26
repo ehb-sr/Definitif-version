@@ -41,6 +41,8 @@ class DossierPage extends Controller
 
     function addComment(Request $request)
     {
-        dd($request);
+        DossierController::addComment($request);
+
+        return redirect()->back();
     }
 }

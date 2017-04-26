@@ -8,12 +8,13 @@
         @endif
     @endforeach
     <div class="flex">
-        <form class="add-comment" method="post" action="addComment" id="{{ $dossier->id }}">
+        <form class="add-comment" method="post" action="{{ url('/addComment') }}">
+            {{ csrf_field() }}
+            <input name="comment_id" type="hidden" value="{{ $dossier->id }}">
             <textarea name="comment"></textarea>
             <button type="submit" id="submit" name="submit">
                 <img src="{{ asset('img/dossier/add_box_black.png') }}" class="add-btn">
             </button>
-
         </form>
     </div>
 </div>

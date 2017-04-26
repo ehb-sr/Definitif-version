@@ -24,4 +24,13 @@ class DossierController extends Controller
 
         return $comments;
     }
+
+    public static function addComment($data)
+    {
+        Comment::insert([
+            'idDossier' => $data->comment_id,
+            'time' => date("Y-m-d"),
+            'text' => $data->comment
+        ]);
+    }
 }

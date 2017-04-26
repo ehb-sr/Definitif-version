@@ -7,5 +7,6 @@
         <a class="item" href="/dossier" id="dossier">Dossiers</a>
         <a class="item" href="/verkiezing" id="verkiezing">Verkiezing</a>
         <a class="item" href="/contact" id="contact">Contact</a>
+        <a class="item" href="/language/nl">Nederlands</a>
     </div>
 </div>

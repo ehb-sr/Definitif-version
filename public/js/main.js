@@ -15,6 +15,7 @@ $(document).ready(function () {
         newCurrentItem.addClass('current');
         currentItem = newCurrentItem;
     });
+    $('#comment-'+$id)
 /*
     $(function () {
 

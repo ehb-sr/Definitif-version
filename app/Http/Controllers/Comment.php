@@ -9,6 +9,8 @@
 namespace App\Http\Controllers;
 
 
+use Faker\Provider\DateTime;
+
 class Comment
 {
     var $time;
@@ -16,7 +18,8 @@ class Comment
 
     function __construct($time, $comment)
     {
-        $this->time = $time;
+        $date=substr($time, 0, 10);
+        $this->time = $date;
         $this->message = $comment;
     }
 }
