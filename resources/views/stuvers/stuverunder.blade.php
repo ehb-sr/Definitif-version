@@ -17,7 +17,7 @@
     </div>
     <div class="rightcontainer">
         <div class="citaatRight2">
-            <img src="/img/textballon-ConvertImage.png"/>
+            <img src="/img/textballon-ConvertImage(1).png"/>
             <div class="text2">
                 {{ $departement->underRight->text }}
             </div>
