@@ -62,7 +62,27 @@ body
     color: red;
     border-bottom: 2px solid;
 }
+#languages {
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    width: 10em;
+    padding-right: 7px;
+}
 
+#languages a {
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 5px;
+}
+
+#languages img {
+    height: 1.4em;
+}
+
+#menuLinks {
+    display: flex;
+}
 /* DATE */
 /*@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Oswald);*/
 
@@ -129,7 +149,7 @@ body
 }
 .inline-flex.date-as-calendar .weekday {
     order: 2;
-    font-size: 0.6125em;
+    font-size: 0.7em;
 }
 .inline-flex.date-as-calendar .day {
     order: 3;

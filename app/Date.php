@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Date extends Model
 {
-    protected $fillable =['id','type', 'time','title', 'undertitle'];
+    protected $fillable =['id','type', 'date','title', 'undertitle'];
     protected $table = 'date';
     public $timestamps = false;
 }

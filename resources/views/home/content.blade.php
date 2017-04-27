@@ -3,9 +3,7 @@
     @include('home.slider')
 
     <div class="contentwrap">
-        {{ \Illuminate\Support\Facades\App::getLocale() }}
-        <h1>@lang('home.title')</h1>
-        <!-- <h1>Studentenraad Erasmushogeschool Brussel</h1> -->
+        <h1>Studentenraad Erasmushogeschool Brussel</h1>
         <p>De leden van de Studentenraad wenst u welkom op onze website! Dankzij onze website kan je ook u
             inbreng geven. Volg onze dossiers en geef u mening. Check onze agenda van Evenementen
             & en de verschillende vergaderingen.</p>
