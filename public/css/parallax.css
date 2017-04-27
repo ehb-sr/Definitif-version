@@ -103,7 +103,7 @@ html,body{
     border-bottom: 3px outset;
 }
 
-#contactContent > div > .contentImg {
+#contactContent > a > div > .contentImg {
     border: 2px solid;
     padding: 5px;
     border-radius: 100px;

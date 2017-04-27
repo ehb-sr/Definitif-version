@@ -119,3 +119,11 @@ label{
 #container form{
     background-color:  #adadad;
 }
+
+#upperBox {
+    display: flex;
+    width: 15em;
+    height: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
