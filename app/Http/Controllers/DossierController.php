@@ -10,11 +10,12 @@ namespace App\Http\Controllers;
 
 use App\Comment;
 use App\Dossier;
+use App\Year;
 
 class DossierController extends Controller
 {
-    public static function getDossiers() {
-        $dossiers = Dossier::where('jaar', 1617)->get();
+    public static function getDossiers($date) {
+        $dossiers = Dossier::where('jaar', $date)->get();
 
         return $dossiers;
     }
@@ -32,5 +33,17 @@ class DossierController extends Controller
             'time' => date("Y-m-d"),
             'text' => $data->comment
         ]);
+    }
+
+    public static function getYearById($year)
+    {
+        $year = Year::where('year', $year)->get();
+        return $year[0]->text;
+    }
+    public static function getYear()
+    {
+        $years = Year::all();
+
+        return $years;
     }
 }

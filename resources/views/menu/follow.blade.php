@@ -1,7 +1,10 @@
 <div id="followMenuWrap">
     <div id="followMenu">
         <h3>Academiejaar</h3>
-        <h4>2016 - 2017</h4>
-        <h4>2017 - 2018</h4>
+        @foreach($dossiers[1]->others as $time)
+        <a href="/getDossier/{{ $time->jaar }}">
+            <h4>{{ $time->text }}</h4>
+        </a>
+        @endforeach
     </div>
 </div>

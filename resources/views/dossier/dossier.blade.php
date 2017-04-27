@@ -4,7 +4,7 @@
         <h4 class="topic">{{ $dossier->topic }}</h4>
     </div>
     <div class="flex-kol">
-        <button class="pdf" value="{{ $dossier->pdf }}">PDF</button>
+        <a class="pdf" href="/download/{{ $dossier->pdf }}">PDF</a>
         <div class="flex-kol">
             <h4 class="title-einde">Einde</h4>
             <p class="timestamp-einde">{{ $dossier->endDate }}</p>

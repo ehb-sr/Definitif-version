@@ -56,3 +56,5 @@ Route::get('language/{locale}', function ($locale) {
     App::setLocale($locale);
     return redirect()->back();
 });
+
+Route::get('download/{file}', 'pages\DossierPage@getDownload');

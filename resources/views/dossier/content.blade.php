@@ -18,16 +18,17 @@
     </div>
     <div class="contentwrap">
         <div id="followWrap">
-            <h2 id="followItem">2016 - 2017</h2>
+            <h2 id="followItem">{{ $dossiers[1]->today }}</h2>
         </div>
         @include('menu.follow')
 
-        @foreach($dossiers as $dossier)
+        @foreach($dossiers[0]->dossiers as $dossier)
             <div class="dossierBox">
                 @include('dossier.dossier')
                 @include('dossier.comment')
             </div>
         @endforeach
+
     </div>
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
