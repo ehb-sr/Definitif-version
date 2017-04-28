@@ -8,8 +8,8 @@
 @include('menu.menu')
 <div class="sitewrap" id="verk">
     <div class="contentwrap">
-        <h1>Verkiezing</h1>
-        <p></p>
+        <h1>@lang('verkiezing.titel')</h1>
+        <p>@lang('verkiezing.inleiding')</p>
     </div>
     <div class="photowrap">
         <img src="{{ asset('img/verkiezing/verk_1.jpg') }}" class="bgimages" alt=""/>

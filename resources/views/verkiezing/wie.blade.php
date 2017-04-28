@@ -1,21 +1,18 @@
 
-    <!-- Wie zoeken we -->
     <div class="flex">
         <div class="half">
-            <h2>Wie zoeken we?</h2>
+            <h2>@lang('verkiezing.wie_titel')</h2>
             <!-- vragend manneken img -->
         </div>
         <div class="half">
             <div>
-                <p>Ben je geëngageerd, en zet je je graag in voor je medestudenten op de school?</p>
+                <p>@lang('verkiezing.wie_opt_1')</p>
             </div>
             <div class="bordersTB">
-                <p>Heb je vernieuwende ideeën over de aanpak in de Erasmushogeschool? Ben je geïnteresseerd in
-                    alles binnen den buiten je campus en heb je hier een mening over? Laat je je mening ook
-                    horen en ben je niet bang om in discussie te gaan?</p>
+                <p>@lang('verkiezing.wie_opt_2')</p>
             </div>
             <div>
-                <p>Heb je de nodige skills om dingen te veranderen?</p>
+                <p>@lang('verkiezing.wie_opt_3')</p>
             </div>
         </div>
     </div>

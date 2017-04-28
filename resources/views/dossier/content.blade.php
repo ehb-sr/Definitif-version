@@ -10,8 +10,8 @@
 @include('menu.menu')
 <div class="sitewrap">
     <div class="contentwrap">
-        <h1>Dossiers</h1>
-        <p></p>
+        <h1>@lang('dossiers.titel')</h1>
+        <p>@lang('dossiers.inleiding')</p>
     </div>
     <div class="photowrap">
         <img src="{{ asset('img/dossier/dossiers.jpg') }}" class="bgimages" alt=""/>

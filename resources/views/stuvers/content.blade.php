@@ -12,8 +12,8 @@
         <div id="followWrap">
             <h2 id="followItem" class="sticky">{{ $departementen->year->today }}</h2>
         </div>
-        <h1>Studentenvertegenwoordigers</h1>
-        <p>Elk departement heeft 4 studentenvertegenwoordigers. Kijkt wie op u departement u stem zal vertegenwoordigen! Je kan u studentenvertegenwoordiger ook rechtstreeks contacteren.</p>
+        <h1>@lang('stuvers.hoofdtitel')</h1>
+        <p>@lang('stuvers.inleiding')</p>
         <div>
             <form method="get" action="/getStuvers" id="stuver">
                 <select name="jaar" id="jaar">
@@ -21,7 +21,7 @@
                         <option value="{{ $year->jaar }}">{{ $year->text }}</option>
                     @endforeach
                 </select>
-                <button type="submit">Tonen</button>
+                <button type="submit">@lang('stuvers.button')</button>
             </form>
         </div>
     </div>
@@ -30,7 +30,7 @@
         <img src="{{ asset('img/campussen/kaai.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap" id="contentAbout">
-        <h2>Design en technologie</h2>
+        <h2>@lang('stuvers.dt')</h2>
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/kaai.jpg') }}" width="250" height="250"/>
         </div>
@@ -44,7 +44,7 @@
         <img src="{{ asset('img/campussen/bloemenhof.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap" id="contentAbout">
-        <h2>Management, media & maatschappij</h2>
+        <h2>@lang('stuvers.mmm')</h2>
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/bloemenhof.jpg') }}" width="250" height="250"/>
         </div>
@@ -58,7 +58,7 @@
         <img src="{{ asset('img/campussen/Jette.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap" id="contentAbout">
-        <h2>Gezondheidszorg & Landsschapsarchitectuur</h2>
+        <h2>@lang('stuvers.gl')</h2>
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/Jette.jpg') }}" width="250" height="250"/>
         </div>
@@ -72,7 +72,7 @@
         <img src="{{ asset('img/campussen/Jette.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap" id="contentAbout">
-        <h2>Onderwijs & Pedagogie</h2>
+        <h2>@lang('stuvers.edu')</h2>
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/Jette.jpg') }}" width="250" height="250"/>
         </div>
@@ -86,7 +86,7 @@
         <img src="{{ asset('img/campussen/kcb.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap" id="contentAbout">
-        <h2>Koninklijk Conservatorium Brussel</h2>
+        <h2>@lang('stuvers.kcb')</h2>
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/kcb.jpg') }}" width="250" height="250"/>
         </div>
@@ -100,7 +100,7 @@
         <img src="{{ asset('img/campussen/ritcs.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap" id="contentAbout">
-        <h2>RITCS</h2>
+        <h2>@lang('stuvers.ritcs')</h2>
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/ritcs.jpg') }}" width="250" height="250"/>
         </div>

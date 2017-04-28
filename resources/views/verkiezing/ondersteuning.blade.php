@@ -1,14 +1,13 @@
 
-    <!-- Ondersteuning -->
-    <h2>Ondersteuning</h2>
+    <h2>@lang('verkiezing.ondersteuning_titel')</h2>
     <div class="flex">
         <div class="triple bordersR">
-            <p>Uigaves die relevant zijn met de Studentenraad worden terugbetaald</p>
+            <p>@lang('verkiezing.ondersteuning_opt_1')</p>
         </div>
         <div class="triple bordersR">
-            <p>Je krijgt de steun van andere studentenvertegenwoordigers om projecten uit te werken</p>
+            <p>@lang('verkiezing.ondersteuning_opt_2')</p>
         </div>
         <div class="triple">
-            <p>Je hebt de steun van verschillende beleidsadviseurs en medewerkers binnen de Erasmushogeschool</p>
+            <p>@lang('verkiezing.ondersteuning_opt_3')</p>
         </div>
     </div>

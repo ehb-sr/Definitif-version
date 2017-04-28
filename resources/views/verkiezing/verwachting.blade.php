@@ -1,19 +1,18 @@
 
-    <!-- Wat wordt er van jou verwacht -->
     <div class="flex">
         <div class="half">
             <div>
-                <p>Je kan tijd maken voor de vergaderingen en verantwoordelijkheden die bij je mandaat horen</p>
+                <p>@lang('verkiezing.verwacht_opt_1')</p>
             </div>
             <div class="bordersTB">
-                <p>Je kan essentiële informatie opslaan en doorspelen naar de Studentenraad.</p>
+                <p>@lang('verkiezing.verwacht_opt_2')</p>
             </div>
             <div>
-                <p>Je weet wat er leeft binnen en buiten je campus</p>
+                <p>@lang('verkiezing.verwacht_opt_3')</p>
             </div>
         </div>
         <div class="half">
-            <h2>Wat wordt er van jou verwacht?</h2>
+            <h2>@lang('verkiezing.verwacht_titel')</h2>
             <!-- manneke -->
         </div>
     </div>

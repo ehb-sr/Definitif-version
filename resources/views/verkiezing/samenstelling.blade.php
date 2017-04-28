@@ -1,9 +1,9 @@
 
     <div id="titelWrap">
-        <h2>Vacature van een Studentenvertegenwoordiger</h2>
+        <h2>@lang('verkiezing.samenstelling_titel')</h2>
     </div>
-    <p>Per departement zoeken we steeds 2 mannen en 2 vrouwen</p>
+    <p>@lang('verkiezing.samenstelling_inleiding')</p>
     <div>
         <img src="{{ asset('img/coupleAndCouple.png') }}" alt="" id="imgCouple">
     </div>
-    <p>De samenstelling van de studentenraad moet gender evenwicht zijn per departement.</p>
+    <p>@lang('verkiezing.samenstelling_uitleg')</p>

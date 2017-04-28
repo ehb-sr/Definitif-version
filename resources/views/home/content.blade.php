@@ -3,13 +3,9 @@
     @include('home.slider')
 
     <div class="contentwrap">
-        <h1>Studentenraad Erasmushogeschool Brussel</h1>
-        <p>De leden van de Studentenraad wenst u welkom op onze website! Dankzij onze website kan je ook u
-            inbreng geven. Volg onze dossiers en geef u mening. Check onze agenda van Evenementen
-            & en de verschillende vergaderingen.</p>
-        <p>Kijkt wie op u Departement Studententenverantwoordelijk is en contacteer hem/haar. Check de
-            verschillende raden waar we zetelen en wie er in zetelt voor u het best te kunnen oriënteren. Aarzelt
-            niet om ons te contacteren via de Contact pagina. We staan altijd paraat voor jullie!</p>
+        <h1>@lang('home.hoofdtitel')</h1>
+        <p>@lang('home.inleiding_p1')</p>
+        <p>@lang('home.inleiding_p2')</p>
     </div>
 
     <div class="photowrap">
@@ -17,8 +13,8 @@
     </div>
     <div class="contentwrap flex" id="eventContent">
         <div class="infoContent">
-            <h1>Events</h1>
-            <p>Evenementen die wij organiseren, STUVO en nog meer. Hou u van alles op de hoogte!</p>
+            <h1>@lang('home.event_titel')</h1>
+            <p>@lang('home.event_text')</p>
             <img src="{{ asset('img/home/events_icon.png') }}" alt="" class="contentImg">
         </div>
         <div class="date">
@@ -40,9 +36,8 @@
             @endforeach
         </div>
         <div class="infoContent">
-            <h1>Agenda</h1>
-            <p>Volg onze toekomende vergaderingen of werkgroepen. Zodat jij altijd op de hoogte zijt wanneer wij
-                samenkomen!</p>
+            <h1>@lang('home.agenda_titel')</h1>
+            <p>@lang('home.agenda_text')</p>
             <img src="{{ asset('img/home/calendar-icon.png') }}" alt="" class="contentImg">
         </div>
     </div>
@@ -51,7 +46,7 @@
         <img src="{{ asset('img/home/parallax/contact-us2-background.jpg') }}" class="bgimages parallax" alt=""/>
     </div>
     <div class="contentwrap">
-        <h1>Contact us!</h1>
+        <h1>@lang('home.contact_titel')</h1>
         @include('home.contact')
 
     </div>

@@ -11,17 +11,15 @@
     <div class="contentwrap" id="contentAbout">
         @include('about.about')
     </div>
-
     <div class="photowrap">
         <img src="{{ asset('img/about/about.jpg') }}" class="bgimages" alt=""/>
     </div>
     <div class="contentwrap" id="citaatContent">
-        <h1>Citaten</h1>
+        <h1>@lang('about.citaat_titel')</h1>
     @foreach($citaten as $citaat)
         @include('about.citaatcontainer')
     @endforeach
     </div>
-
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
 <script>

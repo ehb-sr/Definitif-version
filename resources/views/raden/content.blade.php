@@ -12,8 +12,8 @@
         <div id="followWrap">
             <h2 id="followItem" class="sticky">{{ $leden->year->today }}</h2>
         </div>
-        <h1>Raden</h1>
-        <p></p>
+        <h1>@lang('raden.titel')</h1>
+        <p>@lang('raden.inleiding')</p>
         <div>
             <form method="get" action="/getRaden" id="stuver">
                 <select name="jaar" id="jaar">
@@ -21,7 +21,7 @@
                         <option value="{{ $year->jaar }}">{{ $year->text }}</option>
                     @endforeach
                 </select>
-                <button type="submit">Tonen</button>
+                <button type="submit">@lang('raden.submit')</button>
             </form>
         </div>
     </div>

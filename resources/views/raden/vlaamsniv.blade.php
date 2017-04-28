@@ -1,12 +1,9 @@
 
-    <h2>Op Vlaams niveau</h2>
+    <h2>@lang('raden.vl_titel')</h2>
     <div class="flex" id="vvsContainer">
         <div id="vvsInfo">
-            <h2>VVS (Vlaamse Vereniging voor Studenten)</h2>
-            <p>De Vlaamse Vereniging van Studenten is de koepelorganisatie van studentenraden van de Vlaamse
-                hogescholen en universiteiten. Ze is de officiële spreekbuis van de student. VVS plaatst het
-                verdedigen van de studentenrechten in een breder kader van democratisering van het onderwijs.
-            </p>
+            <h2>@lang('raden.vl_vvs_titel')</h2>
+            <p>@lang('raden.vl_uitleg')</p>
         </div>
         <img src="{{ asset('img/raden/logo/Vlaanderen.gif') }}" id="vvsImg">
     </div>

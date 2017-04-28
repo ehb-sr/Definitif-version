@@ -11,8 +11,6 @@
 |
 */
 
-use Illuminate\Support\Facades\App;
-
 Route::get('/', 'pages\HomePage@getContent');
 //Route::get('/', function () {
 //    return view('base');
@@ -51,11 +49,7 @@ Route::post('addComment', 'pages\DossierPage@AddComment');
 Route::post('contact', 'pages\ContactPage@sendForm');
 
 // refactor to controller
-Route::get('language/{locale}', function ($locale) {
-    session(['applocale' => $locale]);
-    App::setLocale($locale);
-    return redirect()->back();
-});
+Route::get('language/{locale}', 'Languages@setLanguage');
 
 Route::get('download/{file}', 'pages\DossierPage@getDownload');
 

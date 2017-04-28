@@ -1,17 +1,16 @@
 
-    <!-- Voordelen -->
-    <h2>Voordelen</h2>
+    <h2>@lang('verkiezing.voordelen_titel')</h2>
     <div class="flex">
         <div class="quatro bordersR">
-            <p>Je geniet van het statuut als Studentenvertegenwoordiger, dus mag je lessen overslaan om belangrijke vergaderingen bij te wonen</p>
+            <p>@lang('verkiezing.voordelen_opt_1')</p>
         </div>
         <div class="quatro bordersR">
-            <p>Je bouwt een interessant netwerk uit, waar je verschillende personen binnen de EhB, VVS of UAB leert kennen</p>
+            <p>@lang('verkiezing.voordelen_opt_2')</p>
         </div>
         <div class="quatro bordersR">
-            <p>Je verandert dingen ten goede voor je medestudenten, appreciatie zal volgen!</p>
+            <p>@lang('verkiezing.voordelen_opt_3')</p>
         </div>
         <div class="quatro">
-            <p>Je stimuleert je ervaringen in verschillende belangrijke competenties zoals organiseren, vergaderen, standpunten realiseren, etc</p>
+            <p>@lang('verkiezing.voordelen_opt_4')</p>
         </div>
     </div>
