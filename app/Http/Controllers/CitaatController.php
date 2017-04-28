@@ -19,9 +19,5 @@ class CitaatController extends Controller
         return view('about/content')->with('citaten', $citaten);
 }
 
-    public function destroy($ID){
-        $citaat = Citaat::find($ID);
-        $citaat->delete();
-        return Redirect::back()->with('success', 'Your news post has been deleted.');;
-    }
+
 }

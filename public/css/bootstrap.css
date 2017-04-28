@@ -2895,9 +2895,9 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #fff;
-  background-color: #red;
-  border-color: #red;
-    margin-left: 50%;
+  background-color: #E80000;
+  border-color: #E80000;
+    margin-left: 40%;
 }
 .btn-info:hover,
 .btn-info:focus,

@@ -11,69 +11,127 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', function () {
     return view('base');
 });
-
-Route::get('about', 'CitaatController@getAll');
-
+Route::get('about', function() {
+    return view('about/content');
+});
 Route::get('stuvers', function() {
     return view('stuvers/content');
 });
-
 Route::get('raden', function () {
     return view('raden/content');
 });
-
 Route::get('dossier', function () {
     return view('dossier/content');
 });
-
 Route::get('verkiezing', function() {
    return view('verkiezing/content');
 });
-
 Route::get('contact', function() {
     return view('contact/content');
 });
-
 Route::get('adminHome', function() {
     return view('Admin/admin');
 });
 
-//citaat
+Route::group(['middleware' => 'auth'], function () {
+    //citaat
+    Route::get('adminCreateCitaat', function () {
+        return view('Admin/citaatAanmaken');
+    });
+    Route::post('adminCreateCitaat', array('uses'=>'CitaatAdminController@create'));
+    Route::get('adminHome', 'CitaatAdminController@count');
+    Route::get('adminOverzichtCitaat', 'CitaatAdminController@getAll');
+    Route::get('adminEditCitaat', function() {
+        return view('Admin/citaatEdit');
+    Route::post('/Citaat/edit', array(
+            'as' => 'citaat-edit',
+            'uses' => 'CitaatAdminController@edit'
+        ));
+    Route::post('/citaat/update', array(
+            'uses' => 'CitaatAdminController@update'
+        ));
+    });
+    Route::delete('delete/{citaat_id}', ['uses' => 'CitaatAdminController@delete', 'as' => 'delete-citaat']);
 
-Route::get('adminCreateCitaat', function() {
-    return view('Admin/citaatAanmaken');
+
+    //stuvers
+    Route::get('adminCreateStuver', function() {
+        return view('Admin/stuversAanmaken');
+    });
+    Route::post('adminCreateStuver', array('uses'=>'StuversAdminController@create'));
+    Route::get('adminOverzichtStuver', 'StuversAdminController@getAll');
+    Route::delete('deletestuver/{stuver_id}', ['uses' => 'StuversAdminController@delete', 'as' => 'delete-stuver']);
+    Route::get('adminEditStuvers', function() {
+        return view('Admin/stuversEdit');
+    });
+    Route::post('/Stuver/edit', array(
+        'as' => 'stuvers-edit',
+        'uses' => 'StuversAdminController@edit'
+    ));
+    Route::post('/stuvers/update', array(
+        'uses' => 'StuversAdminController@update'
+    ));
+
+    //raden
+    Route::get('adminCreateRaden', function() {
+        return view('Admin/radenAanmaken');
+    });
+    Route::get('adminOverzichtRaden', 'RadenAdminController@getAll');
+    Route::post('adminCreateRaad', array('uses'=>'RadenAdminController@create'));
+    Route::delete('deleteraad/{raad_id}', ['uses' => 'RadenAdminController@deleteRaden', 'as' => 'delete-raad']);
+    Route::get('adminEditRaden', function() {
+        return view('Admin/radenEdit');
+    });
+    Route::post('/Raden/edit', array(
+        'as' => 'raden-edit',
+        'uses' => 'RadenAdminController@edit'
+    ));
+    Route::post('/raden/update', array(
+        'uses' => 'RadenAdminController@update'
+    ));
+
+    //dossiers
+    Route::get('adminCreateDossier', function() {
+        return view('Admin/dossierAanmaken');
+    });
+    Route::post('adminCreateDossier', array('uses'=>'DossierAdminController@create'));
+    Route::get('adminOverzichtDossier', 'DossierAdminController@getAll');
+    Route::get('adminEditDossiers', function() {
+        return view('Admin/dossiersEdit');
+    });
+    Route::post('/Dossier/edit', array(
+        'as' => 'dossiers-edit',
+        'uses' => 'DossierAdminController@edit'
+    ));
+    Route::post('/dossier/update', array(
+        'uses' => 'DossierAdminController@update'
+    ));
+
+    //comments
+    Route::get('adminOverzichtComment', 'CommentAdminController@getAll');
+    Route::delete('deletecomment/{comment_id}', ['uses' => 'CommentAdminController@deleteComment', 'as' => 'delete-comment']);
+
+
 });
-Route::post('adminCreateCitaat', array('uses'=>'CitaatAdminController@create'));
-Route::get('/deletecitaat/{ID}','CitaatAdminController@delete');
-Route::get('adminOverzichtCitaat', 'CitaatAdminController@getAll');
-Route::delete('adminOverzichtCitaat/{id}', array('uses' => 'CitaatAdminController@destroy'));
-
-
-
-//Stuvers
-
-Route::get('adminCreateStuver', function() {
-    return view('Admin/stuversAanmaken');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/', function ()    {
+        // Uses Auth Middleware
+    });
+    Route::get('user/profile', function () {
+        // Uses Auth Middleware
+    });
 });
-Route::post('adminCreateStuver', array('uses'=>'StuversAdminController@create'));
-Route::get('adminOverzichtStuver', 'StuversAdminController@getAll');
+Route::get('/logout', function()
+{
+    Auth::logout();
+    return Redirect::to('/login');
+})->name('logout');
 
-//Raden
+Auth::routes();
 
-Route::get('adminCreateRaden', function() {
-    return view('Admin/radenAanmaken');
-});
-Route::get('adminOverzichtRaden', 'RadenAdminController@getAll');
-
-//dossiers
-
-Route::get('adminCreateDossier', function() {
-    return view('Admin/dossierAanmaken');
-});
-
-Route::post('adminCreateDossier', array('uses'=>'DossierAdminController@create'));
-
-Route::get('adminOverzichtDossier', 'DossierAdminController@getAll');
+Route::get('/home', 'HomeController@index');

@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Bootstrap Advance Admin Template</title>
+    <link rel="icon" type="image/gif/png" href="{{ asset('img/admin/SR_S.png') }}">
+    <title>Studentenraad admin</title>
 
     <!-- BOOTSTRAP STYLES-->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
@@ -33,65 +34,73 @@
 
             <div class="header-right">
 
-                Login
+                                <a class="logout" href="/logout" id="login" >Logout</a>
+
             </div>
         </nav>
-        <!-- /. NAV TOP  -->
-           <nav class="navbar-default navbar-side" role="navigation">
-                   <div class="sidebar-collapse">
-                       <ul class="nav" id="main-menu">
-                           <li>
-                        <a class="active-menu" href="/adminHome" id="adminHome"><i class="fa fa-dashboard "></i>Dashboard</a>
-                           </li>
-                           <li>
-                               <a href="#"><i class="fa fa-desktop "></i>Citaten <span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                   <li>
-                                       <a href="/adminCreateCitaat" id="adminCreateCitaat"><i class="fa fa-toggle-on"></i>Citaat aanmaken</a>
-                                   </li>
-                                   <li>
-                                       <a href="/adminOverzichtCitaat" id="adminOverichtCitaat"><i class="fa fa-bell "></i>Citaten overzicht</a>
-                                   </li>
+   <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <a class="active-menu" href="/adminHome" id="adminHome"><img img src="{{ asset('img/admin/dashboard.png') }}" class="menu">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><img img src="{{ asset('img/admin/quote.png') }}" class="menu">Citaten</a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/adminCreateCitaat" id="adminCreateCitaat">Citaat aanmaken</a>
+                            </li>
+                            <li>
+                                <a href="/adminOverzichtCitaat" id="adminOverichtCitaat">Citaten overzicht</a>
+                            </li>
 
-                               </ul>
-                           </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#"><img img src="{{ asset('img/admin/stuvers.png') }}" class="menu">Stuvers</a>
+                         <ul class="nav nav-second-level">
                             <li>
-                               <a href="#"><i class="fa fa-yelp "></i>Stuvers<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                   <li>
-                                       <a href="/adminCreateStuver" id="adminCreateStuver"><i class="fa fa-coffee"></i>Stuvers aanmaken</a>
-                                   </li>
-                                   <li>
-                                       <a href="/adminOverzichtStuver" id="adminOverzichtStuver"><i class="fa fa-flash "></i>Stuvers overzicht</a>
-                                   </li>
-                               </ul>
+                                <a href="/adminCreateStuver" id="adminCreateStuver">Stuvers aanmaken</a>
+                            </li>
+                            <li>
+                                <a href="/adminOverzichtStuver" id="adminOverzichtStuver">Stuvers overzicht</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img img src="{{ asset('img/admin/raden.png') }}" class="menu">Raden </a>
+                        <ul class="nav nav-second-level">
+                           <li>
+                               <a href="/adminCreateRaden" id="adminCreateRaden">Raden aanmaken</a>
                            </li>
                            <li>
-                               <a href="#"><i class="fa fa-flash "></i>Raden </a>
-                               <ul class="nav nav-second-level">
-                                  <li>
-                                      <a href="/adminCreateRaden" id="adminCreateRaden"><i class="fa fa-coffee"></i>Raden aanmaken</a>
-                                  </li>
-                                  <li>
-                                      <a href="/adminOverzichtRaden" id="adminOverzichtRaden"><i class="fa fa-flash "></i>Raden overzicht</a>
-                                  </li>
-                               </ul>
+                               <a href="/adminOverzichtRaden" id="adminOverzichtRaden">Raden overzicht</a>
                            </li>
-                            <li>
-                                <a href="table.html"><i class="fa fa-flash "></i>Dossiers </a>
-                                 <ul class="nav nav-second-level">
-                                     <li>
-                                        <a href="/adminCreateDossier" id="adminCreateDossier"><i class="fa fa-coffee"></i>Dossier aanmaken</a>
-                                     </li>
-                                     <li>
-                                         <a href="/adminOverzichtDossier" id="adminOverzichtDossier"><i class="fa fa-flash "></i>Dossiers overzicht</a>
-                                    </li>
-                                 </ul>
+                        </ul>
+                    </li>
+                     <li>
+                         <a href="table.html"><img img src="{{ asset('img/admin/dossier.png') }}" class="menu">Dossiers </a>
+                          <ul class="nav nav-second-level">
+                              <li>
+                                 <a href="/adminCreateDossier" id="adminCreateDossier">Dossier aanmaken</a>
+                              </li>
+                              <li>
+                                  <a href="/adminOverzichtDossier" id="adminOverzichtDossier">Dossiers overzicht</a>
                              </li>
-                            </ul>
-                   </div>
+                          </ul>
+                      </li>
+                      <li>
+                        <a href="#"><img img src="{{ asset('img/admin/comment.png') }}" class="menu">Comment</a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/adminOverzichtComment" id="adminOverzichtComment">Comment overzicht</a>
+                            </li>
+                        </ul>
+                    </li>
+                     </ul>
+            </div>
 
-               </nav>
+        </nav>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper">
                     <div id="page-inner">
@@ -114,6 +123,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
+                                                                <th>Foto</th>
                                                                 <th>Voornaam</th>
                                                                 <th>Familienaam</th>
                                                                 <th>jaar</th>
@@ -133,20 +143,59 @@
                                                         @foreach($raden as $raad)
                                                             <tr>
                                                                 <td>{{$raad->ID}}</td>
+                                                                @if($raad->Foto != null)
+                                                                    <td>true</td>
+                                                                @else
+                                                                    <td>false</td>
+                                                                @endif
                                                                 <td>{{$raad->Voornaam}}</td>
                                                                 <td>{{$raad->Familienaam}}</td>
                                                                 <td>{{$raad->Jaar}}</td>
                                                                 <td>{{$raad->Statuut}}</td>
-                                                                <td>{{$raad->VVS}}</td>
-                                                                <td>{{$raad->BAST}}</td>
-                                                                <td>{{$raad->UAB}}</td>
-                                                                <td>{{$raad->STUVO}}</td>
-                                                                <td>{{$raad->RvT}}</td>
+                                                                @if($raad->VVS != null)
+                                                                    <td>true</td>
+                                                                @else
+                                                                    <td>false</td>
+                                                                 @endif
+                                                                 @if($raad->BAST != null)
+                                                                    <td>true</td>
+                                                                 @else
+                                                                    <td>false</td>
+                                                                 @endif
+                                                                 @if($raad->UAB != null)
+                                                                    <td>true</td>
+                                                                 @else
+                                                                    <td>false</td>
+                                                                 @endif
+                                                                @if($raad->STUVO != null)
+                                                                    <td>true</td>
+                                                                 @else
+                                                                    <td>false</td>
+                                                                 @endif
+                                                                @if($raad->RvT != null)
+                                                                    <td>true</td>
+                                                                 @else
+                                                                    <td>false</td>
+                                                                 @endif
                                                                 <td>{{$raad->DR}}</td>
-                                                                <td>{{$raad->RSchoolOfArts}}</td>
-                                                                <td><a href=""><img src="{{ asset('img/admin/delete.jpg') }}"class="delete"></a></td>
-                                                                <td><a href=""><img src="{{ asset('img/admin/edit.png') }}"class="edit"></a></td>
-                                                            </tr>
+                                                                @if($raad->RSchoolOfArts != null)
+                                                                    <td>true</td>
+                                                                 @else
+                                                                    <td>false</td>
+                                                                 @endif
+                                                                <td>
+                                                                 {{  Form::open(array('url'=>'deleteraad/' . $raad->ID, 'method' => 'delete')) }}
+                                                                   <input type="image" src="{{ asset('img/admin/delete.jpg') }}" name="saveForm" class="delete" id="saveForm" />
+
+                                                                   {{ Form::close() }}
+                                                                </td>
+                                                                <td>{{  Form::open(array('url'=>'Raden/edit', 'method' => 'post')) }}
+                                                                <input type="hidden" value="{{$raad->ID}}" name="ID"/>
+                                                                <input type="image" src="{{ asset('img/admin/edit.png') }}" name="saveForm" class="edit" id="saveForm" />
+
+                                                                </a>
+                                                                   {{ Form::close() }}
+                                                                </td>                                                            </tr>
                                                             @endforeach
 
                                                         </tbody>
@@ -164,10 +213,6 @@
     </div>
     <!-- /. WRAPPER  -->
 
-    <div id="footer-sec">
-        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
-    </div>
-    <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>

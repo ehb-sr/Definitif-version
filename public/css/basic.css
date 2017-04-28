@@ -44,7 +44,7 @@ body {
     color: #000;
     font-weight: 800;
     padding-bottom: 20px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #E80000;
     margin-bottom: 10px;
 }
 
@@ -54,7 +54,7 @@ body {
     padding-bottom: 20px;
     font-style:italic;
     margin-bottom:30px;
-    border-bottom:1px dashed #00CA79;
+    border-bottom:1px dashed #E80000;
 
 }
 
@@ -108,7 +108,7 @@ body {
     }
 
 .active-menu {
-    background-color: red!important;
+    background-color: #E80000!important;
 }
 .active-menu-top {
     background-color: #000!important;

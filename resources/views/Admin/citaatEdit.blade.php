@@ -107,7 +107,7 @@
                     <div id="page-inner">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="page-head-line">Citaat aanmaken</h1>
+                                <h1 class="page-head-line">Citaat updaten</h1>
                             </div>
                         </div>
                         <!-- /. ROW  -->
@@ -115,29 +115,30 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                        <div class="panel panel-info">
                                 <div class="panel-heading">
-                                Citaat aanmaken form
+                                Citaat updaten form
                                 </div>
                                 <div class="panel-body">
-                                    {{  Form::open(array('action'=>'CitaatAdminController@create', 'method' => 'post')) }}
-                                                <div class="form-group">
-                                                    <label>Voornaam</label>
-                                                    <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" required>
-                                                </div>
-                                         <div class="form-group">
-                                                    <label>Familienaam</label>
-                                                   <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Statuut</label>
-                                                    <input class="form-control" type="text" name="Statuut" placeholder="Statuut" required>
-                                                 </div>
-                                                    <div class="form-group">
-                                                    <label>Text</label>
-                                                    <textarea class="form-control" rows="3" type="text" name="Text" placeholder="Text" required></textarea>
-                                                </div>
-                                                <button type="submit" class="btn btn-info">Citaat aanmaken</button>
+                                   {{  Form::open(array('action'=>'CitaatAdminController@update', 'method' => 'post')) }}
+                                                                                  <div class="form-group">
+                                                                                      <label>Voornaam</label>
+                                                                                      <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" value="{{$citaat->Voornaam}}">
+                                                                                  </div>
+                                                                           <div class="form-group">
+                                                                                      <label>Familienaam</label>
+                                                                                     <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" value="{{$citaat->Familienaam}}">
+                                                                                  </div>
+                                                                                  <div class="form-group">
+                                                                                      <label>Statuut</label>
+                                                                                      <input class="form-control" type="text" name="Statuut" placeholder="Statuut" value="{{$citaat->Statuut}}">
+                                                                                   </div>
+                                                                                      <div class="form-group">
+                                                                                      <label>Text</label>
+                                                                                      <textarea class="form-control" type="text" name="Text" placeholder="Text" value="{{$citaat->Text}}">{{$citaat->Text}}</textarea>
+                                                                                  </div>
+                                                                                  <input type="hidden" value="{{$citaat->ID}}" name="ID">
+                                                                                  <button type="submit" class="btn btn-info">Citaat updaten</button>
 
-                                    {{  Form::close()  }}
+                                                                      {{  Form::close()  }}
 
                                     </div>
                                 </div>
@@ -148,7 +149,6 @@
     </div>
     <!-- /. WRAPPER  -->
 
-    <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>

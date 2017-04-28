@@ -107,7 +107,7 @@
                     <div id="page-inner">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="page-head-line">Citaat aanmaken</h1>
+                                <h1 class="page-head-line">Dossier updaten</h1>
                             </div>
                         </div>
                         <!-- /. ROW  -->
@@ -115,29 +115,33 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                        <div class="panel panel-info">
                                 <div class="panel-heading">
-                                Citaat aanmaken form
+                                Dossier updaten form
                                 </div>
                                 <div class="panel-body">
-                                    {{  Form::open(array('action'=>'CitaatAdminController@create', 'method' => 'post')) }}
-                                                <div class="form-group">
-                                                    <label>Voornaam</label>
-                                                    <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" required>
-                                                </div>
-                                         <div class="form-group">
-                                                    <label>Familienaam</label>
-                                                   <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Statuut</label>
-                                                    <input class="form-control" type="text" name="Statuut" placeholder="Statuut" required>
-                                                 </div>
-                                                    <div class="form-group">
-                                                    <label>Text</label>
-                                                    <textarea class="form-control" rows="3" type="text" name="Text" placeholder="Text" required></textarea>
-                                                </div>
-                                                <button type="submit" class="btn btn-info">Citaat aanmaken</button>
+                                   {{  Form::open(array('action'=>'DossierAdminController@update', 'method' => 'post',  'enctype="multipart/form-data"')) }}
+                                                                                   <div class="form-group">
+                                                                                                                                      <label>Jaar</label>
+                                                                                                                                      <input class="form-control" type="text" name="jaar" placeholder="jaar" value="{{$dossier->jaar}}">
+                                                                                                                                  </div>
+                                                                                                                                  <div class="form-group">
+                                                                                                                                      <label>Titel</label>
+                                                                                                                                      <input class="form-control" type="text" name="titel" placeholder="titel" value="{{$dossier->titel}}">
+                                                                                                                                  </div>
+                                                                                                                           <div class="form-group">
+                                                                                                                                      <label>Topic</label>
+                                                                                                                                     <input class="form-control" type="text" name="topic" placeholder="topic" value="{{$dossier->topic}}">
+                                                                                                                                  </div>
+                                                                                                                                  <div class="form-group">
+                                                                                                                                      <label>PDF</label><br>
+                                                                                                                                      <input  type="file" name="pdf" placeholder="pdf">
+                                                                                                                                   </div>
+                                                                                                                                      <div >
+                                                                                                                                          <label>Einde</label>
+                                                                                                                                      <input class="form-control" type="dateTime" name="einde" value="{{$dossier->einde}}">
+                                                                                  <input type="hidden" value="{{$dossier->id}}" name="ID">
+                                                                                  <button type="submit" class="btn btn-info">Dossier updaten</button>
 
-                                    {{  Form::close()  }}
+                                                                      {{  Form::close()  }}
 
                                     </div>
                                 </div>
@@ -158,7 +162,7 @@
     <script src="assets/js/jquery.metisMenu.js"></script>
        <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
-
+</div>
 </div>
 </div>
 </body>

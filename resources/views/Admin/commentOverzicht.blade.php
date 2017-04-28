@@ -107,67 +107,60 @@
                     <div id="page-inner">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="page-head-line">Stuver aanmaken</h1>
+                                <h1 class="page-head-line">Comments Overzicht</h1>
                             </div>
                         </div>
                         <!-- /. ROW  -->
                         <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                       <div class="panel panel-info">
-                                <div class="panel-heading">
-                                Stuver aanmaken form
-                                </div>
-                                <div class="panel-body">
-                                    {{  Form::open(array('action'=>'StuversAdminController@create', 'method' => 'post' , 'enctype="multipart/form-data"')) }}
-                                                                                    <div class="form-group">
-                                                                                         <label>Foto</label><br>
-                                                                                         <input type="file" name="Foto" placeholder="Foto" required>
-                                                                                    </div>
-                                                                                    <div class="form-group">
-                                                                                        <label>Voornaam</label>
-                                                                                        <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" required>
-                                                                                    </div>
-                                                                             <div class="form-group">
-                                                                                        <label>Familienaam</label>
-                                                                                       <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" required>
-                                                                                    </div>
-                                                                                     <div class="form-group">
-                                                                                       <label>Jaar</label>
-                                                                                       <input class="form-control" type="number" name="Jaar" placeholder="Jaar" required>
-                                                                                     </div>
-                                                                                      <div class="form-group">
-                                                                                      <label>Campus</label>
-                                                                                      <input class="form-control" type="text" name="Campus" placeholder="Campus" required>
-                                                                                      </div>
-                                                                                    <div class="form-group">
-                                                                                        <label>Statuut</label>
-                                                                                        <input class="form-control" type="text" name="Statuut" placeholder="Statuut" required>
-                                                                                     </div>
-                                                                                        <div class="form-group">
-                                                                                        <label>Quote</label>
-                                                                                        <textarea class="form-control" rows="3" type="text" name="Quote" placeholder="Quote" required></textarea>
-                                                                                    </div>
-                                                                                    <div class="form-group">
-                                                                                      <label>Email</label>
-                                                                                       <input class="form-control" type="email" name="Email" placeholder="Email" required>
-                                                                                        </div>
-                                                                                    <button type="submit" class="btn btn-info">Stuver aanmaken</button>
+                    <div class="col-md-6">
+                                         <!--   Basic Table  -->
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                Comments
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>time</th>
+                                                                <th>text</th>
+                                                                <th>Delete</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        @foreach($comments as $comment)
+                                                            <tr>
+                                                                <td>{{$comment->id}}</td>
+                                                                <td>{{$comment->time}}</td>
+                                                                <td>{{$comment->text}}</td>
+                                                                <td>
+                                                                 {{  Form::open(array('url'=>'deletecomment/' . $comment->id, 'method' => 'delete')) }}
+                                                                    <input type="image" src="{{ asset('img/admin/delete.jpg') }}" name="saveForm" class="delete" id="saveForm" />
+                                                                 {{ Form::close() }}
+                                                                </td>
 
-                                                                        {{  Form::close()  }}
-
-
-                                                                                    {{--<button type="submit" class="btn btn-info">Citaat aanmaken</button>--}}
-
-                                                                                {{--</form>--}}
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="pagination">{{ $comments->links() }}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                          <!-- End  Basic Table  -->
                                     </div>
                                 </div>
-                                    </div>
             <!-- /. PAGE INNER  -->
         </div>
         <!-- /. PAGE WRAPPER  -->
     </div>
     <!-- /. WRAPPER  -->
 
+    <div id="footer-sec">
+        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
+    </div>
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
@@ -179,7 +172,6 @@
        <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
 
-</div>
 </div>
 
 </body>

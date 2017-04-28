@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Bootstrap Advance Admin Template</title>
+    <link rel="icon" type="image/gif/png" href="{{ asset('img/admin/SR_S.png') }}">
+    <title>Studentenraad admin</title>
 
     <!-- BOOTSTRAP STYLES-->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
@@ -33,65 +34,74 @@
 
             <div class="header-right">
 
-                Login
+                                <a class="logout" href="/logout" id="login" >Logout</a>
+
             </div>
         </nav>
         <!-- /. NAV TOP  -->
-           <nav class="navbar-default navbar-side" role="navigation">
-                   <div class="sidebar-collapse">
-                       <ul class="nav" id="main-menu">
-                           <li>
-                        <a class="active-menu" href="/adminHome" id="adminHome"><i class="fa fa-dashboard "></i>Dashboard</a>
-                           </li>
-                           <li>
-                               <a href="#"><i class="fa fa-desktop "></i>Citaten <span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                   <li>
-                                       <a href="/adminCreateCitaat" id="adminCreateCitaat"><i class="fa fa-toggle-on"></i>Citaat aanmaken</a>
-                                   </li>
-                                   <li>
-                                       <a href="/adminOverzichtCitaat" id="adminOverichtCitaat"><i class="fa fa-bell "></i>Citaten overzicht</a>
-                                   </li>
+   <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <a class="active-menu" href="/adminHome" id="adminHome"><img img src="{{ asset('img/admin/dashboard.png') }}" class="menu">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><img img src="{{ asset('img/admin/quote.png') }}" class="menu">Citaten</a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/adminCreateCitaat" id="adminCreateCitaat">Citaat aanmaken</a>
+                            </li>
+                            <li>
+                                <a href="/adminOverzichtCitaat" id="adminOverichtCitaat">Citaten overzicht</a>
+                            </li>
 
-                               </ul>
-                           </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#"><img img src="{{ asset('img/admin/stuvers.png') }}" class="menu">Stuvers</a>
+                         <ul class="nav nav-second-level">
                             <li>
-                               <a href="#"><i class="fa fa-yelp "></i>Stuvers<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                   <li>
-                                       <a href="/adminCreateStuver" id="adminCreateStuver"><i class="fa fa-coffee"></i>Stuvers aanmaken</a>
-                                   </li>
-                                   <li>
-                                       <a href="/adminOverzichtStuver" id="adminOverzichtStuver"><i class="fa fa-flash "></i>Stuvers overzicht</a>
-                                   </li>
-                               </ul>
+                                <a href="/adminCreateStuver" id="adminCreateStuver">Stuvers aanmaken</a>
+                            </li>
+                            <li>
+                                <a href="/adminOverzichtStuver" id="adminOverzichtStuver">Stuvers overzicht</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img img src="{{ asset('img/admin/raden.png') }}" class="menu">Raden </a>
+                        <ul class="nav nav-second-level">
+                           <li>
+                               <a href="/adminCreateRaden" id="adminCreateRaden">Raden aanmaken</a>
                            </li>
                            <li>
-                               <a href="#"><i class="fa fa-flash "></i>Raden </a>
-                               <ul class="nav nav-second-level">
-                                  <li>
-                                      <a href="/adminCreateRaden" id="adminCreateRaden"><i class="fa fa-coffee"></i>Raden aanmaken</a>
-                                  </li>
-                                  <li>
-                                      <a href="/adminOverzichtRaden" id="adminOverzichtRaden"><i class="fa fa-flash "></i>Raden overzicht</a>
-                                  </li>
-                               </ul>
+                               <a href="/adminOverzichtRaden" id="adminOverzichtRaden">Raden overzicht</a>
                            </li>
-                            <li>
-                                <a href="table.html"><i class="fa fa-flash "></i>Dossiers </a>
-                                 <ul class="nav nav-second-level">
-                                     <li>
-                                        <a href="/adminCreateDossier" id="adminCreateDossier"><i class="fa fa-coffee"></i>Dossier aanmaken</a>
-                                     </li>
-                                     <li>
-                                         <a href="/adminOverzichtDossier" id="adminOverzichtDossier"><i class="fa fa-flash "></i>Dossiers overzicht</a>
-                                    </li>
-                                 </ul>
+                        </ul>
+                    </li>
+                     <li>
+                         <a href="table.html"><img img src="{{ asset('img/admin/dossier.png') }}" class="menu">Dossiers </a>
+                          <ul class="nav nav-second-level">
+                              <li>
+                                 <a href="/adminCreateDossier" id="adminCreateDossier">Dossier aanmaken</a>
+                              </li>
+                              <li>
+                                  <a href="/adminOverzichtDossier" id="adminOverzichtDossier">Dossiers overzicht</a>
                              </li>
-                            </ul>
-                   </div>
+                          </ul>
+                      </li>
+                      <li>
+                        <a href="#"><img img src="{{ asset('img/admin/comment.png') }}" class="menu">Comment</a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/adminOverzichtComment" id="adminOverzichtComment">Comment overzicht</a>
+                            </li>
+                        </ul>
+                    </li>
+                     </ul>
+            </div>
 
-               </nav>
+        </nav>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper">
                     <div id="page-inner">
@@ -108,59 +118,59 @@
                                 Raden aanmaken form
                                 </div>
                                 <div class="panel-body">
-                                    <form role="form">
+
+                                   {{  Form::open(array('action'=>'RadenAdminController@create', 'method' => 'post', 'enctype="multipart/form-data"')) }}
+                                                <div class="form-group">
+                                                    <label>Foto</label><br>
+                                                    <input type="file" name="Foto" placeholder="Foto" required>
+                                                </div>
                                                 <div class="form-group">
                                                     <label>Voornaam</label>
-                                                    <input class="form-control" type="text">
+                                                    <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" required>
                                                 </div>
                                          <div class="form-group">
                                                     <label>Familienaam</label>
-                                                    <input class="form-control" type="text">
+                                                    <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>jaar</label>
-                                                    <input class="form-control" type="text">
+                                                    <input class="form-control" type="number" name="Jaar" placeholder="Jaar" required>
                                                  </div>
                                                 <div class="form-group">
                                                     <label>statuut</label>
-                                                    <input class="form-control" type="text">
+                                                    <input class="form-control" type="text" name="Statuut" placeholder="Statuut" required>
                                                  </div>
                                                     <div class="form-group">
                                                     <label>VVS</label>
-                                                    <input class="form-control" rows="3"/>
+                                                    <input class="form-control" type="number" name="VVS" placeholder="VVS" required/>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>BAST</label>
-                                                    <input class="form-control" type="text">
+                                                    <input class="form-control" type="number" name="BAST" placeholder="BAST" required>
                                                  </div>
                                                  <div class="form-group">
                                                  <label>UAB</label>
-                                                 <input class="form-control" type="text">
+                                                 <input class="form-control" type="number" name="UAB" placeholder="UAB" required>
                                                  </div>
                                                  <div class="form-group">
                                                   <label>STUVO</label>
-                                                  <input class="form-control" type="text">
+                                                  <input class="form-control" type="number" name="STUVO" placeholder="STUVO" required>
                                                  </div>
                                                   <div class="form-group">
                                                  <label>RvT</label>
-                                                  <input class="form-control" type="text">
+                                                  <input class="form-control" type="number" name="RvT" placeholder="RvT" required>
                                                  </div>
                                                  <div class="form-group">
                                                 <label>DR</label>
-                                                <input class="form-control" type="text">
+                                                <input class="form-control" type="text" name="DR" placeholder="DR" required>
                                                  </div>
                                                  <div class="form-group">
                                                  <label>RSchoolOfArts</label>
-                                                  <input class="form-control" type="text">
+                                                  <input class="form-control" type="number" name="RSchoolOfArts" placeholder="RSchoolOfArts" required>
                                                   </div>
+                                                  <button type="submit" class="btn btn-info">Raden aanmaken</button>
 
-
-
-
-
-                                                <button type="submit" class="btn btn-info">Stuver aanmaken</button>
-
-                                            </form>
+                                           {{  Form::close()  }}
                                     </div>
                                 </div>
                                     </div>
@@ -170,9 +180,6 @@
     </div>
     <!-- /. WRAPPER  -->
 
-    <div id="footer-sec">
-        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
-    </div>
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
@@ -185,13 +192,7 @@
     <script src="assets/js/custom.js"></script>
 
 
-
+</div>
+</div>
 </body>
 </html>
-<?php
-/**
- * Created by PhpStorm.
- * User: sophie
- * Date: 19.04.17
- * Time: 12:48
- */ 

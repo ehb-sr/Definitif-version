@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Bootstrap Advance Admin Template</title>
+    <link rel="icon" type="image/gif/png" href="{{ asset('img/admin/SR_S.png') }}">
+    <title>Studentenraad admin</title>
 
     <!-- BOOTSTRAP STYLES-->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
@@ -33,61 +34,70 @@
 
             <div class="header-right">
 
-                Login
+                                <a class="logout" href="/logout" id="login" >Logout</a>
+
             </div>
         </nav>
         <!-- /. NAV TOP  -->
-    <nav class="navbar-default navbar-side" role="navigation">
+   <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li>
-                        <a class="active-menu" href="/adminHome" id="adminHome"><i class="fa fa-dashboard "></i>Dashboard</a>
+                        <a class="active-menu" href="/adminHome" id="adminHome"><img img src="{{ asset('img/admin/dashboard.png') }}" class="menu">Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-desktop "></i>Citaten <span class="fa arrow"></span></a>
+                        <a href="#"><img img src="{{ asset('img/admin/quote.png') }}" class="menu">Citaten</a>
                          <ul class="nav nav-second-level">
                             <li>
-                                <a href="/adminCreateCitaat" id="adminCreateCitaat"><i class="fa fa-toggle-on"></i>Citaat aanmaken</a>
+                                <a href="/adminCreateCitaat" id="adminCreateCitaat">Citaat aanmaken</a>
                             </li>
                             <li>
-                                <a href="/adminOverzichtCitaat" id="adminOverichtCitaat"><i class="fa fa-bell "></i>Citaten overzicht</a>
+                                <a href="/adminOverzichtCitaat" id="adminOverichtCitaat">Citaten overzicht</a>
                             </li>
 
                         </ul>
                     </li>
                      <li>
-                        <a href="#"><i class="fa fa-yelp "></i>Stuvers<span class="fa arrow"></span></a>
+                        <a href="#"><img img src="{{ asset('img/admin/stuvers.png') }}" class="menu">Stuvers</a>
                          <ul class="nav nav-second-level">
                             <li>
-                                <a href="/adminCreateStuver" id="adminCreateStuver"><i class="fa fa-coffee"></i>Stuvers aanmaken</a>
+                                <a href="/adminCreateStuver" id="adminCreateStuver">Stuvers aanmaken</a>
                             </li>
                             <li>
-                                <a href="/adminOverzichtStuver" id="adminOverzichtStuver"><i class="fa fa-flash "></i>Stuvers overzicht</a>
+                                <a href="/adminOverzichtStuver" id="adminOverzichtStuver">Stuvers overzicht</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-flash "></i>Raden </a>
+                        <a href="#"><img img src="{{ asset('img/admin/raden.png') }}" class="menu">Raden </a>
                         <ul class="nav nav-second-level">
                            <li>
-                               <a href="/adminCreateRaden" id="adminCreateRaden"><i class="fa fa-coffee"></i>Raden aanmaken</a>
+                               <a href="/adminCreateRaden" id="adminCreateRaden">Raden aanmaken</a>
                            </li>
                            <li>
-                               <a href="/adminOverzichtRaden" id="adminOverzichtRaden"><i class="fa fa-flash "></i>Raden overzicht</a>
+                               <a href="/adminOverzichtRaden" id="adminOverzichtRaden">Raden overzicht</a>
                            </li>
                         </ul>
                     </li>
                      <li>
-                         <a href="table.html"><i class="fa fa-flash "></i>Dossiers </a>
+                         <a href="table.html"><img img src="{{ asset('img/admin/dossier.png') }}" class="menu">Dossiers </a>
                           <ul class="nav nav-second-level">
                               <li>
-                                 <a href="/adminCreateDossier" id="adminCreateDossier"><i class="fa fa-coffee"></i>Dossier aanmaken</a>
+                                 <a href="/adminCreateDossier" id="adminCreateDossier">Dossier aanmaken</a>
                               </li>
                               <li>
-                                  <a href="/adminOverzichtDossier" id="adminOverzichtDossier"><i class="fa fa-flash "></i>Dossiers overzicht</a>
+                                  <a href="/adminOverzichtDossier" id="adminOverzichtDossier">Dossiers overzicht</a>
                              </li>
                           </ul>
                       </li>
+                      <li>
+                        <a href="#"><img img src="{{ asset('img/admin/comment.png') }}" class="menu">Comment</a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/adminOverzichtComment" id="adminOverzichtComment">Comment overzicht</a>
+                            </li>
+                        </ul>
+                    </li>
                      </ul>
             </div>
 
@@ -114,6 +124,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
+                                                                <th>Foto</th>
                                                                 <th>Voornaam</th>
                                                                 <th>Familienaam</th>
                                                                 <th>jaar</th>
@@ -126,14 +137,29 @@
                                                         <tbody>
                                                         @foreach($stuvers as $stuver)
                                                             <tr>
-                                                                <td>{{$stuver->ID}}</td>
+                                                            <td>{{$stuver->ID}}</td>
+                                                                @if($stuver->Foto != null)
+                                                                    <td>true</td>
+                                                                @else
+                                                                    <td>false</td>
+                                                                @endif
                                                                 <td>{{$stuver->Voornaam}}</td>
                                                                 <td>{{$stuver->Familienaam}}</td>
                                                                 <td>{{$stuver->Jaar}}</td>
                                                                 <td>{{$stuver->Campus}}</td>
                                                                 <td>{{$stuver->Statuut}}</td>
-                                                                <td><a href="">Delete</a></td>
-                                                                <td><a href="">Update</a></td>
+                                                                <td>
+                                                                 {{  Form::open(array('url'=>'deletestuver/' . $stuver->ID, 'method' => 'delete')) }}
+                                                                    <input type="image" src="{{ asset('img/admin/delete.jpg') }}" name="saveForm" class="delete" id="saveForm" />
+                                                                 {{ Form::close() }}
+                                                                </td>
+                                                                <td>{{  Form::open(array('url'=>'/Stuver/edit', 'method' => 'post')) }}
+                                                                <input type="image" src="{{ asset('img/admin/edit.png') }}" name="saveForm" class="edit" id="saveForm" />
+                                                                 <input type="hidden" value="{{$stuver->ID}}" name="ID"/>
+
+                                                                 </a>
+                                                                 {{ Form::close() }}
+                                                                 </td>
                                                             </tr>
                                                             @endforeach
                                                         </tbody>
@@ -151,9 +177,6 @@
     </div>
     <!-- /. WRAPPER  -->
 
-    <div id="footer-sec">
-        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
-    </div>
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->

@@ -26,13 +26,13 @@
 
     }
 .mb-dull {
-    background-color:#8F8F2C;
+    background-color:#202020;
 }
 .mb-red {
-    background-color:#d36f2e;
+    background-color:#E80000;
 }
 .mb-pink {
-    background-color:#FF2F71;
+    background-color:#E80000;
 }
     .main-box h5 {
         font-size:16px;
@@ -91,7 +91,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     position: relative;
-    border: 1px solid #d51111;
+    border: 1px solid #E80000;
     font-size:14px;
     
 }
@@ -250,10 +250,10 @@ ul#filters {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: #ff0000;
+    color: #E80000;
 }
 
-.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover { background-color: red; border-color: red; color:#ffffff }
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover { background-color: #E80000; border-color: #E80000; color:#ffffff }
 
 .delete{
     width: 15px;
@@ -262,4 +262,35 @@ ul#filters {
 
 .edit{
     width: 20px;height: 20px;
+}
+
+.buttonDelete{
+    background: none;
+}
+
+.logout{
+    background-color:#E80000;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.comment{
+    width: 90px;
+    height: 90px;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.input {
+    height:100px;
+
 }
