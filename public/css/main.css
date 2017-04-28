@@ -1,7 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
+a, p, h1, h2, h3, h4, button {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 a {
     text-decoration: none;
+}
+
+li {
+    font-size: 1.5em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
 }
 
 body
@@ -92,7 +104,7 @@ body
     font-variant: normal;
     font-style: normal;
     font-weight: normal;
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 
     /* It seems vertical-align: baseline does not work correctly with display: inline-flex. */
     vertical-align: top;
@@ -117,7 +129,7 @@ body
     line-height: 1.0;
 }
 .date-as-calendar .month {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     background: #B11;
     background : linear-gradient(to bottom right, #D66 0%, #A00 100%);
@@ -232,20 +244,9 @@ body
     float: left;
     width: 50%;
 }
-/*.rightcontainer img{*/
-/*float:left;*/
-/*width:550px;*/
-
-/*}*/
-
 .rightcontainer img{
     width: 100%;
     float:left;
-
-
-
-
-
 }
 .item{
     position: relative;
@@ -562,6 +563,19 @@ h2{
     border-radius: 5px;
     border-width: 0.15em;
     margin-left: 1em;
+}
+
+#buttonLeden {
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: white;
+    background: red;
+    border-color: darkred;
+    border-radius: 5px;
+    border-width: 0.15em;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
 }
 
 #stuver #jaar {

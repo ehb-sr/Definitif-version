@@ -26,7 +26,7 @@
     <div class="flex">
         <div class="flex lidContainer" id="assLidContainer">
 
-            @foreach($leden->bast as $lid)
+            @foreach($leden->raden->bast as $lid)
                 <div class="flex lidBox">
                     <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                         <div>
@@ -36,7 +36,7 @@
                     </div>
             @endforeach
 
-            @foreach($leden->uab as $lid)
+            @foreach($leden->raden->uab as $lid)
                     <div class="flex lidBox" id="uab">
                         <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                         <div>

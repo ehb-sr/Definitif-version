@@ -1,4 +1,5 @@
-<form id="contact" method="post" action="contact">
+<form id="contact" method="post" action="/contact">
+    {{ csrf_field() }}
     <label>Voornaam</label><br>
     <input type="text" name="firstName">
     <br>

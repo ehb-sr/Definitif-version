@@ -19,11 +19,11 @@
     </div>
     <div class="flex">
         <div>
-            <button>Leden</button>
+            <button id="buttonLeden">Leden</button>
         </div>
         <div class="flex-kol" id="stuvoBox">
         <div class="flex" id="hoLeden">
-            @foreach($leden->stuvo as $lid)
+            @foreach($leden->raden->stuvo as $lid)
                     <div class="flex lidBox">
                         <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                         <div>
@@ -34,7 +34,7 @@
             @endforeach
         </div>
         <div class="flex" id="hoLeden2">
-            @foreach($leden->stuvo2 as $lid)
+            @foreach($leden->raden->stuvo2 as $lid)
                     <div class="flex lidBox">
                         <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                         <div>
@@ -51,7 +51,7 @@
         begroting goed. Bepaalt ook mee het pedagogisch project van de student
     </p>
     <div class="flex" id="rvtLeden">
-        @foreach($leden->rvt as $lid)
+        @foreach($leden->raden->rvt as $lid)
             <div class="flex lidBox">
                 <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                 <div>

@@ -3,6 +3,6 @@
 <p> Nijverheidskaai 170<br>
     1070 Anderlecht</p>
 <p>02 523 37 37</p>
-<p>erasmushogeschool@ehb.be</p>
+<p>studentenraad@ehb.be</p>
 <br>
 <h3>Social Media</h3>

@@ -11,7 +11,7 @@
         <img src="{{ asset('img/raden/logo/Vlaanderen.gif') }}" id="vvsImg">
     </div>
     <div class="flex lidContainer">
-        @foreach($leden->vvs as $lid)
+        @foreach($leden->raden->vvs as $lid)
             <div class="flex lidBox">
                 <img src="{{ asset('img/raden/unknown.jpeg') }}" class="lidImg">
                 <div>

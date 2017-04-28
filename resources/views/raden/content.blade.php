@@ -9,8 +9,21 @@
 @include('menu.menu')
 <div class="sitewrap">
     <div class="contentwrap">
+        <div id="followWrap">
+            <h2 id="followItem" class="sticky">{{ $leden->year->today }}</h2>
+        </div>
         <h1>Raden</h1>
         <p></p>
+        <div>
+            <form method="get" action="/getRaden" id="stuver">
+                <select name="jaar" id="jaar">
+                    @foreach($leden->year->others as $year)
+                        <option value="{{ $year->jaar }}">{{ $year->text }}</option>
+                    @endforeach
+                </select>
+                <button type="submit">Tonen</button>
+            </form>
+        </div>
     </div>
     <div class="photowrap">
         <img src="{{ asset('img/raden/raden.jpg') }}" class="bgimages" alt=""/>

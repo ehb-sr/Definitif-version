@@ -5,4 +5,4 @@
     <br>
     {{$citaat->right->statuut}}
 </div>
-<img src="{{ asset('img/unknown.jpeg') }}" alt="" class="PersonImgRight">
+<img src="{{ asset('img/raden/unknown.jpeg') }}" alt="" class="PersonImgRight">

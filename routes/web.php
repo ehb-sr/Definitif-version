@@ -48,7 +48,7 @@ Route::get('contact', function() {
 
 Route::post('addComment', 'pages\DossierPage@AddComment');
 
-Route:: post('contact', 'pages\ContactPage@sendForm');
+Route::post('contact', 'pages\ContactPage@sendForm');
 
 // refactor to controller
 Route::get('language/{locale}', function ($locale) {
@@ -62,3 +62,5 @@ Route::get('download/{file}', 'pages\DossierPage@getDownload');
 Route::get('getDossier/{year}', 'pages\DossierPage@getDossier');
 
 Route::get('getStuvers', 'pages\StuverPage@getStuvers');
+
+Route::get('getRaden', 'pages\RadenPage@getRaden');
