@@ -14,17 +14,7 @@
         </div>
         <h1>Studentenvertegenwoordigers</h1>
         <p>Elk departement heeft 4 studentenvertegenwoordigers. Kijkt wie op u departement u stem zal vertegenwoordigen! Je kan u studentenvertegenwoordiger ook rechtstreeks contacteren.</p>
-        <div>
-            <form>
-                <select name="jaar">
-                    @foreach($departementen->year->others as $year)
-                        <option value="{{ $year->jaar }}">{{ $year->text }}</option>
-                    @endforeach
-                </select>
-                <button type="submit">Tonen</button>
-            </form>
-
-        </div>
+        @include('menu.year)
     </div>
 
     <div class="photowrap">

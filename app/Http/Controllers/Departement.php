@@ -20,5 +20,9 @@ class Departement
     function __construct($departement)
     {
         $this->departement = $departement;
+        $this->leftAbove = new Stuver("");
+        $this->rightAbove = new Stuver("");
+        $this->underLeft = new Stuver("");
+        $this->underRight = new Stuver("");
     }
 }

@@ -14,9 +14,9 @@ use Illuminate\Routing\Controller;
 
 class StuverController extends Controller
 {
-    public static function getStuvers() {
+    public static function getStuvers($year) {
 
-        $stuvers = Stuvers::where('Jaar', 1617)->get();
+        $stuvers = Stuvers::where('Jaar', $year)->get();
 
         return $stuvers;
     }
