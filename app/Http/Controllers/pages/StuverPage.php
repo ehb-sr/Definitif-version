@@ -8,9 +8,13 @@
 
 namespace App\Http\Controllers\pages;
 
+use App\Http\Controllers\DateController;
 use App\Http\Controllers\Stuver;
 use App\Http\Controllers\StuverController;
 use App\Http\Controllers\Departement;
+use App\Http\Controllers\StuversContent;
+use App\Http\Controllers\Year;
+use App\Http\Controllers\Years;
 
 class StuverPage
 {
@@ -153,7 +157,28 @@ class StuverPage
 
         array_push($departement, $depDT, $depEDU, $depGL, $depKCB, $depMMM, $depRITCS);
 
-        //dd($departement);
-        return view('stuvers/content')->with('departementen', $departement);
+        $startdate = null;
+        if(date('m') < 9)
+        {
+            $startdate = date('y')-1..date('y');
+        }
+        else
+            $startdate =  date('y').date('y')+1;
+
+        $now = DateController::getYearById($startdate);
+        $years = DateController::getYear();
+        $datas = [];
+        foreach($years as $year)
+        {
+            $data = new Years($year);
+            array_push($datas, $data);
+        }
+
+        $time = new Year($now, $datas);
+
+        $data = new StuversContent($departement, $time);
+
+        //dd($data);
+        return view('stuvers/content')->with('departementen', $data);
     }
 }

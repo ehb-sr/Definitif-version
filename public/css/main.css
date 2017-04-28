@@ -412,6 +412,31 @@ h2{
     margin-top: 20px;
 }
 
+#followWrap {
+    height: 8.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: -10.65em;
+    margin-bottom: 3em;
+}
+#followItem {
+    height: 50px;
+    background: #e6e6e6;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-radius: 0 0 0.5em 0.5em;
+    margin-bottom: 0;
+    width: 9em;
+    align-self: flex-end;
+    font-size: 2.5em;
+    border-color: #cccccc;
+}
+.sticky {
+    position: fixed;
+    top: 1.4em;
+}
+
 /* ========================
         RADEN PAGE
    ======================== */

@@ -9,8 +9,22 @@
 @include('menu.menu')
 <div class="sitewrap">
     <div class="contentwrap" id="contentAbout">
+        <div id="followWrap">
+            <h2 id="followItem" class="sticky">{{ $departementen->year->today }}</h2>
+        </div>
         <h1>Studentenvertegenwoordigers</h1>
         <p>Elk departement heeft 4 studentenvertegenwoordigers. Kijkt wie op u departement u stem zal vertegenwoordigen! Je kan u studentenvertegenwoordiger ook rechtstreeks contacteren.</p>
+        <div>
+            <form>
+                <select name="jaar">
+                    @foreach($departementen->year->others as $year)
+                        <option value="{{ $year->jaar }}">{{ $year->text }}</option>
+                    @endforeach
+                </select>
+                <button type="submit">Tonen</button>
+            </form>
+
+        </div>
     </div>
 
     <div class="photowrap">
@@ -21,7 +35,7 @@
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/kaai.jpg') }}" width="250" height="250"/>
         </div>
-        @foreach($departementen as $departement)
+        @foreach($departementen->departementen as $departement)
             @if($departement->departement == 'DT')
                 @include('stuvers.departement')
             @endif
@@ -35,7 +49,7 @@
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/bloemenhof.jpg') }}" width="250" height="250"/>
         </div>
-        @foreach($departementen as $departement)
+        @foreach($departementen->departementen as $departement)
             @if($departement->departement == 'MMM')
                 @include('stuvers.departement')
             @endif
@@ -49,7 +63,7 @@
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/Jette.jpg') }}" width="250" height="250"/>
         </div>
-        @foreach($departementen as $departement)
+        @foreach($departementen->departementen as $departement)
             @if($departement->departement == 'GL')
                 @include('stuvers.departement')
             @endif
@@ -63,7 +77,7 @@
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/Jette.jpg') }}" width="250" height="250"/>
         </div>
-        @foreach($departementen as $departement)
+        @foreach($departementen->departementen as $departement)
             @if($departement->departement == 'EDU')
                 @include('stuvers.departement')
             @endif
@@ -77,7 +91,7 @@
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/kcb.jpg') }}" width="250" height="250"/>
         </div>
-        @foreach($departementen as $departement)
+        @foreach($departementen->departementen as $departement)
             @if($departement->departement == 'KCB')
                 @include('stuvers.departement')
             @endif
@@ -91,7 +105,7 @@
         <div class="DesignEnItcontent">
             <img class="roundrect" src="{{ asset('img/campussen/ritcs.jpg') }}" width="250" height="250"/>
         </div>
-        @foreach($departementen as $departement)
+        @foreach($departementen->departementen as $departement)
             @if($departement->departement == 'RITCS')
                 @include('stuvers.departement')
             @endif
@@ -99,5 +113,6 @@
     </div>
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
+@include('dossier.script')
 </body>
 </html>

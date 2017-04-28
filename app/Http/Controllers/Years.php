@@ -16,7 +16,7 @@ class Years
 
     function __construct($data)
     {
-        $this->jaar = $data->jaar;
+        $this->jaar = $data->year;
         $this->text = $data->text;
     }
 }

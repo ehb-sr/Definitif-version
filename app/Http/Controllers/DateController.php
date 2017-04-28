@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Date;
+use App\Year;
 use App\Http\Controllers\Controller;
 
 class DateController extends Controller
@@ -31,5 +32,17 @@ class DateController extends Controller
         ])->orderBy('date', 'asc')->get();
 
         return $agendas;
+    }
+
+    public static function getYearById($year)
+    {
+        $year = Year::where('year', $year)->get();
+        return $year[0]->text;
+    }
+    public static function getYear()
+    {
+        $years = Year::all();
+
+        return $years;
     }
 }

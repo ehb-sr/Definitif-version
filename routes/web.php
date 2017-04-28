@@ -58,3 +58,5 @@ Route::get('language/{locale}', function ($locale) {
 });
 
 Route::get('download/{file}', 'pages\DossierPage@getDownload');
+
+Route::get('getDossier/{year}', 'pages\DossierPage@getDossier');

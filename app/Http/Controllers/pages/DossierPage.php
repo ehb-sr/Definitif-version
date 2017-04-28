@@ -10,6 +10,7 @@ namespace App\Http\Controllers\pages;
 
 use App\Http\Controllers\Comment;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\DateController;
 use App\Http\Controllers\Dossier;
 use App\Http\Controllers\DossierController;
 use App\Http\Controllers\Dossiers;
@@ -46,8 +47,8 @@ class DossierPage extends Controller
             array_push($arr, $object);
         }
 
-        $now = DossierController::getYearById($startdate);
-        $years = DossierController::getYear();
+        $now = DateController::getYearById($startdate);
+        $years = DateController::getYear();
         $datas = [];
         foreach($years as $year)
         {
@@ -59,7 +60,6 @@ class DossierPage extends Controller
         $array = [];
         $dos = new Dossiers($arr);
         array_push($array, $dos, $time);
-        //dd($array);
 
         return view('dossier/content')->with('dossiers', $array);
     }
@@ -74,5 +74,41 @@ class DossierPage extends Controller
     public function getDownload($name)
     {
         return Response()->download(storage_path('app\public\\'.$name));
+    }
+
+    public function getDossier($year)
+    {
+        $dossiers = DossierController::getDossiers($year);
+        $arr = [];
+
+        foreach($dossiers as $dossier)
+        {
+            $id = $dossier->id;
+            $object = new Dossier($dossier);
+            $arrComments = [];
+            $comments = DossierController::getComments($id);
+            foreach($comments as $comment)
+            {
+                array_push($arrComments, new Comment($comment->time, $comment->text));
+            }
+            $object->comments = $arrComments;
+            array_push($arr, $object);
+        }
+
+        $now = DateController::getYearById($year);
+        $years = DateController::getYear();
+        $datas = [];
+        foreach($years as $year)
+        {
+            $data = new Years($year);
+            array_push($datas, $data);
+        }
+
+        $time = new Year($now, $datas);
+        $array = [];
+        $dos = new Dossiers($arr);
+        array_push($array, $dos, $time);
+
+        return view('dossier/content')->with('dossiers', $array);
     }
 }

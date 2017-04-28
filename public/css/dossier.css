@@ -177,3 +177,7 @@ button[type=submit]:focus {
     font-weight: bold;
     margin-bottom: -1em;
 }
+
+#contentDossiers {
+    min-height: 30em;
+}

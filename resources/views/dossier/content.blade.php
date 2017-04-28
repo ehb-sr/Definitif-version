@@ -16,7 +16,7 @@
     <div class="photowrap">
         <img src="{{ asset('img/dossier/dossiers.jpg') }}" class="bgimages" alt=""/>
     </div>
-    <div class="contentwrap">
+    <div class="contentwrap" id="contentDossiers">
         <div id="followWrap">
             <h2 id="followItem">{{ $dossiers[1]->today }}</h2>
         </div>
