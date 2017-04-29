@@ -28,5 +28,5 @@ return [
     // CONTACT
     'contact_titel' => 'Contacteer ons!',
     'mail' => 'Mail',
-    'formulier' => 'Inschrijvings formulier'
+    'formulier' => 'Online formulier'
 ];

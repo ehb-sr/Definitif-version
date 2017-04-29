@@ -3,26 +3,26 @@
 
 return [
     // SLIDER
-    'citaat_1' => '',
-    'citaat_2' => '',
-    'citaat_3' => '',
-    'citaat_4' => '',
+    'citaat_1' => 'Student council Erasmus academy of Brussels',
+    'citaat_2' => 'We strive for improvement and quality',
+    'citaat_3' => 'We are working our ass off',
+    'citaat_4' => 'We are always there to support you',
 
     //Begin text
-    'hoofdtitel' => '',
-    'inleiding_p1' => '',
-    'inleiding_p2' => '',
+    'hoofdtitel' => 'Student council Erasmus academy of Brussels',
+    'inleiding_p1' => 'The members of the student council wishes you a warm welcome on our website! Thanks to our website, you can also give some input. Follow our records and give your opinion. Check our calendar for events and several meetings.',
+    'inleiding_p2' => 'Look for the responsible student on your department and contact him/her. Check the different councils where we reside and who is in charge for each of them in order to orientate yourself. Don’t hesitate to contact us via our contact page. We are always ready to help you when you’re in need!',
 
     // EVENTS
-    'eventTitel' => '',
-    'eventsTekst' => '',
+    'eventTitel' => 'Events',
+    'eventsTekst' => 'Events that we organize, STUVO and many others. Keep yourself posted of everything!',
 
     // AGENDA
-    'agendaTitel' => '',
-    'agendaTekst' => '',
+    'agendaTitel' => 'Agenda', // or Calendar
+    'agendaTekst' => 'Events that we organize, STUVO and many others. Keep yourself posted of everything!',
 
     // CONTACT
-    'contactTitel' => '',
-    'mail' => '',
-    'formulier' => ''
+    'contactTitel' => 'Contact us!',
+    'mail' => 'Mail',
+    'formulier' => 'Contact form'
 ];
