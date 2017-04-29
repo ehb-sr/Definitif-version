@@ -1,0 +1,825 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+a, p, h1, h2, h3, h4, button {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-size: 1.5em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+body
+{
+    margin: 0;
+}
+
+.flex-kol {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLogo img {
+    height: 40px;
+}
+
+.containerMenu {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 3.5em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.containerMenu {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.containerMenu > a {
+    margin-right: auto;
+    margin-left: 2%;
+    padding: 0.5em;
+}
+
+.containerMenu > div {
+    align-self: center;
+}
+
+.item {
+    font-size: 1.2em;
+    padding: 0.7em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 1s ease;
+    border-bottom: 2px solid transparent;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.item:hover {
+    color: lightcoral;
+    border-bottom: 2px solid;
+}
+
+.current {
+    color: red;
+    border-bottom: 2px solid;
+}
+#languages {
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    width: 10em;
+    padding-right: 7px;
+}
+
+#languages a {
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 5px;
+}
+
+#languages img {
+    height: 1.4em;
+}
+
+#menuLinks {
+    display: flex;
+}
+/* DATE */
+/*@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Oswald);*/
+
+/****************************************/
+/* Styling rules, such as font and colors */
+.date-as-calendar {
+    font-variant: normal;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+
+    /* It seems vertical-align: baseline does not work correctly with display: inline-flex. */
+    vertical-align: top;
+
+    /* margin: 1ex; */
+
+    color: black;
+    background: white;
+    background : linear-gradient(to bottom right, #FFF 0%, #EEE 100%);
+
+    border: 1px solid #888;
+    border-radius: 3px;
+    overflow: hidden;
+
+    box-shadow: 2px 2px 2px -2px black;
+}
+.date-as-calendar .weekday,
+.date-as-calendar .day,
+.date-as-calendar .month,
+.date-as-calendar .year {
+    text-align: center;
+    line-height: 1.0;
+}
+.date-as-calendar .month {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    background: #B11;
+    background : linear-gradient(to bottom right, #D66 0%, #A00 100%);
+    color: white;
+}
+
+
+/* Layout rules using display: inline-flex and relative dimensions using em. */
+.inline-flex.date-as-calendar {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    width: 4em;
+    height: 4em;
+}
+.inline-flex.date-as-calendar .weekday,
+.inline-flex.date-as-calendar .day,
+.inline-flex.date-as-calendar .month,
+.inline-flex.date-as-calendar .year {
+    display: block;
+    flex: 1 1 auto;
+}
+.inline-flex.date-as-calendar .month {
+    order: 1;
+    font-size: 0.75em;
+    padding: 0.1em 0;
+}
+.inline-flex.date-as-calendar .weekday {
+    order: 2;
+    font-size: 0.7em;
+}
+.inline-flex.date-as-calendar .day {
+    order: 3;
+    font-size: 1.5em;
+}
+.inline-flex.date-as-calendar .year {
+    order: 4;
+    font-size: 0.87750em;
+}
+
+/****************************************/
+/* Multiple sizes. */
+.date-as-calendar.size0_5x {
+    font-size: 8px;
+}
+.date-as-calendar.size0_75x {
+    font-size: 12px;
+}
+.date-as-calendar.size1x {
+    font-size: 16px;
+}
+.date-as-calendar.size1_25x {
+    font-size: 20px;
+}
+.date-as-calendar.size1_5x {
+    font-size: 24px;
+}
+.date-as-calendar.size1_75x {
+    font-size: 28px;
+}
+.date-as-calendar.size2x {
+    font-size: 32px;
+}
+.date-as-calendar.size3x {
+    font-size: 48px;
+}
+
+/* ============================
+        ABOUT PAGE
+   ============================*/
+
+.aboutDiv{
+    background-color: lightgray;
+    border-bottom: 5px darkgrey solid;
+    margin-top: -15px;
+}
+
+.aboutcontent{
+    font-size: 12px;
+    color:black;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding:15px;
+}
+
+
+.citaatcontainer{
+    width:100%;
+    display: inline-block;
+    margin-bottom: 5em;
+}
+
+.leftcontainer{
+    float:left;
+    width:50%;
+
+
+}
+.textballon{
+    width:550px;
+    height:150px;
+    margin:10px;
+}
+.leftcontainer img{
+    float:right;
+}
+
+.rightcontainer {
+    float: left;
+    width: 50%;
+}
+.rightcontainer img{
+    width: 100%;
+    float:left;
+}
+.item{
+    position: relative;
+}
+
+.rightitem{
+    float: left;
+    position: relative;
+}
+
+.citaatLeft {
+    position: absolute;
+    margin-top:13px;
+}
+
+.citaatRight {
+    position: absolute;
+    margin-left:45px;
+    margin-top:13px;
+}
+
+/* ========================
+        STUVERS PAGE
+   ======================== */
+
+h1{
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+}
+h2{
+    padding-top: 15px;
+    color: #ff0000;
+    text-align: center;
+
+}
+
+.roundrect {
+    border-radius:50%;
+
+}
+
+.DesignEnItcontent{
+    margin-top: 120px;
+    position: absolute;
+    left: 41%;
+}
+.StuverDiv{
+    background-color: lightgray;
+    border-bottom-width:5px;
+    border-bottom-color: darkgrey;
+    border-bottom-style: solid;
+}
+
+.container{
+    width:100%;
+    display: inline-block;
+}
+.container2{
+    width:100%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.leftcontainer {
+    float:left ;
+    width:50%;
+}
+
+.leftcontainer a, .rightcontainer a {
+    color: #3e3e3e;
+}
+
+.rightcontainer {
+    float:right ;
+    width: 50%;
+}
+
+.leftcontainer img{
+    width:100%;
+    float: left;
+}
+
+
+.contentTitleLeftStuvers{
+    margin-left:50px;
+    text-align: left;
+    margin-top: 120px;
+    position: absolute;
+}
+
+
+.contentTitleRightStuvers{
+    margin-left:145px;
+    text-align: right;
+    position: absolute;
+    margin-top:120px;
+}
+
+.contentTitleLeft2Stuvers{
+    margin-left:45px;
+    text-align: left;
+    margin-top: -40px;
+    position: absolute;
+}
+
+
+.contentTitleRight2Stuvers{
+    margin-left:170px;
+    text-align: right;
+    position: absolute;
+    margin-top:-40px;
+}
+
+
+.citaatLeft{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 230px;
+
+}
+.citaatRight{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 45px;
+
+}
+
+.GebouwImage img{
+    position: absolute;
+    margin-top: -390px;
+    border-radius: 50%;
+    margin-left: 41%;
+}
+
+.citaatLeft2{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 230px;
+
+}
+
+
+.citaatRight2{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 45px;
+
+}
+
+.text{
+    position: absolute;
+    margin-left: 15px;
+    width: 270px;
+    height: 90px;
+    margin-top: 10px;
+}
+.text2{
+    position: absolute;
+    margin-left: 15px;
+    width: 266px;
+    height: 94px;
+    margin-top: 20px;
+}
+
+#followWrap {
+    height: 8.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: -10.65em;
+    margin-bottom: 3em;
+}
+#followItem {
+    height: 50px;
+    background: #e6e6e6;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-radius: 0 0 0.5em 0.5em;
+    margin-bottom: 0;
+    width: 9em;
+    align-self: flex-end;
+    font-size: 2.5em;
+    border-color: #cccccc;
+}
+.sticky {
+    position: fixed;
+    top: 1.4em;
+}
+
+/* ========================
+        RADEN PAGE
+   ======================== */
+
+.large {
+    padding: 100px 10% !important;
+}
+
+.lidBox img {
+    width: 38%;
+    height: 97%;
+    border-radius: 70px;
+}
+
+.lidBox div {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.lidBox h3 {
+    margin-bottom: 3%;
+}
+
+.lidBox p {
+    margin-top: 3%;
+    margin-bottom: 0;
+    font-size: inherit !important;
+}
+
+.lidContainer {
+    margin-top: 6%;
+    margin-left: 14%;
+    justify-content: center;
+}
+
+#assLidContainer {
+    margin-top: 6%;
+    margin-left: 0;
+}
+
+#assLidContainer div {
+    width: 30%;
+    height: 7em;
+}
+
+#assLidContainer h3 {
+    margin-top: 50%;
+}
+
+#uab {
+    margin-left: 14em;
+}
+
+#uab h3 {
+    margin-top: 82%;
+}
+
+#stuvoBox {
+    width: 49%;
+    margin-left: auto;
+}
+
+#vvs {
+    padding: 100px 5%;
+}
+
+#assContent h3, #ho h3, #rvt, .dr h3 {
+    font-size: 2em;
+    margin-top: 0;
+    color: red;
+    font-weight: bold;
+}
+
+#rvt {
+    margin-top: 6%;
+}
+
+.dr div {
+    width: 50%;
+}
+
+#rvtLeden {
+    justify-content: center;
+    margin-left: 10%;
+}
+
+#assImg{
+    height: 45%;
+    width: 35%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+#hoImg {
+    height: 30%;
+    width: 21%;
+    margin-left: 7%;
+    margin-right: 3%;
+}
+
+#hoLeden .lidBox, #hoLeden2 .lidBox {
+    width: 14em;
+    height: 6em;
+}
+
+#verk a {
+    padding: 1em 2em;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    border-bottom-color: darkred;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#stuver button {
+    padding: 0.5em;
+    color: white;
+    background: red;
+    border-color: darkred;
+    border-radius: 5px;
+    border-width: 0.15em;
+    margin-left: 1em;
+}
+
+#buttonLeden {
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: white;
+    background: red;
+    border-color: darkred;
+    border-radius: 5px;
+    border-width: 0.15em;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#stuver #jaar {
+    padding: 0.5em;
+    width: 10em;
+}
+
+#stuver {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ========================
+        VERKIEZING PAGE
+   ======================== */
+
+#imgCouple {
+    width: 28%;
+}
+
+.half {
+    width: 50%;
+}
+
+.bordersTB {
+    border-bottom: 3px ridge;
+    border-top: 3px ridge;
+}
+
+.bordersR {
+    border-right: 3px ridge;
+}
+
+.quatro {
+    padding: 0 2%;
+    width: 25%;
+}
+
+.triple {
+    padding: 0 2%;
+    width: 33%;
+}
+
+#verk .contentwrap {
+    padding: 100px 12%;
+}
+
+#verk h1 {
+    margin: auto;
+}
+
+/* ========================
+        CONTACT PAGE
+   ======================== */
+
+
+.contact{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.leftSide h1{
+    text-align: center;
+    color: #ff0000;
+    font-size: 45px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.leftSide{
+    width:50%;
+    background-color: white;
+    float: left;
+    height: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.rightSide{
+    width:50%;
+    background-color: #adadad;
+    float: left;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 48px;
+    text-align: center;
+
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:red;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight:bold;
+}
+input, textarea{
+    width: 300px;margin-bottom: 15px;
+}
+
+select{
+    width: 310px;
+    margin-bottom: 15px;
+}
+label{
+    float: left;
+    margin-left: 45px;
+}
+
+.map{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.contact{
+    width: 80%;
+    position: relative;
+}
+
+#gmap{
+    height: 100%;
+    left: 0;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1; } /* One increment smaller than the z-index of container */
+
+#container{
+    background: white;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    width: 800px;
+    height: auto;
+    z-index: 2; } /* One increment larger than the Google Maps z-index of iframe */
+
+.cardContact {
+    position: relative;
+}
+
+.cardContact .top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.cardContact .contentImg {
+    margin-left: 20px;
+    width: 60%;
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 100px
+}
+.cardContact:hover .top {
+    display: inline;
+}
+
+.contentImg{
+    width: 5%;
+}
+
+#container form{
+    background-color:  #adadad;
+}
+
+
+.citaatImg{
+    width: 600px;
+    height: auto;
+}
+.left p{
+    position: absolute;
+    margin-top: 20px;
+    width: 580px;
+    margin-left: 75px;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+.PersonImgLeft{
+    float: left;
+    margin-left:515px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.contentTitleLeft{
+    margin-left:290px;
+    text-align: right;
+    margin-top: 15px;
+    position: absolute;
+    width: 15em;
+}
+
+.right {
+    width: 50%;
+    float: left;
+    position: absolute;
+
+    margin-left: 50%;
+}
+
+.right p {
+    margin-top: 5px;
+    width: 580px;
+    position: absolute;
+    margin-left: 89px;
+}
+.PersonImgRight{
+    float: left;
+    margin-left: 130px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.contentTitleRight{
+    margin-left:210px;
+    text-align: left;
+    margin-top: 15px;
+    position: absolute;
+}
+
+
+
+

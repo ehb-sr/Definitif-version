@@ -1,0 +1,183 @@
+.box {
+    border-bottom: 2px solid;
+    width: 82%;
+}
+
+.topic-box {
+    width: 75%;
+    padding-right: 15%;
+}
+
+.title-topic {
+    text-align: left;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 2em;
+    margin-left: 2%
+}
+
+.topic {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-left: 2%;
+}
+
+.title-einde {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.timestamp-einde {
+    margin-top: 0;
+    font-size: 1.2em;
+    width: 6em;
+}
+
+.comment-content {
+    width: 82%
+}
+
+.comment-box {
+    border-bottom: 2px solid;
+}
+
+.timestamp-message {
+    width: 5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em !important;
+    color: #575753 !important;
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+.comment-user {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-left: 2%;
+}
+
+textarea {
+    width: 95% !important;
+    border: 0;
+    border-bottom: 1px solid;
+    padding: 9px;
+}
+
+.s-more {
+    margin-right: 16em;
+    padding-top: 0;
+    margin-top: 10px;
+    color: dodgerblue !important;
+    font-size: 16px !important;
+}
+
+#followWrap {
+    height: 8.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: -10.65em;
+    margin-bottom: 3em;
+}
+#followItem {
+    height: 50px;
+    background: #e6e6e6;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-radius: 0 0 0.5em 0.5em;
+    margin-bottom: 0;
+    width: 9em;
+    align-self: flex-end;
+    font-size: 2.5em;
+    border-color: #cccccc;
+}
+.sticky {
+    position: fixed;
+    top: 1.4em;
+}
+
+#followMenu {
+    width: 20em;
+    float: right;
+    margin-right: -15em;
+    border: 2px solid;
+    border-radius: 0.5em;
+    align-self: flex-end;
+    margin-top: 27em;
+    position: absolute;
+    margin-left: 15em;
+    background-color: white;
+}
+
+#followMenu h3 {
+    font-size: 2em;
+}
+
+#followMenu h4 {
+    color: #575753;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+#followMenuWrap {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0em;
+    height: 15em;
+    margin-top: -11em;
+}
+
+.stickyMenu {
+    position: fixed !important;
+    right: 19.5em;
+    top: -20.5em;
+}
+
+h1 {
+    margin: 0.5em 1em;
+}
+
+.add-btn {
+    height: 40px;
+    margin-bottom: 1.4em;
+    margin-top: auto;
+}
+
+.dossierBox {
+    padding: 2em;
+    border-bottom: 2px solid black;
+    margin-bottom: 3em;
+}
+
+form {
+    display: inherit;
+    width: 100%;
+}
+
+button[type=submit] {
+    border: none;
+    background:none;
+}
+
+button[type=submit]:focus {
+    border:none;
+}
+
+.pdf {
+    padding: 0.5em;
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: darkred;
+    color: white;
+    background: red;
+    font-weight: bold;
+    margin-bottom: -1em;
+}
+
+#contentDossiers {
+    min-height: 30em;
+}

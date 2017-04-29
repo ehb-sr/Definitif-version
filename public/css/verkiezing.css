@@ -1,0 +1,34 @@
+#imgCouple {
+    width: 28%;
+}
+
+.half {
+    width: 50%;
+}
+
+.bordersTB {
+    border-bottom: 3px ridge;
+    border-top: 3px ridge;
+}
+
+.bordersR {
+    border-right: 3px ridge;
+}
+
+.quatro {
+    padding: 0 2%;
+    width: 25%;
+}
+
+.triple {
+    padding: 0 2%;
+    width: 33%;
+}
+
+#verk .contentwrap {
+    padding: 100px 12%;
+}
+
+#verk h1 {
+    margin: auto;
+}

@@ -11,6 +11,50 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/', 'pages\HomePage@getContent');
+//Route::get('/', function () {
+//    return view('base');
+//});
+
+Route::get('about', 'pages\AboutPage@getContent');
+//Route::get('about', function() {
+//   return view('about/content');
+//});
+
+Route::get('stuvers', 'pages\StuverPage@getContent');
+//Route::get('stuvers', function() {
+//    return view('stuvers/content');
+//});
+
+Route::get('raden', 'pages\RadenPage@getContent');
+//Route::get('raden', function () {
+//    return view('raden/content');
+//});
+
+Route::get('dossier', 'pages\DossierPage@getContent');
+//Route::get('dossier', function () {
+//    return view('dossier/content');
+//});
+
+Route::get('verkiezing', function() {
+   return view('verkiezing/content');
 });
+
+Route::get('contact', function() {
+    return view('contact/content');
+});
+
+Route::post('addComment', 'pages\DossierPage@AddComment');
+
+Route::post('contact', 'pages\ContactPage@sendForm');
+
+// refactor to controller
+Route::get('language/{locale}', 'Languages@setLanguage');
+
+Route::get('download/{file}', 'pages\DossierPage@getDownload');
+
+Route::get('getDossier/{year}', 'pages\DossierPage@getDossier');
+
+Route::get('getStuvers', 'pages\StuverPage@getStuvers');
+
+Route::get('getRaden', 'pages\RadenPage@getRaden');

@@ -1,0 +1,125 @@
+html,body{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #575753;
+    height: 100%;
+    width: 100%;
+}
+
+.contentwrap{
+    position: relative;
+    padding: 100px 18%;
+    z-index: 5;
+    background: white;
+    text-align: center;
+}
+#contentAbout {
+    padding: 100px 10%;
+}
+
+#citaatContent {
+    padding: 100px 10%;
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    padding:0;
+}
+
+.contentwrap h1 {
+    font-size: 4em;
+    margin-top: 0;
+    color: red;
+    font-weight: bold;
+}
+
+.contentwrap h2 {
+    font-size: 3em;
+    margin-top: 0;
+    color: red;
+    font-weight: bold;
+}
+
+.contentwrap p {
+    font-size: 1.5em;
+    color: black;
+}
+
+.photowrap{
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.photowrap img{
+    width: 40%;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+    margin-right: 8em;
+}
+
+.date div {
+    margin: 5px;
+}
+
+.date p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+#agendaContent, #eventContent, #citaatContent {
+    padding: 5% 2%;
+}
+
+#agendaContent > .infoContent, #eventContent >.infoContent{
+    width: 50em;
+    margin-right: 8em;
+}
+#citaatContent > .citaatcontainer {
+    margin-right: 8em;
+}
+
+#vvsContainer > #vvsInfo, #vvsContainer > #vvsImg {
+    width: 50em;
+}
+
+.contentImg {
+    width: 25%;
+}
+
+.infoContent > h1 {
+    width: 12.5em;
+}
+
+.date > .flex {
+    border-bottom: 3px outset;
+}
+
+#contactContent > a > div > .contentImg {
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 100px;
+    width: 35%;
+}
+
+.card {
+    position: relative;
+}
+
+.card .top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.card:hover .top {
+    display: inline;
+}

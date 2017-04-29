@@ -1,3 +1,6 @@
+/**
+ * Created by sophie on 01.03.17.
+ */
 $(document).ready(function () {
 
     var currentItem;
