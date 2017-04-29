@@ -29,6 +29,9 @@ body
 .menuLogo img {
     height: 40px;
 }
+.menuLogoAdmin img {
+    height: 60px;
+}
 
 .containerMenu {
     background-color: rgba(0, 0, 0, 0.7);
@@ -691,6 +694,10 @@ select{
     margin-bottom: 15px;
 }
 label{
+    float: left;
+
+}
+.label{
     float: left;
     margin-left: 45px;
 }
