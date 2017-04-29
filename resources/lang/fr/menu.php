@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: De Maeyer
- * Date: 29-Apr-17
- * Time: 19:11
- */
+
+
+return [
+
+    'wat' => 'Quoi',
+    'stuvers' => 'étudiants',
+    'raden' => 'Conseil',
+    'dossiers' => 'Dossiers',
+    'verkiezing' => 'élection',
+    'contact' => 'Contact'
+];
