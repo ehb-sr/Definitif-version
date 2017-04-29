@@ -70,6 +70,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('adminOverzichtCitaat', 'CitaatAdminController@getAll');
     Route::get('adminEditCitaat', function() {
         return view('Admin/citaatEdit');
+    });
     Route::post('/Citaat/edit', array(
             'as' => 'citaat-edit',
             'uses' => 'CitaatAdminController@edit'
@@ -83,8 +84,9 @@ Route::group(['middleware' => 'auth'], function () {
 
     //stuvers
         return view('Admin/stuversAanmaken');
-    Route::get('adminCreateStuver', function() {
-    });
+
+    Route::get('adminCreateStuver', function() {});
+
     Route::post('adminCreateStuver', array('uses'=>'StuversAdminController@create'));
     Route::delete('deletestuver/{stuver_id}', ['uses' => 'StuversAdminController@delete', 'as' => 'delete-stuver']);
     Route::get('adminOverzichtStuver', 'StuversAdminController@getAll');
@@ -109,10 +111,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('adminEditRaden', function() {
         return view('Admin/radenEdit');
     });
+
     Route::post('/Raden/edit', array(
-        'uses' => 'RadenAdminController@edit'
+        'uses' => 'RadenAdminController@edit',
         'as' => 'raden-edit',
     ));
+
     Route::post('/raden/update', array(
         'uses' => 'RadenAdminController@update'
     ));
@@ -126,7 +130,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('adminEditDossiers', function() {
         return view('Admin/dossiersEdit');
     Route::post('/Dossier/edit', array(
-    });
         'as' => 'dossiers-edit',
         'uses' => 'DossierAdminController@edit'
     ));
@@ -148,8 +151,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('user/profile', function () {
     });
 });
-{
-Route::get('/logout', function()
+
+Route::get('/logout', function() {
     Auth::logout();
     return Redirect::to('/login');
 })->name('logout');
