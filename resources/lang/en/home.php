@@ -14,15 +14,15 @@ return [
     'inleiding_p2' => 'Look for the responsible student on your department and contact him/her. Check the different councils where we reside and who is in charge for each of them in order to orientate yourself. Don’t hesitate to contact us via our contact page. We are always ready to help you when you’re in need!',
 
     // EVENTS
-    'eventTitel' => 'Events',
-    'eventsTekst' => 'Events that we organize, STUVO and many others. Keep yourself posted of everything!',
+    'event_titel' => 'Events',
+    'event_text' => 'Events that we organize, STUVO and many others. Keep yourself posted of everything!',
 
     // AGENDA
-    'agendaTitel' => 'Agenda', // or Calendar
-    'agendaTekst' => 'Events that we organize, STUVO and many others. Keep yourself posted of everything!',
+    'agenda_titel' => 'Agenda', // or Calendar
+    'agenda_text' => 'Events that we organize, STUVO and many others. Keep yourself posted of everything!',
 
     // CONTACT
-    'contactTitel' => 'Contact us!',
+    'contact_titel' => 'Contact us!',
     'mail' => 'Mail',
     'formulier' => 'Contact form'
 ];

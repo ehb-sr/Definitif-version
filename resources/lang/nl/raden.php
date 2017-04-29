@@ -19,7 +19,7 @@ return [
     'an_titel' => 'Niveau van de associatie',
     'an_inleiding' => 'De Erasmushogeschool Brussel en de Vrije Universiteit Brussel zijn partners in de Universitaire
         Associatie Brussel (UAB). De UAB-Studentenraad verbindt de Studentenraad van de EhB met die van de VUB.
-        De raad verdiept zich ook in onderwerpen als verder studenten en heroriënteren',
+        De raad verdiept zich ook in onderwerpen als verder studeren en heroriënteren',
     'an_bast_titel' => 'Bast',
     'an_bast_uitleg' => 'De UAB-Studentenraad of BAST (Brusselse Associatie Studentenraad) bestaat uit studenten van de
                 partnerinstellingen Vrije Universiteit Brussel en Erasmushogeschool Brussel die rechtstreeks

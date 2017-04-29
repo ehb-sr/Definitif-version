@@ -43,7 +43,7 @@ return [
 
     // ONDERSTEUNING
     'ondersteuning_titel' => 'Ondersteuning',
-    'ondersteuning_opt_1' => 'Uigaves die relevant zijn met de Studentenraad worden terugbetaald',
+    'ondersteuning_opt_1' => 'Uitgaves die relevant zijn met de Studentenraad worden terugbetaald',
     'ondersteuning_opt_2' => 'Je krijgt de steun van andere studentenvertegenwoordigers om projecten uit te werken',
     'ondersteuning_opt_3' => 'Je hebt de steun van verschillende beleidsadviseurs en medewerkers binnen de Erasmushogeschool',
 

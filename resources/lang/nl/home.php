@@ -3,7 +3,7 @@
 return [
     // SLIDER
     'citaat_1' => 'Studentenraad Erasmushogeschool Brussel',
-    'citaat_2' => 'wij streven naar verbetering en kwaliteit',
+    'citaat_2' => 'Wij streven naar verbetering en kwaliteit',
     'citaat_3' => 'We werken met hart en ziel',
     'citaat_4' => 'We zijn er altijd om jullie te steunen',
 
@@ -18,7 +18,7 @@ return [
 
     // EVENTS
     'event_titel' => 'Events',
-    'events_tekst' => 'Evenementen die wij organiseren, STUVO en nog meer. Hou u van alles op de hoogte!',
+    'event_text' => 'Evenementen die wij organiseren, STUVO en nog meer. Hou u van alles op de hoogte!',
 
     // AGENDA
     'agenda_titel' => 'Agenda',
