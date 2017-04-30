@@ -15,7 +15,6 @@
     <!--CUSTOM MAIN STYLES-->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/parallax.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>

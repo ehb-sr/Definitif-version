@@ -294,3 +294,12 @@ a:hover{
     height:100px;
 
 }
+
+h1{
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+}
+.menuLogoAdmin img {
+    height: 60px;
+}

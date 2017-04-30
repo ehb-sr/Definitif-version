@@ -148,7 +148,7 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', function ()    {
+    Route::get('/admin', function ()    {
         // Uses Auth Middleware
         return view('Admin/admin');
     });
