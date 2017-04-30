@@ -59,9 +59,13 @@ Route::get('getDossier/{year}', 'pages\DossierPage@getDossier');
 Route::get('getStuvers', 'pages\StuverPage@getStuvers');
 
 Route::get('getRaden', 'pages\RadenPage@getRaden');
+
+
+
 Route::get('adminHome', function() {
     return view('Admin/admin');
 });
+
 Route::group(['middleware' => 'auth'], function () {
     //citaat
     Route::get('adminCreateCitaat', function () {
@@ -72,12 +76,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('adminOverzichtCitaat', 'CitaatAdminController@getAll');
     Route::get('adminEditCitaat', function() {
         return view('Admin/citaatEdit');
-    });
-    Route::post('/Citaat/edit', array(
+        Route::post('/Citaat/edit', array(
             'as' => 'citaat-edit',
             'uses' => 'CitaatAdminController@edit'
         ));
-    Route::post('/citaat/update', array(
+        Route::post('/citaat/update', array(
             'uses' => 'CitaatAdminController@update'
         ));
     });
@@ -85,13 +88,12 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     //stuvers
+    Route::get('adminCreateStuver', function() {
         return view('Admin/stuversAanmaken');
-
-    Route::get('adminCreateStuver', function() {});
-
+    });
     Route::post('adminCreateStuver', array('uses'=>'StuversAdminController@create'));
-    Route::delete('deletestuver/{stuver_id}', ['uses' => 'StuversAdminController@delete', 'as' => 'delete-stuver']);
     Route::get('adminOverzichtStuver', 'StuversAdminController@getAll');
+    Route::delete('deletestuver/{stuver_id}', ['uses' => 'StuversAdminController@delete', 'as' => 'delete-stuver']);
     Route::get('adminEditStuvers', function() {
         return view('Admin/stuversEdit');
     });
@@ -102,8 +104,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/stuvers/update', array(
         'uses' => 'StuversAdminController@update'
     ));
-    //raden
 
+    //raden
     Route::get('adminCreateRaden', function() {
         return view('Admin/radenAanmaken');
     });
@@ -113,12 +115,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('adminEditRaden', function() {
         return view('Admin/radenEdit');
     });
-
     Route::post('/Raden/edit', array(
-        'uses' => 'RadenAdminController@edit',
         'as' => 'raden-edit',
+        'uses' => 'RadenAdminController@edit'
     ));
-
     Route::post('/raden/update', array(
         'uses' => 'RadenAdminController@update'
     ));
@@ -126,11 +126,12 @@ Route::group(['middleware' => 'auth'], function () {
     //dossiers
     Route::get('adminCreateDossier', function() {
         return view('Admin/dossierAanmaken');
-    Route::post('adminCreateDossier', array('uses'=>'DossierAdminController@create'));
     });
+    Route::post('adminCreateDossier', array('uses'=>'DossierAdminController@create'));
     Route::get('adminOverzichtDossier', 'DossierAdminController@getAll');
     Route::get('adminEditDossiers', function() {
         return view('Admin/dossiersEdit');
+    });
     Route::post('/Dossier/edit', array(
         'as' => 'dossiers-edit',
         'uses' => 'DossierAdminController@edit'
@@ -140,21 +141,23 @@ Route::group(['middleware' => 'auth'], function () {
     ));
 
     //comments
-    Route::delete('deletecomment/{comment_id}', ['uses' => 'CommentAdminController@deleteComment', 'as' => 'delete-comment']);
     Route::get('adminOverzichtComment', 'CommentAdminController@getAll');
+    Route::delete('deletecomment/{comment_id}', ['uses' => 'CommentAdminController@deleteComment', 'as' => 'delete-comment']);
 
 
 });
+
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/', function ()    {
         // Uses Auth Middleware
+        return view('Admin/admin');
     });
-        // Uses Auth Middleware
     Route::get('user/profile', function () {
+        // Uses Auth Middleware
     });
 });
-
-Route::get('/logout', function() {
+Route::get('/logout', function()
+{
     Auth::logout();
     return Redirect::to('/login');
 })->name('logout');
