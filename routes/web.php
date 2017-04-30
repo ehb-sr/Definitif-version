@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', 'pages\HomePage@getContent');
 //Route::get('/', function () {
 //    return view('base');
