@@ -6,16 +6,15 @@
 }
 
 body {
-    height: 100%;
-    background-image: url("../img/admin/background2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100%;
+  background-image: url("../img/admin/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    color: #ffffff;
+  color: #ffffff;
   font: 87.5%/1.5em 'Open Sans', sans-serif;
   margin: 0;
 }
-
 input {
   border: none;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -35,8 +34,8 @@ after { clear: both; }
 
   margin: 50px auto;
   width: 320px;
-    margin-top: 15%;
-    text-align: center;
+  margin-top: 15%;
+  text-align: center;
 }
 
 #login form {
@@ -47,7 +46,7 @@ after { clear: both; }
   background: #282e33;
   border-top: 3px solid #434a52;
   border-bottom: 3px solid #434a52;
-    background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.5);
 }
 
 #login form span {
@@ -66,7 +65,7 @@ after { clear: both; }
 #login form input[type="email"] {
   background-color: #3b4148;
   border-radius: 0px 3px 3px 0px;
-    color: #ffffff;
+  color: #ffffff;
   margin-bottom: 1em;
   padding: 0 16px;
   width: 235px;
@@ -95,4 +94,13 @@ after { clear: both; }
 }
 #login form input[type="submit"]:hover {
   background: #d40601;
+}
+#login form input[type="text"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #ffffff;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 235px;
+  height: 50px;
 }

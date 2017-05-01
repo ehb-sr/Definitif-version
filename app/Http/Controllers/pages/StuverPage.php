@@ -16,7 +16,8 @@ use App\Http\Controllers\StuversContent;
 use App\Http\Controllers\Year;
 use App\Http\Controllers\Years;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\View;
 
 class StuverPage
 {
@@ -39,8 +40,6 @@ class StuverPage
         $depEDU = new Departement("EDU");
         $depKCB = new Departement("KCB");
         $depRITCS = new Departement("RITCS");
-
-        //dd($stuvers);
 
         foreach($stuvers as $stuver)
         {
@@ -177,11 +176,13 @@ class StuverPage
         }
 
         $time = new Year($now, $datas);
-
         $data = new StuversContent($departement, $time);
 
-        //dd($data);
-        return view('stuvers/content')->with('departementen', $data);
+        $content = View::make('stuvers/content')->with('departementen', $data);
+        $response = Response::make($content, 200);
+        $response->header('Cache-Control', 'no-cache, must-revalidate, post-check=0, pre-check=0, max-age=5');
+        return $response;
+        //return view('stuvers/content')->with('departementen', $data);
     }
 
     function getStuvers()
@@ -336,7 +337,10 @@ class StuverPage
 
         $data = new StuversContent($departement, $time);
 
-        //dd($data);
-        return view('stuvers/content')->with('departementen', $data);
+        $content = View::make('stuvers/content')->with('departementen', $data);
+        $response = Response::make($content, 200);
+        $response->header('Cache-Control', 'no-cache, must-revalidate, post-check=0, pre-check=0, max-age=5');
+        return $response;
+        //return view('stuvers/content')->with('departementen', $data);
     }
 }

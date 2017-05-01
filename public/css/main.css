@@ -423,7 +423,7 @@ h2{
     margin-bottom: 3em;
 }
 #followItem {
-    height: 50px;
+    height: 49px;
     background: #e6e6e6;
     border-bottom: 2px solid;
     border-left: 2px solid;
@@ -438,6 +438,12 @@ h2{
 .sticky {
     position: fixed;
     top: 1.4em;
+}
+
+#ledenBox {
+    margin-left: 8.4em;
+    margin-right: auto;
+    width: 7em;
 }
 
 /* ========================

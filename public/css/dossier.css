@@ -126,8 +126,8 @@ textarea {
 #followMenuWrap {
     display: flex;
     justify-content: flex-end;
-    padding-top: 0em;
-    height: 15em;
+    padding-top: 0;
+    height: 19em;
     margin-top: -11em;
 }
 
@@ -169,9 +169,8 @@ button[type=submit]:focus {
 
 .pdf {
     padding: 0.5em;
-    border: 2px solid;
+    border: 2px solid darkred;
     border-radius: 8px;
-    border-color: darkred;
     color: white;
     background: red;
     font-weight: bold;

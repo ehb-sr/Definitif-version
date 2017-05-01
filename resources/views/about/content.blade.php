@@ -7,7 +7,7 @@
 </head>
 <body>
 @include('menu.menu')
-<div class="sitewrap">
+<div class="sitewrap" id="loaded">
     <div class="contentwrap" id="contentAbout">
         @include('about.about')
     </div>
@@ -27,7 +27,13 @@
         $.parallax({
             speed: .70
         });
-    })
+    });
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
 </script>
 </body>
 </html>

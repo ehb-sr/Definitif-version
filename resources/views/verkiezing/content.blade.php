@@ -6,6 +6,7 @@
 <body>
 <title>Verkiezing - Studentenraad</title>
 @include('menu.menu')
+<div id="loaded">
 <div class="sitewrap" id="verk">
     <div class="contentwrap">
         <h1>@lang('verkiezing.titel')</h1>
@@ -54,6 +55,15 @@
         @include('verkiezing.inschrijving')
     </div>
 </div>
+</div>
 <script src="{{ asset('js/main.js') }}"></script>
+<script>
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
+</script>
 </body>
 </html>

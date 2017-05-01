@@ -26,11 +26,12 @@ Route::get('about', 'pages\AboutPage@getContent');
 Route::get('stuvers', 'pages\StuverPage@getContent');
 //Route::get('stuvers', function() {
 //    return view('stuvers/content');
+
 //});
 
 Route::get('raden', 'pages\RadenPage@getContent');
-//Route::get('raden', function () {
-//    return view('raden/content');
+//Route::get('raden', function ($data) {
+//    return view('raden/content')-> with('leden', $data);
 //});
 
 Route::get('dossier', 'pages\DossierPage@getContent');

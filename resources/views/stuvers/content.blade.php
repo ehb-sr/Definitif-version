@@ -7,7 +7,7 @@
 </head>
 <body>
 @include('menu.menu')
-<div class="sitewrap">
+<div class="sitewrap" id="loaded">
     <div class="contentwrap" id="contentAbout">
         <div id="followWrap">
             <h2 id="followItem" class="sticky">{{ $departementen->year->today }}</h2>
@@ -113,5 +113,13 @@
 </div>
 <script src="{{ asset('js/main.js') }}"></script>
 @include('dossier.script')
+<script>
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
+</script>
 </body>
 </html>

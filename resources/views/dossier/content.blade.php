@@ -8,7 +8,7 @@
 </head>
 <body>
 @include('menu.menu')
-<div class="sitewrap">
+<div class="sitewrap" id="loaded">
     <div class="contentwrap">
         <h1>@lang('dossiers.titel')</h1>
         <p>@lang('dossiers.inleiding')</p>
@@ -37,6 +37,14 @@
     $(document).ready(function() {
         $.parallax();
     });
+</script>
+<script>
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
 </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
     <div class="flex" id="vvsContainer">
         <div id="vvsInfo">
             <h2>@lang('raden.vl_vvs_titel')</h2>
-            <p>@lang('raden.vl_uitleg')</p>
+            <p>@lang('raden.vl_vvs_uitleg')</p>
         </div>
         <img src="{{ asset('img/raden/logo/Vlaanderen.gif') }}" id="vvsImg">
     </div>

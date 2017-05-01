@@ -120,7 +120,7 @@
                                     {{  Form::open(array('action'=>'StuversAdminController@create', 'method' => 'post' , 'enctype="multipart/form-data"')) }}
                                                                                     <div class="form-group">
                                                                                          <label>Foto</label><br>
-                                                                                         <input type="file" name="Foto" placeholder="Foto" required>
+                                                                                         <input type="file" name="Foto" placeholder="Foto">
                                                                                     </div>
                                                                                     <div class="form-group">
                                                                                         <label>Voornaam</label>

@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="flex">
-        <div>
+        <div id="ledenBox">
             <button id="buttonLeden">@lang('raden.hn_sr_button')</button>
         </div>
         <div class="flex-kol" id="stuvoBox">

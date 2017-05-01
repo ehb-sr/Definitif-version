@@ -121,7 +121,7 @@
                                    {{  Form::open(array('action'=>'RadenAdminController@create', 'method' => 'post', 'enctype="multipart/form-data"')) }}
                                                 <div class="form-group">
                                                     <label>Foto</label><br>
-                                                    <input type="file" name="Foto" placeholder="Foto" required>
+                                                    <input type="file" name="Foto" placeholder="Foto">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Voornaam</label>
@@ -161,7 +161,7 @@
                                                  </div>
                                                  <div class="form-group">
                                                 <label>DR</label>
-                                                <input class="form-control" type="text" name="DR" placeholder="DR" required>
+                                                <input class="form-control" type="number" name="DR" placeholder="DR" required>
                                                  </div>
                                                  <div class="form-group">
                                                  <label>RSchoolOfArts</label>

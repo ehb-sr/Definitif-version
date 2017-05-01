@@ -2,7 +2,7 @@
 <div class="sitewrap">
     @include('home.slider')
 
-    <div class="contentwrap">
+    <div class="contentwrap" id="loaded">
         <h1>@lang('home.hoofdtitel')</h1>
         <p>@lang('home.inleiding_p1')</p>
         <p>@lang('home.inleiding_p2')</p>
@@ -90,5 +90,11 @@
             //  Skin name
             skin      : 'edslider'
         });
-    })
+    });
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
 </script>

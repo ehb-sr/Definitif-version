@@ -18,6 +18,9 @@ use App\Http\Controllers\DateController;
 use App\Http\Controllers\Year;
 use App\Http\Controllers\Years;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\View;
 
 class RadenPage extends Controller
 {
@@ -30,7 +33,6 @@ class RadenPage extends Controller
             $startdate = date('y') . date('y') + 1;
 
         $leden = RadenController::getByYear($startdate);
-
         $uab = [];
         $stuvo = [];
         $stuvo2 = [];
@@ -67,7 +69,14 @@ class RadenPage extends Controller
         $time = new Year($now, $datas);
         $raden = new RadenContent($leden, $time);
 
-        return view('raden/content')->with('leden', $raden);
+        //return Redirect::to('raden')->header('Cache-Control', 'no-store, no-cache')->with('leden', $raden);
+        $content = View::make('raden/content')->with('leden', $raden);
+        $response = Response::make($content, 200);
+        $response->header('Cache-Control', 'no-cache, must-revalidate, post-check=0, pre-check=0, max-age=5');
+        return $response;
+        //return response()
+          //  ->view('raden/content', ['leden', $raden])
+            //->header('Cache-Control', 'no-cache, must-revalidate');
     }
 
     public function getRaden()
@@ -113,6 +122,12 @@ class RadenPage extends Controller
         $time = new Year($now, $datas);
         $raden = new RadenContent($leden, $time);
 
-        return view('raden/content')->with('leden',$raden);
+        $content = View::make('raden/content')->with('leden', $raden);
+        $response = Response::make($content, 200);
+        $response->header('Cache-Control', 'no-cache, must-revalidate, post-check=0, pre-check=0, max-age=5');
+        return $response;
+        //return view('raden/other')->with('leden',$raden);
+
+        //return redirect('raden/other')->with('leden', $raden)->header('Cache-Control', 'no-cache, must-revalidate, post-check=0, pre-check=0, max-age=5');
     }
 }

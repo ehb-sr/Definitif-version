@@ -3,13 +3,13 @@
     <p>@lang('raden.an_inleiding')</p>
     <div class="flex" id="assContent">
         <div>
-            <h3>@lang('raden.bast_titel')</h3>
-            <p>@lang('raden.bast_uitleg')</p>
+            <h3>@lang('raden.an_bast_titel')</h3>
+            <p>@lang('raden.an_bast_uitleg')</p>
         </div>
         <img src="{{ asset('img/raden/logo/Bruxelles.png') }}" id="assImg">
         <div>
-            <h3>@lang('raden.uab_titel')</h3>
-            <p>@lang('raden.uab_titel')</p>
+            <h3>@lang('raden.an_uab_titel')</h3>
+            <p>@lang('raden.an_uab_titel')</p>
         </div>
     </div>
     <div class="flex">
