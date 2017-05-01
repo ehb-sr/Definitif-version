@@ -161,7 +161,7 @@
                                                  </div>
                                                  <div class="form-group">
                                                 <label>DR</label>
-                                                <input class="form-control" type="number" name="DR" placeholder="DR" required>
+                                                <input class="form-control" type="text" name="DR" placeholder="DR" required>
                                                  </div>
                                                  <div class="form-group">
                                                  <label>RSchoolOfArts</label>

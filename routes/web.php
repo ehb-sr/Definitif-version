@@ -77,14 +77,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('adminOverzichtCitaat', 'CitaatAdminController@getAll');
     Route::get('adminEditCitaat', function() {
         return view('Admin/citaatEdit');
-        Route::post('/Citaat/edit', array(
+    });
+    Route::post('/Citaat/edit', array(
             'as' => 'citaat-edit',
             'uses' => 'CitaatAdminController@edit'
         ));
-        Route::post('/citaat/update', array(
+    Route::post('/citaat/update', array(
             'uses' => 'CitaatAdminController@update'
         ));
-    });
     Route::delete('delete/{citaat_id}', ['uses' => 'CitaatAdminController@delete', 'as' => 'delete-citaat']);
 
 
@@ -144,7 +144,6 @@ Route::group(['middleware' => 'auth'], function () {
     //comments
     Route::get('adminOverzichtComment', 'CommentAdminController@getAll');
     Route::delete('deletecomment/{comment_id}', ['uses' => 'CommentAdminController@deleteComment', 'as' => 'delete-comment']);
-
 
 });
 
