@@ -145,6 +145,23 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('adminOverzichtComment', 'CommentAdminController@getAll');
     Route::delete('deletecomment/{comment_id}', ['uses' => 'CommentAdminController@deleteComment', 'as' => 'delete-comment']);
 
+    //agenda events
+    Route::get('adminCreateAgendaEvent', function () {
+        return view('Admin/agendaEventAanmaken');
+    });
+    Route::post('adminCreateAgendaEvent', array('uses'=>'DateController@create'));
+    Route::get('adminOverzichtAgendaEvent', 'DateController@getAll');
+    Route::delete('deletes/{date_id}', ['uses' => 'DateController@deletes', 'as' => 'delete-date']);
+    Route::get('adminEditAgendaEvent', function() {
+        return view('Admin/AgendaEventEdit');
+    });
+    Route::post('/agendaEvent/edit', array(
+        'as' => 'agendaEvent-edit',
+        'uses' => 'DateController@edit'
+    ));
+    Route::post('/agendaEvent/update', array(
+        'uses' => 'DateController@update'
+    ));
 });
 
 Route::group(['middleware' => 'auth'], function () {

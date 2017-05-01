@@ -53,7 +53,6 @@
                             <li>
                                 <a href="/adminOverzichtCitaat" id="adminOverichtCitaat">Citaten overzicht</a>
                             </li>
-                           
                         </ul>
                     </li>
                      <li>
@@ -94,6 +93,17 @@
                          <ul class="nav nav-second-level">
                             <li>
                                 <a href="/adminOverzichtComment" id="adminOverzichtComment">Comment overzicht</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img img src="{{ asset('img/admin/event.png') }}" class="menu">Agenda/Events</a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/adminCreateAgendaEvent" id="adminCreateAgendaEvent">Agenda/Event aanmaken</a>
+                            </li>
+                            <li>
+                                <a href="/adminOverzichtAgendaEvent" id="adminOverzichtAgendaEvent">Agenda/Event overzicht</a>
                             </li>
                         </ul>
                     </li>
@@ -167,10 +177,7 @@
     </div>
     <!-- /. WRAPPER  -->
 
-    <div id="footer-sec">
-        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
-    </div>
-    <!-- /. FOOTER  -->
+
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>

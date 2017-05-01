@@ -33,8 +33,7 @@
 
             <div class="header-right">
 
-                                <a class="logout" href="/logout" id="login" >Logout</a>
-
+                <a class="logout" href="/logout" id="login" >Logout</a>
             </div>
         </nav>
         <!-- /. NAV TOP  -->
@@ -97,6 +96,7 @@
                             </li>
                         </ul>
                     </li>
+
                     <li>
                         <a href="#"><img img src="{{ asset('img/admin/event.png') }}" class="menu">Agenda/Events</a>
                         <ul class="nav nav-second-level">
@@ -117,7 +117,7 @@
                     <div id="page-inner">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="page-head-line">Stuvers Overzicht</h1>
+                                <h1 class="page-head-line">Agenda/Events Overzicht</h1>
                             </div>
                         </div>
                         <!-- /. ROW  -->
@@ -126,7 +126,7 @@
                                          <!--   Basic Table  -->
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                Stuvers
+                                                Agenda/Events
                                             </div>
                                             <div class="panel-body">
                                                 <div class="table-responsive">
@@ -134,51 +134,47 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
-                                                                <th>Foto</th>
-                                                                <th>Voornaam</th>
-                                                                <th>Familienaam</th>
-                                                                <th>jaar</th>
-                                                                <th>campus</th>
-                                                                <th>status</th>
+                                                                <th>Type</th>
+                                                                <th>Titel</th>
+                                                                <th>Ondertitel</th>
+                                                                <th>Datum</th>
                                                                 <th>Delete</th>
                                                                 <th>Update</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                        @foreach($stuvers as $stuver)
+                                                        @foreach($dates as $date)
                                                             <tr>
-                                                            <td>{{$stuver->ID}}</td>
-                                                                @if($stuver->Foto != null)
-                                                                    <td>true</td>
-                                                                @else
-                                                                    <td>false</td>
-                                                                @endif
-                                                                <td>{{$stuver->Voornaam}}</td>
-                                                                <td>{{$stuver->Familienaam}}</td>
-                                                                <td>{{$stuver->Jaar}}</td>
-                                                                <td>{{$stuver->Campus}}</td>
-                                                                <td>{{$stuver->Statuut}}</td>
-                                                                <td>
-                                                                 {{  Form::open(array('url'=>'deletestuver/' . $stuver->ID, 'method' => 'delete')) }}
-                                                                    <input type="image" src="{{ asset('img/admin/delete.jpg') }}" name="saveForm" class="delete" id="saveForm" />
-                                                                 {{ Form::close() }}
+                                                                <td>{{$date->id}}</td>
+                                                                <td>{{$date->type}}</td>
+                                                                <td>{{$date->title}}</td>
+                                                                <td>{{$date->undertitle}}</td>
+                                                                <td>{{$date->date}}</td>
+                                                               <td>
+                                                                 {{  Form::open(array('url'=>'deletes/' . $date->id, 'method' => 'delete')) }}
+                                                                       <input type="image" src="{{ asset('img/admin/delete.jpg') }}" name="saveForm" class="delete" id="saveForm" />
+                                                                {{ Form::close() }}
                                                                 </td>
-                                                                <td>{{  Form::open(array('url'=>'/Stuver/edit', 'method' => 'post')) }}
+                                                                <td>{{  Form::open(array('url'=>'agendaEvent/edit', 'method' => 'post')) }}
+                                                                <input type="hidden" value="{{$date->id}}" name="id"/>
                                                                 <input type="image" src="{{ asset('img/admin/edit.png') }}" name="saveForm" class="edit" id="saveForm" />
-                                                                 <input type="hidden" value="{{$stuver->ID}}" name="ID"/>
 
-                                                                 </a>
-                                                                 {{ Form::close() }}
-                                                                 </td>
+                                                                </a>
+                                                                   {{ Form::close() }}
+                                                                </td>
                                                             </tr>
                                                             @endforeach
+
+
                                                         </tbody>
                                                     </table>
-                                                    <div class="pagination">{{ $stuvers->links() }}</div>
+
                                                 </div>
+
                                             </div>
                                         </div>
                                           <!-- End  Basic Table  -->
+                                           <div class="pagination">{{ $dates->links() }}</div>
                                     </div>
                                 </div>
             <!-- /. PAGE INNER  -->
@@ -197,7 +193,7 @@
        <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
 
-</div>
 
+</div>
 </body>
 </html>

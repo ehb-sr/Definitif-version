@@ -97,6 +97,17 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="#"><img img src="{{ asset('img/admin/event.png') }}" class="menu">Agenda/Events</a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/adminCreateAgendaEvent" id="adminCreateAgendaEvent">Agenda/Event aanmaken</a>
+                            </li>
+                            <li>
+                                <a href="/adminOverzichtAgendaEvent" id="adminOverzichtAgendaEvent">Agenda/Event overzicht</a>
+                            </li>
+                        </ul>
+                    </li>
                      </ul>
             </div>
 
@@ -167,7 +178,6 @@
     </div>
     <!-- /. WRAPPER  -->
 
-    <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>
