@@ -130,29 +130,27 @@
                                 </div>
                                 <div class="panel-body">
                                    {{  Form::open(array('action'=>'DateController@update', 'method' => 'post')) }}
-                                                                                  <div class="form-group">
-                                                                                                                                     <select name="type">
-                                                                                                                                         <option name="type" value="1">Event</option>
-                                                                                                                                         <option name="type" value="2">Agenda</option>
-                                                                                                                                     </select>
-                                                                                                                                 </div>
-                                                                                                                                 <div class="form-group">
-                                                                                                                                      <label>Date</label>
-                                                                                                                                      <input class="form-control" type="text" name="date" placeholder="date" required value="{{$dates->date}}">
-                                                                                                                                 </div>
-                                                                                                                                 <div class="form-group">
-                                                                                                                                     <label>Titel</label>
-                                                                                                                                     <input class="form-control" type="text" name="title" placeholder="title" required value="{{$dates->title}}">
-                                                                                                                                 </div>
-                                                                                                                                 <div class="form-group">
-                                                                                                                                     <label>Ondertitel</label>
-                                                                                                                                     <input class="form-control" type="text" name="undertitle" placeholder="undertitle" required value="{{$dates->undertitle}}">
-                                                                                                                                  </div>
-                                                                                  <input type="hidden" value="{{$dates->id}}" name="id">
-                                                                                  <button type="submit" class="btn btn-info">updaten</button>
-
-                                                                      {{  Form::close()  }}
-
+                                    <div class="form-group">
+                                        <select name="type">
+                                            <option name="type" value="1">Event</option>
+                                            <option name="type" value="2">Agenda</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Date</label>
+                                        <input class="form-control" type="text" name="date" placeholder="date YYYY-MM-DD" required value="{{$dates->date}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Titel</label>
+                                        <input class="form-control" type="text" name="title" placeholder="title" required value="{{$dates->title}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ondertitel</label>
+                                        <input class="form-control" type="text" name="undertitle" placeholder="undertitle" required value="{{$dates->undertitle}}">
+                                    </div>
+                                    <input type="hidden" value="{{$dates->id}}" name="id">
+                                    <button type="submit" class="btn btn-info">updaten</button>
+                                    {{  Form::close()  }}
                                     </div>
                                 </div>
                                     </div>

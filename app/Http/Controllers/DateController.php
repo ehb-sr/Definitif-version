@@ -12,6 +12,7 @@ use App\Date;
 use App\Year;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use DateTime;
 
 class DateController extends Controller
 {
@@ -49,12 +50,14 @@ class DateController extends Controller
 
     public function create(Request $request)
     {
+        $date = new DateTime($request->date);
+
         Date::insertGetId(
             [
                 'type' => $request->type,
                 'title' => $request->title,
                 'undertitle' => $request->undertitle,
-                'date' => $request->date,
+                'date' => $date,
             ]);
 
         return view('Admin/agendaEventAanmaken')->with('message', 'event of agenda goed aangemaakt');

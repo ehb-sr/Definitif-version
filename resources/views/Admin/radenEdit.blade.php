@@ -129,59 +129,57 @@
                                 </div>
                                 <div class="panel-body">
                                    {{  Form::open(array('action'=>'RadenAdminController@update', 'method' => 'post', 'enctype="multipart/form-data"')) }}
-                                                                                    <div class="form-group">
-                                                                                        <label>Foto</label><br>
-                                                                                        <input type="file" name="Foto" placeholder="Foto">
-                                                                                    </div>
-                                                                                 <div class="form-group">
-                                                                                                                                     <label>Voornaam</label>
-                                                                                                                                     <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" value="{{$raden->Voornaam}}">
-                                                                                                                                 </div>
-                                                                                                                          <div class="form-group">
-                                                                                                                                     <label>Familienaam</label>
-                                                                                                                                     <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" value="{{$raden->Familienaam}}">
-                                                                                                                                 </div>
-                                                                                                                                 <div class="form-group">
-                                                                                                                                     <label>jaar</label>
-                                                                                                                                     <input class="form-control" type="text" name="Jaar" placeholder="Jaar" value="{{$raden->Jaar}}">
-                                                                                                                                  </div>
-                                                                                                                                 <div class="form-group">
-                                                                                                                                     <label>statuut</label>
-                                                                                                                                     <input class="form-control" type="text" name="Statuut" placeholder="Statuut" value="{{$raden->Statuut}}">
-                                                                                                                                  </div>
-                                                                                                                                     <div class="form-group">
-                                                                                                                                     <label>VVS</label>
-                                                                                                                                     <input class="form-control" type="number" name="VVS" placeholder="VVS" value="{{$raden->VVS}}"/>
-                                                                                                                                 </div>
-                                                                                                                                 <div class="form-group">
-                                                                                                                                     <label>BAST</label>
-                                                                                                                                     <input class="form-control" type="number" name="BAST" placeholder="BAST" value="{{$raden->BAST}}">
-                                                                                                                                  </div>
-                                                                                                                                  <div class="form-group">
-                                                                                                                                  <label>UAB</label>
-                                                                                                                                  <input class="form-control" type="number" name="UAB" placeholder="UAB" value="{{$raden->UAB}}">
-                                                                                                                                  </div>
-                                                                                                                                  <div class="form-group">
-                                                                                                                                   <label>STUVO</label>
-                                                                                                                                   <input class="form-control" type="number" name="STUVO" placeholder="STUVO" value="{{$raden->STUVO}}">
-                                                                                                                                  </div>
-                                                                                                                                   <div class="form-group">
-                                                                                                                                  <label>RvT</label>
-                                                                                                                                   <input class="form-control" type="number" name="RvT" placeholder="RvT" value="{{$raden->RvT}}">
-                                                                                                                                  </div>
-                                                                                                                                  <div class="form-group">
-                                                                                                                                 <label>DR</label>
-                                                                                                                                 <input class="form-control" type="text" name="DR" placeholder="DR" value="{{$raden->DR}}">
-                                                                                                                                  </div>
-                                                                                                                                  <div class="form-group">
-                                                                                                                                  <label>RSchoolOfArts</label>
-                                                                                                                                   <input class="form-control" type="number" name="RSchoolOfArts" placeholder="RSchoolOfArts" value="{{$raden->RSchoolOfArts}}">
-                                                                                                                                   </div>
-                                                                                  <input type="hidden" value="{{$raden->ID}}" name="ID">
-                                                                                  <button type="submit" class="btn btn-info">Raden updaten</button>
-
-                                                                      {{  Form::close()  }}
-
+                                    <div class="form-group">
+                                        <label>Foto</label><br>
+                                        <input type="file" name="Foto" placeholder="Foto" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Voornaam</label>
+                                        <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" value="{{$raden->Voornaam}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Familienaam</label>
+                                        <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" value="{{$raden->Familienaam}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>jaar</label>
+                                        <input class="form-control" type="text" name="Jaar" placeholder="Jaar" value="{{$raden->Jaar}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>statuut</label>
+                                        <input class="form-control" type="text" name="Statuut" placeholder="Statuut" value="{{$raden->Statuut}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>VVS</label>
+                                        <input class="form-control" type="number" name="VVS" placeholder="VVS" value="{{$raden->VVS}}"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>BAST</label>
+                                        <input class="form-control" type="number" name="BAST" placeholder="BAST" value="{{$raden->BAST}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>UAB</label>
+                                        <input class="form-control" type="number" name="UAB" placeholder="UAB" value="{{$raden->UAB}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>STUVO</label>
+                                        <input class="form-control" type="number" name="STUVO" placeholder="STUVO" value="{{$raden->STUVO}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>RvT</label>
+                                        <input class="form-control" type="number" name="RvT" placeholder="RvT" value="{{$raden->RvT}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>DR</label>
+                                        <input class="form-control" type="text" name="DR" placeholder="DR" value="{{$raden->DR}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>RSchoolOfArts</label>
+                                        <input class="form-control" type="number" name="RSchoolOfArts" placeholder="RSchoolOfArts" value="{{$raden->RSchoolOfArts}}">
+                                    </div>
+                                    <input type="hidden" value="{{$raden->ID}}" name="ID">
+                                    <button type="submit" class="btn btn-info">Raden updaten</button>
+                                    {{  Form::close()  }}
                                     </div>
                                 </div>
                                     </div>

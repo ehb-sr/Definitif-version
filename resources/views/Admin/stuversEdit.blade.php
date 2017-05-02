@@ -130,40 +130,39 @@
                                 <div class="panel-body">
                                    {{  Form::open(array('action'=>'StuversAdminController@update', 'method' => 'post', 'enctype="multipart/form-data"')) }}
                                    <div class="form-group">
-                                                                                                                           <label>Foto</label><br>
-                                                                                                                           <input type="file" name="Foto" placeholder="Foto">
-                                                                                                                       </div>
-                                                                                  <div class="form-group">
-                                                                                                                                                                          <label>Voornaam</label>
-                                                                                                                                                                          <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" value="{{$stuvers->Voornaam}}">
-                                                                                                                                                                      </div>
-                                                                                                                                                               <div class="form-group">
-                                                                                                                                                                          <label>Familienaam</label>
-                                                                                                                                                                         <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" value="{{$stuvers->Familienaam}}">
-                                                                                                                                                                      </div>
-                                                                                                                                                                       <div class="form-group">
-                                                                                                                                                                         <label>Jaar</label>
-                                                                                                                                                                         <input class="form-control" type="number" name="Jaar" placeholder="Jaar" value="{{$stuvers->Jaar}}">
-                                                                                                                                                                       </div>
-                                                                                                                                                                        <div class="form-group">
-                                                                                                                                                                        <label>Campus</label>
-                                                                                                                                                                        <input class="form-control" type="text" name="Campus" placeholder="Campus" value="{{$stuvers->Campus}}">
-                                                                                                                                                                        </div>
-                                                                                                                                                                      <div class="form-group">
-                                                                                                                                                                          <label>Statuut</label>
-                                                                                                                                                                          <input class="form-control" type="text" name="Statuut" placeholder="Statuut" value="{{$stuvers->Statuut}}">
-                                                                                                                                                                       </div>
-                                                                                                                                                                          <div class="form-group">
-                                                                                                                                                                          <label>Quote</label>
-                                                                                                                                                                          <textarea class="form-control" rows="3" type="text" name="Quote" placeholder="Quote" value="{{$stuvers->Quote}}">{{$stuvers->Quote}}</textarea>
-                                                                                                                                                                      </div>
-                                                                                                                                                                      <div class="form-group">
-                                                                                                                                                                        <label>Email</label>
-                                                                                                                                                                         <input class="form-control" type="email" name="Email" placeholder="Email" value="{{$stuvers->Email}}">
-                                                                                                                                                                          </div>
-                                                                                                                                                                          <input type="hidden" value="{{$stuvers->ID}}" name="ID">
-                                                                                                                                                                      <button type="submit" class="btn btn-info">Stuver updaten</button>
-
+                                       <label>Foto</label><br>
+                                       <input type="file" name="Foto" placeholder="Foto">
+                                   </div>
+                                    <div class="form-group">
+                                        <label>Voornaam</label>
+                                        <input class="form-control" type="text" name="Voornaam" placeholder="Voornaam" value="{{$stuvers->Voornaam}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Familienaam</label>
+                                        <input class="form-control" type="text" name="Familienaam" placeholder="Familienaam" value="{{$stuvers->Familienaam}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Jaar</label>
+                                        <input class="form-control" type="number" name="Jaar" placeholder="Jaar" value="{{$stuvers->Jaar}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Campus</label>
+                                        <input class="form-control" type="text" name="Campus" placeholder="Campus" value="{{$stuvers->Campus}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Statuut</label>
+                                        <input class="form-control" type="text" name="Statuut" placeholder="Statuut" value="{{$stuvers->Statuut}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Quote</label>
+                                        <textarea class="form-control" rows="3" type="text" name="Quote" placeholder="Quote" value="{{$stuvers->Quote}}">{{$stuvers->Quote}}</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input class="form-control" type="email" name="Email" placeholder="Email" value="{{$stuvers->Email}}">
+                                    </div>
+                                    <input type="hidden" value="{{$stuvers->ID}}" name="ID">
+                                    <button type="submit" class="btn btn-info">Stuver updaten</button>
 
                                                                       {{  Form::close()  }}
 

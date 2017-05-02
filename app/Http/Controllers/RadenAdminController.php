@@ -22,6 +22,7 @@ class RadenAdminController extends Controller
 
     public function create(Request $request)
     {
+        if($request->file('Foto') != null)
         Raden::insertGetId(
             [
                 'Foto' => $request->file('Foto')->store('raden'),
@@ -36,10 +37,24 @@ class RadenAdminController extends Controller
                 'RvT' => $request->RvT,
                 'DR' => $request->DR,
                 'RSchoolOfArts' => $request->RSchoolOfArts,
-
-
-
             ]);
+        else {
+            Raden::insertGetId(
+                [
+                    'Foto' => 'stuvers/r4E568sLePN7Fq6zZ0dJ4bFptv9fZLNJYrfSzSOo.jpeg',
+                    'Voornaam' => $request->Voornaam,
+                    'Familienaam' => $request->Familienaam,
+                    'Jaar' => $request->Jaar,
+                    'Statuut' => $request->Statuut,
+                    'VVS' => $request->VVS,
+                    'BAST' => $request->BAST,
+                    'UAB' => $request->UAB,
+                    'STUVO' => $request->STUVO,
+                    'RvT' => $request->RvT,
+                    'DR' => $request->DR,
+                    'RSchoolOfArts' => $request->RSchoolOfArts,
+                ]);
+        }
 
         return view('Admin/radenAanmaken')->with('message', 'raad goed aangemaakt');
 
@@ -61,20 +76,38 @@ class RadenAdminController extends Controller
     }
 
     public function update(Request $request) {
-        Raden::where('id', $request->input("ID"))->update(array(
-            'Foto' => $request->file('Foto')->store('raden'),
-            'Voornaam'    =>  $request->input("Voornaam"),
-            'Familienaam' =>  $request->input("Familienaam"),
-            'Jaar' =>  $request->input("Jaar"),
-            'Statuut'  => $request->input("Statuut"),
-            'VVS' => $request->input("VVS"),
-            'BAST' =>  $request->input("BAST"),
-            'UAB' =>  $request->input("UAB"),
-            'STUVO' =>  $request->input("STUVO"),
-            'RvT' =>  $request->input("RvT"),
-            'DR' =>  $request->input("DR"),
-            'RSchoolOfArts' =>  $request->input("RSchoolOfArts"),
-        ));
+        if($request->file('Foto') != ""){
+            Raden::where('id', $request->input("ID"))->update(array(
+                'Foto' => $request->file('Foto')->store('raden'),
+                'Voornaam'    =>  $request->input("Voornaam"),
+                'Familienaam' =>  $request->input("Familienaam"),
+                'Jaar' =>  $request->input("Jaar"),
+                'Statuut'  => $request->input("Statuut"),
+                'VVS' => $request->input("VVS"),
+                'BAST' =>  $request->input("BAST"),
+                'UAB' =>  $request->input("UAB"),
+                'STUVO' =>  $request->input("STUVO"),
+                'RvT' =>  $request->input("RvT"),
+                'DR' =>  $request->input("DR"),
+                'RSchoolOfArts' =>  $request->input("RSchoolOfArts"),
+            ));
+        } else {
+            Raden::where('id', $request->input("ID"))->update(array(
+                //'Foto' => 'stuvers/r4E568sLePN7Fq6zZ0dJ4bFptv9fZLNJYrfSzSOo.jpeg',
+                'Voornaam'    =>  $request->input("Voornaam"),
+                'Familienaam' =>  $request->input("Familienaam"),
+                'Jaar' =>  $request->input("Jaar"),
+                'Statuut'  => $request->input("Statuut"),
+                'VVS' => $request->input("VVS"),
+                'BAST' =>  $request->input("BAST"),
+                'UAB' =>  $request->input("UAB"),
+                'STUVO' =>  $request->input("STUVO"),
+                'RvT' =>  $request->input("RvT"),
+                'DR' =>  $request->input("DR"),
+                'RSchoolOfArts' =>  $request->input("RSchoolOfArts"),
+            ));
+        }
+
         return redirect('adminOverzichtRaden');
     }
 

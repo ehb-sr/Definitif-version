@@ -162,33 +162,33 @@
                                                                 <td>{{$raad->Familienaam}}</td>
                                                                 <td>{{$raad->Jaar}}</td>
                                                                 <td>{{$raad->Statuut}}</td>
-                                                                @if($raad->VVS != null)
+                                                                @if($raad->VVS != 0)
                                                                     <td>true</td>
                                                                 @else
                                                                     <td>false</td>
                                                                  @endif
-                                                                 @if($raad->BAST != null)
+                                                                 @if($raad->BAST != 0)
                                                                     <td>true</td>
                                                                  @else
                                                                     <td>false</td>
                                                                  @endif
-                                                                 @if($raad->UAB != null)
+                                                                 @if($raad->UAB != 0)
                                                                     <td>true</td>
                                                                  @else
                                                                     <td>false</td>
                                                                  @endif
-                                                                @if($raad->STUVO != null)
+                                                                @if($raad->STUVO != 0)
                                                                     <td>true</td>
                                                                  @else
                                                                     <td>false</td>
                                                                  @endif
-                                                                @if($raad->RvT != null)
+                                                                @if($raad->RvT != 0)
                                                                     <td>true</td>
                                                                  @else
                                                                     <td>false</td>
                                                                  @endif
                                                                 <td>{{$raad->DR}}</td>
-                                                                @if($raad->RSchoolOfArts != null)
+                                                                @if($raad->RSchoolOfArts != 0)
                                                                     <td>true</td>
                                                                  @else
                                                                     <td>false</td>

@@ -137,7 +137,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                      <label>Date</label>
-                                                     <input class="form-control" type="text" name="date" placeholder="date" required>
+                                                     <input class="form-control" type="text" name="date YYYY-MM-DD" placeholder="date" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Titel</label>

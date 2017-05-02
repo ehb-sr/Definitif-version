@@ -23,16 +23,32 @@ class StuversAdminController extends Controller
 
     public function create(Request $request)
     {
-        Stuvers::insertGetId(
-            [
-                'Foto' => $request->file('Foto')->store('stuvers'),
-                'Voornaam' => $request->Voornaam,
-                'Familienaam' => $request->Familienaam,
-                'Jaar' => $request->Jaar,
-                'Campus' => $request->Campus,
-                'Quote' => $request->Quote,
-                'Email' => $request->Email,
-            ]);
+        if($request->file('Foto') != null)
+        {
+            Stuvers::insertGetId(
+                [
+                    'Foto' => $request->file('Foto')->store('stuvers'),
+                    'Voornaam' => $request->Voornaam,
+                    'Familienaam' => $request->Familienaam,
+                    'Jaar' => $request->Jaar,
+                    'Campus' => $request->Campus,
+                    'Quote' => $request->Quote,
+                    'Email' => $request->Email,
+                ]);
+        } else {
+            Stuvers::insertGetId(
+                [
+                    'Foto' => null,
+                    'Voornaam' => $request->Voornaam,
+                    'Familienaam' => $request->Familienaam,
+                    'Jaar' => $request->Jaar,
+                    'Campus' => $request->Campus,
+                    'Quote' => $request->Quote,
+                    'Email' => $request->Email,
+                ]);
+        }
+
+
 
         return view('Admin/stuversAanmaken');
 
@@ -54,16 +70,31 @@ class StuversAdminController extends Controller
     }
 
     public function update(Request $request) {
-        Stuvers::where('id', $request->input("ID"))->update(array(
-            'Foto' => $request->file('Foto')->store('stuvers'),
-            'Voornaam'    =>  $request->input("Voornaam"),
-            'Familienaam' =>  $request->input("Familienaam"),
-            'Jaar' =>  $request->input("Jaar"),
-            'Campus' =>  $request->input("Campus"),
-            'Statuut'  => $request->input("Statuut"),
-            'Quote' => $request->input("Quote"),
-            'Email' =>  $request->input("Email"),
-        ));
+
+        if($request->file('Foto') != ""){
+            Stuvers::where('id', $request->input("ID"))->update(array(
+                'Foto' => $request->file('Foto')->store('stuvers'),
+                'Voornaam'    =>  $request->input("Voornaam"),
+                'Familienaam' =>  $request->input("Familienaam"),
+                'Jaar' =>  $request->input("Jaar"),
+                'Campus' =>  $request->input("Campus"),
+                'Statuut'  => $request->input("Statuut"),
+                'Quote' => $request->input("Quote"),
+                'Email' =>  $request->input("Email"),
+            ));
+        } else {
+            Stuvers::where('id', $request->input("ID"))->update(array(
+                //'Foto' => $request->file('Foto')->store('stuvers'),
+                'Voornaam'    =>  $request->input("Voornaam"),
+                'Familienaam' =>  $request->input("Familienaam"),
+                'Jaar' =>  $request->input("Jaar"),
+                'Campus' =>  $request->input("Campus"),
+                'Statuut'  => $request->input("Statuut"),
+                'Quote' => $request->input("Quote"),
+                'Email' =>  $request->input("Email"),
+            ));
+        }
+
         return redirect('adminOverzichtStuver');
     }
 
